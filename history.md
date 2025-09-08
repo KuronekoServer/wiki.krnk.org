@@ -2,10 +2,10 @@
 title: 運営履歴
 description: KuronekoServerの運営開始/終了履歴/その他履歴
 published: true
-date: 2025-02-02T13:08:12.098Z
+date: 2025-09-08T16:36:30.820Z
 tags: 
 editor: markdown
-dateCreated: 2025-02-02T13:08:08.535Z
+dateCreated: 2025-09-07T10:53:27.221Z
 ---
 
 # 運営履歴
@@ -29,9 +29,8 @@ VOICEROID読み上げBOT提供開始 | 2021/12/26
 ----- 2022年 ------ | 
 Coefont読み上げBOT提供終了 | 2022/01/09
 Web認証bot提供開始 | 2022/01/23
-電気通信事業者の届出番号取得 | 2022/05/12
+電気通信事業者の届出番号取得(H-04-01770) | 2022/05/12
 音楽BOT提供終了 | 2022/06/01
-弊組織のなりすましをした荒らし行為が行われた | 2022/08/16
 KuronekoServer http Proxyサービス提供開始 | 2022/9/24
 Rextとのパートナー提携開始 | 2022/11/23
 FnoTesとのパートナー提携開始 | 2022/12/28
@@ -64,3 +63,4 @@ UptimeRobotとのスポンサー提携開始 | 2024/08/10
 ----- 2025年 ------ | 
 USLOGとのパートナー提携開始 | 2025/01/13
 KuronekoServer VRC Streaming Service提供開始 | 2025/01/18
+VRC Streaming Service から Nyan Streaming に名称変更 | 2025/08/10

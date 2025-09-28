@@ -2,17 +2,17 @@
 title: 弊組織について
 description: 
 published: true
-date: 2025-03-13T09:01:05.747Z
+date: 2025-09-28T08:54:04.726Z
 tags: 
 editor: markdown
-dateCreated: 2025-02-02T12:56:55.720Z
+dateCreated: 2025-09-07T10:53:42.627Z
 ---
 
 ![logo](https://cdn.krnk.org/kuronekoserver/header.webp)
 
 # KuronekoServerとは
 ### 概要
-KuronekoServerは、学生の集まりで運営している任意団体です。
+KuronekoServerは、技術者の集まりで運営している任意団体です。
 KuronekoServerは、2018年に黒猫ちゃん個人で運営が開始し2021/07/20にDiscordサーバーを開設しました。
 現在では、Discord読み上げBOTが20万サーバー以上に利用されています。
 

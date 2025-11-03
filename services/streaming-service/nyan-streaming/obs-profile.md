@@ -2,7 +2,7 @@
 title: 低遅延OBSプロファイル
 description: 
 published: true
-date: 2025-11-03T07:52:12.717Z
+date: 2025-11-03T07:54:18.997Z
 tags: streaming, obs, nyanstreaming, s
 editor: markdown
 dateCreated: 2025-11-03T07:52:12.717Z
@@ -21,14 +21,21 @@ https://lemonkaju.booth.pm/items/7497730 のプロファイルを元に、改変
 🔷iTunes: https://www.apple.com/itunes/download/win64
 
 ## プロファイル
+> デフォルトでは、Node02のアドレスが入っております。
+> 実際に使用する場合は各自NyanStreamingのツールよりアドレスを確認し、配信をお願いいたします。
+{.is-info}
+
 ### CoreAudio ACC
 -  Nvidia: https://kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
 - Radeon: https://kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 > 全Nodeでの動作を確認いたしました。
+{.is-success}
+
 ### LPCM
 - Nvidia: https://kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
 - Radeon: https://kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip
 > Node01、Node03、Node04、協賛Nodeでの動作を確認いたしました。
+{.is-success}
 
 ## OBSでのプロファイルインポート
 上記のプロファイルをダウンロードして、**解凍を行った後**にOBSのプロファイルから、インポートを選択し、解凍したファイルを選択する。

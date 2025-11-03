@@ -1,11 +1,11 @@
 ---
-title: VR Streaming
+title: Nyan Streaming
 description: VRユーザー向けの映像配信サービス
 published: true
-date: 2025-08-19T16:06:58.662Z
+date: 2025-11-03T04:31:06.584Z
 tags: vrchat, streaming
 editor: markdown
-dateCreated: 2025-02-02T13:12:01.515Z
+dateCreated: 2025-09-07T10:55:11.710Z
 ---
 
 # Nyan Streaming
@@ -16,8 +16,5 @@ https://nyst.live/
 
 
 <hr>
-!!警告!!
-
-2024/12/18時点でVRChat側の不具合(?)でrtspでの視聴ができません。
 法人利用を行う場合は事前に弊組織までお問い合わせくださいませ。
-配信サービスで著作権のある配信を行っていた場合直ちに[お問い合わせ](https://discord.krnk.org)にて報告をお願い致します。
+配信サービスで著作権のある配信を行っていた場合直ちに[お問い合わせ](<https://discord.krnk.org>)にて報告をお願い致します。

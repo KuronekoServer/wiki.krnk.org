@@ -2,7 +2,7 @@
 title: 低遅延OBSプロファイル
 description: 
 published: true
-date: 2025-11-03T07:54:18.997Z
+date: 2025-11-03T07:55:37.224Z
 tags: streaming, obs, nyanstreaming, s
 editor: markdown
 dateCreated: 2025-11-03T07:52:12.717Z
@@ -31,7 +31,7 @@ https://lemonkaju.booth.pm/items/7497730 のプロファイルを元に、改変
 > 全Nodeでの動作を確認いたしました。
 {.is-success}
 
-### LPCM
+### LPCM (最高音質)
 - Nvidia: https://kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
 - Radeon: https://kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip
 > Node01、Node03、Node04、協賛Nodeでの動作を確認いたしました。

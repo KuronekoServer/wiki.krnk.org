@@ -2,10 +2,10 @@
 title: ビデオプレイヤーの設定/確認
 description: 
 published: true
-date: 2025-06-18T12:57:13.387Z
+date: 2025-11-03T05:57:57.795Z
 tags: vrchat
 editor: markdown
-dateCreated: 2025-06-18T11:49:36.340Z
+dateCreated: 2025-09-07T10:55:06.842Z
 ---
 
 # Video Playerの設定について

@@ -2,7 +2,7 @@
 title: ビデオプレイヤーの設定/確認
 description: 
 published: true
-date: 2025-11-03T07:06:10.339Z
+date: 2025-11-03T07:23:22.466Z
 tags: vrchat
 editor: markdown
 dateCreated: 2025-09-07T10:55:06.842Z
@@ -37,12 +37,6 @@ iwaSyncでは、低遅延での配信視聴を行う場合はUnityで動画プ�
 
 BOOTH: https://xtl.booth.pm/items/5056077
 
-## TopazChat Player 3.0 (高度)
-TopazChat Playerでは、配信視聴を行う場合は動画プレイヤーの**スクリプトの編集が必要**です。
-![TopazChat](https://cdn.krnk.org/kuronekoserver/wiki/nyst/topaz1.webp)
-
-BOOTH: https://tyounanmoti.booth.pm/items/1752066
-
 ## ProTV 3.0
 ProTV 3.0は標準で低遅延に対応しており、特に設定の変更は行わず**設定の変更は不要**です。
 https://booth.pm/ja/items/2536209
@@ -53,3 +47,13 @@ USharpVideoでは、低遅延での配信視聴を行う場合はUnityで動画�
 ![USharpVideoPlayer](https://cdn.krnk.org/kuronekoserver/wiki/nyst/usharp.webp)
 
 GitHub: https://github.com/MerlinVR/USharpVideo
+
+## TopazChat Player 3.0 (高度)
+TopazChat Playerでは、配信視聴を行う場合は動画プレイヤーの**スクリプトの編集が必要**です。
+
+![TopazChat](https://cdn.krnk.org/kuronekoserver/wiki/nyst/topaz1.webp)
+![TopazChat](https://cdn.krnk.org/kuronekoserver/wiki/nyst/topaz2.webp)
+![TopazChat](https://cdn.krnk.org/kuronekoserver/wiki/nyst/topaz3.webp)
+![TopazChat](https://cdn.krnk.org/kuronekoserver/wiki/nyst/topaz4.webp)
+
+BOOTH: https://tyounanmoti.booth.pm/items/1752066

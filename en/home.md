@@ -2,25 +2,25 @@
 title: Welcome
 description: 
 published: true
-date: 2025-03-13T08:24:29.358Z
+date: 2025-03-13T08:12:21.476Z
 tags: 
 editor: markdown
-dateCreated: 2025-03-13T08:24:25.795Z
+dateCreated: 2025-02-02T12:51:18.012Z
 ---
 
 ![logo](https://cdn.krnk.org/kuronekoserver/header.webp)
 
 # Welcome
-Welcome to the official documentation of **KuronekoServer**!
+Welcome to the official documentation of KuronekoServer!
 
-In this wiki site, you will find descriptions of each feature of each service.
+This wiki documents the features of each service.
 
-If you have any questions in using the service, please take a look at this first!
+If you have any questions while using our services, please consult this documentation first.
 
-> **Be sure to read the [Terms of Use](https://krnk.org/tos) and [Privacy Policy](https://krnk.org/privacy) before using KuronekoServer services. **
-Your use of the service constitutes your agreement to them.
+> **Before using KuronekoServer services, please read and agree to the [Terms of Service](https://krnk.org/tos) and [Privacy Policy](https://krnk.org/privacy).**
+Services are considered to be used with your agreement to these terms.
 {.is-info}
 
-> This document is written in parallel with the development of BOT. Therefore, it may not correspond to the latest version of each service depending on the time.
-If you have any questions about something not mentioned in the documentation, please feel free to contact us at [support server](https://discord.krnk.org).
+> This documentation is being written alongside bot development. Therefore, it may not always reflect the most recent service versions.
+If something isn't documented or you have questions, please feel free to contact our [support server](https://discord.krnk.org).
 {.is-warning}

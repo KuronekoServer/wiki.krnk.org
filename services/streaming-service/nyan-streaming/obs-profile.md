@@ -2,7 +2,7 @@
 title: 低遅延OBSプロファイル
 description: 
 published: true
-date: 2025-11-03T07:55:37.224Z
+date: 2025-11-11T15:21:59.507Z
 tags: streaming, obs, nyanstreaming, s
 editor: markdown
 dateCreated: 2025-11-03T07:52:12.717Z
@@ -26,14 +26,14 @@ https://lemonkaju.booth.pm/items/7497730 のプロファイルを元に、改変
 {.is-info}
 
 ### CoreAudio ACC
--  Nvidia: https://kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
-- Radeon: https://kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
+-  Nvidia: https://cdn.krnk.org/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
+- Radeon: https://cdn.krnk.org/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 > 全Nodeでの動作を確認いたしました。
 {.is-success}
 
 ### LPCM (最高音質)
-- Nvidia: https://kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
-- Radeon: https://kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip
+- Nvidia: https://cdn.krnk.org/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
+- Radeon: https://cdn.krnk.org/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip
 > Node01、Node03、Node04、協賛Nodeでの動作を確認いたしました。
 {.is-success}
 

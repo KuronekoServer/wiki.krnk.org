@@ -10,8 +10,9 @@ dateCreated: 2026-04-14T00:00:00.000Z
 
 # Paid Plans
 ## Overview
-Paid plans relax the dictionary limits and reading length limits used by the TTS BOT.
-Changing limits does not update existing settings automatically, so please adjust them again with the related commands when needed.
+The premium plan relaxes the character limits for the dictionary used by the text-to-speech bot, as well as the character limits for the readings themselves.
+Please note that the character limits for readings do not update automatically, so you will need to configure them using the command.
+You can sign up for the premium plan here: https://payment.krnk.org
 
 ## Related Commands
 Command | Description | Guide

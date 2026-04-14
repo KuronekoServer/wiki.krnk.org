@@ -9,6 +9,7 @@ dateCreated: 2025-03-13T08:08:56.313Z
 ---
 
 ## Discord BOT 서비스
+- [독서BOT](/services/discordbot/tts-bot)
 - [Artifacter](/services/discordbot/artifacter)
 - [웹 인증 BOT](/services/discordbot/webauth-bot)
 {.links-list}

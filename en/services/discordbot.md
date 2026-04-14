@@ -9,6 +9,7 @@ dateCreated: 2025-03-13T08:08:56.313Z
 ---
 
 ## Discord BOT Services
+- [Text-to-speech bot](/services/discordbot/tts-bot)
 - [Artifacter](/services/discordbot/artifacter)
 - [Web Authentication BOT](/services/discordbot/webauth-bot)
 {.links-list}

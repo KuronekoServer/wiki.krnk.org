@@ -2,7 +2,7 @@
 title: 運営履歴
 description: KuronekoServerの運営開始/終了履歴/その他履歴
 published: true
-date: 2025-09-08T16:36:30.820Z
+date: 2025-12-12T14:35:21.997Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-07T10:53:27.221Z
@@ -64,3 +64,5 @@ UptimeRobotとのスポンサー提携開始 | 2024/08/10
 USLOGとのパートナー提携開始 | 2025/01/13
 KuronekoServer VRC Streaming Service提供開始 | 2025/01/18
 VRC Streaming Service から Nyan Streaming に名称変更 | 2025/08/10
+KuronekoServer ShareText 提供開始 | 2025/12/12
+----- 2026年 ------ | 

@@ -2,8 +2,8 @@
 title: 低遅延OBSプロファイル
 description: 
 published: true
-date: 2026-01-31T14:30:32.972Z
-tags: streaming, obs, nyanstreaming, s
+date: 2026-05-10T16:00:58.776Z
+tags: streaming, obs, nyanstreaming
 editor: markdown
 dateCreated: 2025-11-03T07:52:12.717Z
 ---

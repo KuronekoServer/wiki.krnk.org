@@ -24,7 +24,6 @@ https://openjtalk-api.krnk.org/synthesize?text=読み上げる文字&type=話者
 
 サービスページ: https://openjtalk-api.krnk.org
 
-> 10秒間に100回以上リクエストをすると「429 Too many Requests」が返されます。
+> 1秒間に50回以上リクエストをすると「429 Too many Requests」が返されます。
 APIのレートリミットの緩和を行いたい場合は[お問い合わせ](https://discord.krnk.org)をお願いします。
-※APIの制限は提供しているAPIサービスと制限は共有されています。
 {.is-danger}

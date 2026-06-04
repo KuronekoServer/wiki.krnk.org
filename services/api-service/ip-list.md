@@ -2,10 +2,10 @@
 title: IP国別リスト
 description: 大陸ごと、国ごとのIPリストを取得できるサービス
 published: true
-date: 2025-08-10T12:42:55.549Z
+date: 2026-06-04T15:09:56.535Z
 tags: 
 editor: markdown
-dateCreated: 2025-08-10T12:40:56.322Z
+dateCreated: 2025-09-07T10:54:36.647Z
 ---
 
 # IP国別リスト
@@ -13,6 +13,9 @@ dateCreated: 2025-08-10T12:40:56.322Z
 本IPリストは1日ごとに更新が行われます。
 CDN Serverの利用規約・プライバシーポリシーが適用されます。
 どうぞ、日本のみに制限する際等にご利用くださいませ。
+
+## Tor
+https://cdn.krnk.org/ip/torexitall.txt
 
 ## 大陸ごと
 | 大陸              | URL                                                      |

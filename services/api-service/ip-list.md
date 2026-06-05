@@ -1,8 +1,8 @@
 ---
-title: IP国別リスト
+title: 国別IPリスト
 description: 大陸ごと、国ごとのIPリストを取得できるサービス
 published: true
-date: 2026-06-04T15:09:56.535Z
+date: 2026-06-05T23:55:35.703Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-07T10:54:36.647Z

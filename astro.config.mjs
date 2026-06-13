@@ -20,6 +20,7 @@ export default defineConfig({
         alt: 'KuronekoServer',
         replacesTitle: false,
       },
+      customCss: ['./src/styles/custom.css'],
       defaultLocale: 'root',
       locales: {
         root: { label: '日本語', lang: 'ja' },

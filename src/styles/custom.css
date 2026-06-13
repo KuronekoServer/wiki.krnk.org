@@ -1,0 +1,21 @@
+/* サイト独自のスタイル調整 */
+
+/* 右側の目次(このページの内容 / On this page)サイドバー幅の調整。
+   Starlight 既定は「左サイドバー幅 + 余白/2」で、ワイド画面では広すぎるため固定幅にする。
+   必要に応じて --toc-width の値だけ変えれば調整できる。 */
+:root {
+  --toc-width: 16rem;
+}
+
+@media (min-width: 72rem) {
+  .right-sidebar-container {
+    width: var(--toc-width);
+  }
+
+  /* 余ったスペースは本文ペインに回し、本文は中央寄せにする */
+  [data-has-sidebar][data-has-toc] .main-pane {
+    width: auto;
+    flex: 1;
+    --sl-content-margin-inline: auto;
+  }
+}

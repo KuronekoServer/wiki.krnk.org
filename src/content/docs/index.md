@@ -14,7 +14,7 @@ lastUpdated: 2025-03-13T08:12:21.476Z
 ご利用にあたってわからないことがあった場合は、まずはこちらをご確認ください！
 
 :::note
-**KuronekoServerのサービスを使用する前に、必ず[利用規約](https://krnk.org/tos)と[プライバシーポリシー](https://krnk.org/privacy)のご確認をお願いします。**
+**KuronekoServerのサービスを使用する前に、必ず[利用規約](https://krnk.org/terms/)と[プライバシーポリシー](https://krnk.org/privacy)のご確認をお願いします。**
 サービスを利用した場合、これらに同意したとみなされます。
 :::
 

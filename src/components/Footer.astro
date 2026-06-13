@@ -1,0 +1,67 @@
+---
+// Starlight 既定のフッター(前/次ナビ・最終更新・編集リンク)はそのまま残し、
+// その下にサイト共通フッターを追加するオーバーライド。
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const lang = (Astro.locals.starlightRoute.lang || 'ja').split('-')[0];
+
+const STRINGS = {
+  ja: { site: '公式サイト', tos: '利用規約', privacy: 'プライバシーポリシー', support: 'サポート' },
+  en: { site: 'Official Site', tos: 'Terms of Service', privacy: 'Privacy Policy', support: 'Support' },
+  ko: { site: '공식 사이트', tos: '이용약관', privacy: '개인정보처리방침', support: '지원' },
+};
+const t = STRINGS[lang] ?? STRINGS.ja;
+
+const links = [
+  { href: 'https://krnk.org', label: t.site },
+  { href: 'https://krnk.org/terms/', label: t.tos },
+  { href: 'https://krnk.org/privacy', label: t.privacy },
+  { href: 'https://discord.krnk.org', label: `${t.support} (Discord)` },
+  { href: 'https://x.com/kuroneko_server', label: 'X' },
+  { href: 'https://github.com/KuronekoServer', label: 'GitHub' },
+];
+
+const year = new Date().getFullYear();
+---
+
+<Default><slot /></Default>
+
+<footer class="site-footer">
+  <nav class="site-footer__links" aria-label="KuronekoServer">
+    {
+      links.map((l) => (
+        <a href={l.href} target="_blank" rel="noopener noreferrer">
+          {l.label}
+        </a>
+      ))
+    }
+  </nav>
+  <p class="site-footer__copyright">© 2018–{year} KuronekoServer</p>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sl-color-hairline);
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+  .site-footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .site-footer__links a {
+    color: var(--sl-color-gray-2);
+    text-decoration: none;
+  }
+  .site-footer__links a:hover {
+    color: var(--sl-color-text-accent);
+    text-decoration: underline;
+  }
+  .site-footer__copyright {
+    margin: 0;
+  }
+</style>

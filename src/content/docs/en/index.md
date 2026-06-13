@@ -14,7 +14,7 @@ This wiki documents the features of each service.
 If you have any questions while using our services, please consult this documentation first.
 
 :::note
-**Before using KuronekoServer services, please read and agree to the [Terms of Service](https://krnk.org/tos) and [Privacy Policy](https://krnk.org/privacy).**
+**Before using KuronekoServer services, please read and agree to the [Terms of Service](https://krnk.org/terms/) and [Privacy Policy](https://krnk.org/privacy).**
 Services are considered to be used with your agreement to these terms.
 :::
 

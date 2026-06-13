@@ -16,7 +16,7 @@ export default defineConfig({
       title: 'KuronekoServer Wiki',
       description: 'KuronekoServer の公式ドキュメント',
       logo: {
-        src: 'https://cdn.krnk.org/kuronekoserver/logo.webp',
+        src: './src/assets/logo.webp',
         alt: 'KuronekoServer',
         replacesTitle: false,
       },

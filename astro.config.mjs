@@ -15,6 +15,7 @@ export default defineConfig({
     starlight({
       title: 'KuronekoServer Wiki',
       description: 'KuronekoServer の公式ドキュメント',
+      favicon: '/favicon.ico',
       logo: {
         src: './src/assets/logo.webp',
         alt: 'KuronekoServer',

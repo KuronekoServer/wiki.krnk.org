@@ -20,6 +20,8 @@ https://nyst.live/
 - [視聴方法（再生）](/services/streaming-service/nyan-streaming/viewing-methods/)
 - [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/)
 - [プラン・制限・ポリシー](/services/streaming-service/nyan-streaming/plans-and-limits/)
+- [ダッシュボードの使い方](/services/streaming-service/nyan-streaming/dashboard/)
+- [公開 API](/services/streaming-service/nyan-streaming/api/)
 - [低遅延OBSプロファイル](/services/streaming-service/nyan-streaming/obs-profile/)
 - [ビデオプレイヤーの設定/確認](/services/streaming-service/nyan-streaming/video-player-settings/)
 

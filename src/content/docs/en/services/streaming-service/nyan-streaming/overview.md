@@ -60,5 +60,7 @@ The standard is **H.264** for video and **AAC** for audio. Audio also supports *
 - [Viewing Methods (Playback)](/en/services/streaming-service/nyan-streaming/viewing-methods/)
 - [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/)
 - [Plans, Limits & Policies](/en/services/streaming-service/nyan-streaming/plans-and-limits/)
+- [Using the Dashboard](/en/services/streaming-service/nyan-streaming/dashboard/)
+- [Public API](/en/services/streaming-service/nyan-streaming/api/)
 - [Low-latency OBS Profile](/en/services/streaming-service/nyan-streaming/obs-profile/)
 - [Video Player Settings / Verification](/en/services/streaming-service/nyan-streaming/video-player-settings/)

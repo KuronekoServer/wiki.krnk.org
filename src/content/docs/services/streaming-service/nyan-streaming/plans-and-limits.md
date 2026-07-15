@@ -60,12 +60,16 @@ JASRAC / NexTone 管理楽曲などを配信で利用する場合は、ダッシ
 - 再配信（外部 RTMP 送信先）の設定
 - 番組送出（チャンネル）の切り替え
 - API キーの発行（公開 API の利用）
-- IP アクセスルールの設定
+- 配信元 IP アクセスルールの設定
 - 通知（アプリ内通知 / Webhook / メール）の設定
 - チーム（組織）・メンバー・請求の管理
+
+各操作の詳しい手順は [ダッシュボードの使い方](/services/streaming-service/nyan-streaming/dashboard/) をご覧ください。
 
 ## 関連ページ
 
 - [機能概要・対応プロトコル](/services/streaming-service/nyan-streaming/overview/)
 - [配信方法（取り込み）](/services/streaming-service/nyan-streaming/streaming-methods/)
 - [視聴方法（再生）](/services/streaming-service/nyan-streaming/viewing-methods/)
+- [ダッシュボードの使い方](/services/streaming-service/nyan-streaming/dashboard/)
+- [公開 API](/services/streaming-service/nyan-streaming/api/)

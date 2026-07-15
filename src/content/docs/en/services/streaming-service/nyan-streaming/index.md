@@ -20,6 +20,8 @@ https://nyst.live/
 - [Viewing Methods (Playback)](/en/services/streaming-service/nyan-streaming/viewing-methods/)
 - [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/)
 - [Plans, Limits, and Policies](/en/services/streaming-service/nyan-streaming/plans-and-limits/)
+- [Using the Dashboard](/en/services/streaming-service/nyan-streaming/dashboard/)
+- [Public API](/en/services/streaming-service/nyan-streaming/api/)
 - [Low-Latency OBS Profile](/en/services/streaming-service/nyan-streaming/obs-profile/)
 - [Video Player Settings / Verification](/en/services/streaming-service/nyan-streaming/video-player-settings/)
 

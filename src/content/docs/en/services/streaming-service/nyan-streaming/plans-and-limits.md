@@ -60,12 +60,16 @@ If you use music managed by JASRAC / NexTone or similar in your stream, please a
 - Configure restreaming (external RTMP destinations)
 - Switch program output (channels)
 - Issue API keys (for using the public API)
-- Configure IP access rules
+- Configure publish-source IP access rules
 - Configure notifications (in-app notifications / Webhook / email)
 - Manage teams (organizations), members, and billing
+
+For detailed steps on each operation, see [Using the Dashboard](/en/services/streaming-service/nyan-streaming/dashboard/).
 
 ## Related Pages
 
 - [Feature Overview and Supported Protocols](/en/services/streaming-service/nyan-streaming/overview/)
 - [Streaming Methods (Ingest)](/en/services/streaming-service/nyan-streaming/streaming-methods/)
 - [Viewing Methods (Playback)](/en/services/streaming-service/nyan-streaming/viewing-methods/)
+- [Using the Dashboard](/en/services/streaming-service/nyan-streaming/dashboard/)
+- [Public API](/en/services/streaming-service/nyan-streaming/api/)

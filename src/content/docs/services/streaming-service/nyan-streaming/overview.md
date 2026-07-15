@@ -60,5 +60,7 @@ Nyan Streaming は、**高画質な映像を低遅延（最短で約 1 秒）で
 - [視聴方法（再生）](/services/streaming-service/nyan-streaming/viewing-methods/)
 - [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/)
 - [プラン・制限・ポリシー](/services/streaming-service/nyan-streaming/plans-and-limits/)
+- [ダッシュボードの使い方](/services/streaming-service/nyan-streaming/dashboard/)
+- [公開 API](/services/streaming-service/nyan-streaming/api/)
 - [低遅延 OBS プロファイル](/services/streaming-service/nyan-streaming/obs-profile/)
 - [ビデオプレイヤーの設定/確認](/services/streaming-service/nyan-streaming/video-player-settings/)

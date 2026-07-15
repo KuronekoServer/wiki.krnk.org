@@ -64,8 +64,12 @@ JASRAC / NexTone 관리 악곡 등을 송출에서 이용하는 경우에는 대
 - 알림(앱 내 알림 / Webhook / 메일) 설정
 - 팀(조직)·멤버·청구 관리
 
+각 조작의 자세한 절차는 [대시보드 사용법](/ko/services/streaming-service/nyan-streaming/dashboard/)을 참조하세요.
+
 ## 관련 페이지
 
 - [기능 개요·지원 프로토콜](/ko/services/streaming-service/nyan-streaming/overview/)
 - [송출 방법(인제스트)](/ko/services/streaming-service/nyan-streaming/streaming-methods/)
 - [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/)
+- [대시보드 사용법](/ko/services/streaming-service/nyan-streaming/dashboard/)
+- [공개 API](/ko/services/streaming-service/nyan-streaming/api/)

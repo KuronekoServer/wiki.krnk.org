@@ -60,5 +60,7 @@ Nyan Streaming은 **고화질 영상을 낮은 지연 시간(최단 약 1초)으
 - [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/)
 - [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)
 - [플랜·제한·정책](/ko/services/streaming-service/nyan-streaming/plans-and-limits/)
+- [대시보드 사용법](/ko/services/streaming-service/nyan-streaming/dashboard/)
+- [공개 API](/ko/services/streaming-service/nyan-streaming/api/)
 - [저지연 OBS 프로파일](/ko/services/streaming-service/nyan-streaming/obs-profile/)
 - [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/)

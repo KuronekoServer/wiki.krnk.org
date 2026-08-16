@@ -58,6 +58,13 @@ Organization domain changed from kuroneko6423.com to krnk.org | 2024/06/29
 KuronekoServer CDN Server provided | 2024/08/10
 Partnership with UptimeRobot started | 2024/08/10
 ----- 2025年 ------ |
-Partnership with USLOG started | 2025/01/13
-KuronekoServer VRC Streaming Service provided | 2025/01/18
+Partnership with USLOG begins | 2025/01/13
+KuronekoServer VRC Streaming Service beta launch | 2025/01/18
 VRC Streaming Service renamed to Nyan Streaming | 2025/08/10
+KuronekoServer ShareText service launch | 2025/12/12
+----- 2026 ----- |
+Paid VOICEVOX TTS Bot service launch | 2026/02/17
+Artifacter image generation API launch | 2026/06/10
+TTS Bot series surpasses 500,000 total server installations | 2026/06/12
+Nyan Streaming official release | 2026/07/06
+VRC CDN service ends | 2026/11/1

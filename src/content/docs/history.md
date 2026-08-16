@@ -59,7 +59,12 @@ KuronekoServer CDN Server 提供開始 | 2024/08/10
 UptimeRobotとのスポンサー提携開始 | 2024/08/10
 ----- 2025年 ------ |
 USLOGとのパートナー提携開始 | 2025/01/13
-KuronekoServer VRC Streaming Service提供開始 | 2025/01/18
+KuronekoServer VRC Streaming Service ベータ提供開始 | 2025/01/18
 VRC Streaming Service から Nyan Streaming に名称変更 | 2025/08/10
 KuronekoServer ShareText 提供開始 | 2025/12/12
 ----- 2026年 ------ |
+有料版VOICEVOX読み上げBOT 提供開始 | 2026/02/17
+Artifacter 画像生成API 提供開始 | 2026/06/10
+読み上げBOTシリーズ累計導入数50万サーバー突破 | 2026/06/12
+Nyan Streaming 正式リリース | 2026/07/06
+VRC CDN サービス提供終了 | 2026/11/1

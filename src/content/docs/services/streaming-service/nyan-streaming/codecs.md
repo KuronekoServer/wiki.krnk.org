@@ -31,11 +31,6 @@ Nyan Streaming は自社開発の配信サーバーで動作しており、**サ
 - **LPCM（pcm_s16le / 非圧縮・最高音質）** — **RTMP での配信**（OBS など）で利用できます。設定済みの OBS プロファイルを [低遅延 OBS プロファイル](/services/streaming-service/nyan-streaming/obs-profile/) で配布しています。
 - **Opus** — **WebRTC（WHIP 配信 / WHEP 視聴）** で利用できます。
 - **L16（PCM）での RTSP 視聴** — AV Pro / Windows Media Foundation など、RTSP の AAC をうまく再生できない環境向けに、RTSP 視聴の音声を L16（PCM）で受け取れます。
-
-:::note
-迷った場合は **H.264 + AAC** を選んでおけば、すべての配信・視聴方法で確実に動作します。
-:::
-
 ## VRChat での視聴について
 
 :::caution

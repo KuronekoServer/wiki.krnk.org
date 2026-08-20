@@ -32,10 +32,6 @@ In addition to the basic codecs, the standard server also supports the following
 - **Opus** — Available for **WebRTC (WHIP streaming / WHEP viewing)**.
 - **RTSP viewing with L16 (PCM)** — For environments such as AV Pro / Windows Media Foundation that cannot properly play AAC over RTSP, you can receive the audio for RTSP viewing as L16 (PCM).
 
-:::note
-If you are unsure, choosing **H.264 + AAC** will reliably work with all streaming and viewing methods.
-:::
-
 ## About Viewing in VRChat
 
 :::caution

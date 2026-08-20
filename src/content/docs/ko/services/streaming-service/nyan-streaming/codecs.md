@@ -32,10 +32,6 @@ Nyan Streaming은 자체 개발한 송출 서버에서 동작하며, **서버 �
 - **Opus** — **WebRTC(WHIP 송출 / WHEP 시청)** 에서 이용할 수 있습니다.
 - **L16(PCM) 으로의 RTSP 시청** — AV Pro / Windows Media Foundation 등 RTSP의 AAC를 제대로 재생하지 못하는 환경을 위해, RTSP 시청 음성을 L16(PCM)으로 받을 수 있습니다.
 
-:::note
-망설여진다면 **H.264 + AAC** 를 선택해 두면 모든 송출·시청 방법에서 확실하게 동작합니다.
-:::
-
 ## VRChat에서의 시청에 대해
 
 :::caution

@@ -54,5 +54,6 @@ RTMP 再生に対応するプレイヤーで視聴できます（約 1〜2 秒�
 
 ## 関連ページ
 
+- [ノードの選び方](/services/streaming-service/nyan-streaming/nodes/)
 - [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/)
 - [ビデオプレイヤーの設定/確認](/services/streaming-service/nyan-streaming/video-player-settings/)

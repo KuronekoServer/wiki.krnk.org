@@ -1,6 +1,6 @@
 ---
 title: "Low-Latency OBS Profile"
-lastUpdated: 2026-05-10T16:00:58.776Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 11
 ---
@@ -30,6 +30,10 @@ The software you need to install in advance is as follows.
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 
 ### LPCM (Highest Audio Quality)
+
+:::caution
+LPCM is available **only for streaming and playback over RTSP**. It cannot be used over RTMP, HLS, or WebRTC.
+:::
 
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip

@@ -1,7 +1,7 @@
 ---
 title: "対応コーデック一覧"
 description: "Nyan Streaming（現行サーバー）の配信・視聴で利用できるコーデック"
-lastUpdated: 2026-06-26T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 6
 ---
@@ -27,7 +27,7 @@ Nyan Streaming は自社開発の配信サーバーで動作しており、**サ
 
 標準のサーバーでは、基本コーデックに加えて以下の音声にも対応しています。
 
-- **LPCM（pcm_s16le / 非圧縮・最高音質）** — **RTMP での配信**（OBS など）で利用できます。設定済みの OBS プロファイルを [低遅延 OBS プロファイル](/services/streaming-service/nyan-streaming/obs-profile/) で配布しています。
+- **LPCM（pcm_s16le / 非圧縮・最高音質）** — **RTSP での配信・視聴でのみ**利用できます。RTMP / HLS / WebRTC では利用できません。
 - **Opus** — **WebRTC（WHIP 配信 / WHEP 視聴）** で利用できます。
 - **L16（PCM）での RTSP 視聴** — AV Pro / Windows Media Foundation など、RTSP の AAC をうまく再生できない環境向けに、RTSP 視聴の音声を L16（PCM）で受け取れます。
 
@@ -37,7 +37,7 @@ Nyan Streaming は自社開発の配信サーバーで動作しており、**サ
 VRChat では、以下のコーデックのみ再生に対応しています。
 
 - 映像: **H.264**
-- 音声: **AAC（MPEG-4 Audio）**, **LPCM（pcm_s16le）**
+- 音声: **AAC（MPEG-4 Audio）**, **LPCM（pcm_s16le・RTSP 視聴時のみ）**
   :::
 
 VRChat 向けには、最も低遅延な **RTSP** での視聴を推奨します。プレイヤーごとの設定は [ビデオプレイヤーの設定/確認](/services/streaming-service/nyan-streaming/video-player-settings/) をご参照ください。

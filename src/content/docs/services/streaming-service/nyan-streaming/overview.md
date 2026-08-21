@@ -1,7 +1,7 @@
 ---
 title: "機能概要・対応プロトコル"
 description: "Nyan Streaming の対応プロトコル・コーデック・遅延・主な機能の総覧"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 3
 ---
@@ -38,7 +38,7 @@ Nyan Streaming は、**高画質な映像を低遅延（最短で約 1 秒）で
 
 ## 対応コーデック
 
-映像は **H.264**、音声は **AAC** が標準です。音声は **LPCM（RTMP・最高音質）** や **Opus（WebRTC）** にも対応しています。**AV1 / VP9 / VP8 / H.265 (HEVC) には対応していません。** 詳細は [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) をご覧ください。
+映像は **H.264**、音声は **AAC** が標準です。音声は **LPCM（RTSP のみ・最高音質）** や **Opus（WebRTC）** にも対応しています。**AV1 / VP9 / VP8 / H.265 (HEVC) には対応していません。** 詳細は [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) をご覧ください。
 
 ## 主な機能
 
@@ -55,6 +55,7 @@ Nyan Streaming は、**高画質な映像を低遅延（最短で約 1 秒）で
 
 ## 関連ページ
 
+- [ノードの選び方](/services/streaming-service/nyan-streaming/nodes/)
 - [配信方法（取り込み）](/services/streaming-service/nyan-streaming/streaming-methods/)
 - [視聴方法（再生）](/services/streaming-service/nyan-streaming/viewing-methods/)
 - [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/)

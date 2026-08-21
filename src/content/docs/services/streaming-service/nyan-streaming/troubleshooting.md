@@ -1,7 +1,7 @@
 ---
 title: "トラブルシューティング"
 description: "配信・視聴の問題と、ビットレート・24時間・規約違反による制限の対処方法"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 9
 ---
@@ -16,7 +16,7 @@ sidebar:
 | ----------------------------- | ------------------------------------------------------------------------------------------- |
 | 配信を開始できない            | RTMP URL と配信用シークレット、ノードの稼働状態、キーの制限バナー                           |
 | 映像が出ない                  | 映像コーデックが H.264 (AVC) か                                                             |
-| 音声が出ない                  | 音声コーデックが AAC か。WebRTC は Opus、対応経路では LPCM も利用可能                       |
+| 音声が出ない                  | 音声コーデックが AAC か。WebRTC は Opus、LPCM は RTSP の配信・視聴時のみ利用可能            |
 | ブラウザで HLS を再生できない | URL が `.m3u8` か、Safari 以外では hls.js 対応プレイヤーを利用しているか                    |
 | VRChat で再生できない         | AVPro 対応プレイヤーか、RTSP / RTSPT URL を使っているか、Stream Mode / Low Latency が有効か |
 | 遅延が大きい                  | HLS ではなく RTSP または WebRTC (WHEP) を利用できるか                                       |
@@ -92,6 +92,7 @@ sidebar:
 
 ## 関連ページ
 
+- [ノードの選び方](/services/streaming-service/nyan-streaming/nodes/)
 - [入門ガイド](/services/streaming-service/nyan-streaming/getting-started/)
 - [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/)
 - [プラン・制限・ポリシー](/services/streaming-service/nyan-streaming/plans-and-limits/)

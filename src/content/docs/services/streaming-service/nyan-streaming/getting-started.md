@@ -1,7 +1,7 @@
 ---
 title: "入門ガイド"
-description: "ストリームキーの作成から OBS での配信、ブラウザ・VRChat での再生確認まで"
-lastUpdated: 2026-08-21T00:00:00.000Z
+description: "ノードとストリームキーの選択から OBS での配信、ブラウザ・VRChat での再生確認まで"
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 2
 ---
@@ -31,7 +31,23 @@ sidebar:
 
 ## 2. 配信先を確認する
 
-概要タブから、利用するサーバーの次の2項目を確認します。
+### ノードの選び方
+
+ストリームキーを作成するときに、配信内容に合うノードを選択します。
+
+| 配信内容・条件 | 選ぶノード |
+| --- | --- |
+| JASRACまたはNexToneが管理する楽曲を利用する | **Node01** |
+| 通常配信、イベント、世界各地への配信、録画を利用する | **Node02** |
+| 低ビットレートで24時間を超える長時間配信を行う | **Node03** |
+
+:::tip
+特別な条件がなく、どれを選ぶか迷った場合は **Node02** を選択してください。録画を利用できるのもNode02のみです。
+:::
+
+楽曲報告、録画対応、配信時間などの違いは、[ノードの選び方](/services/streaming-service/nyan-streaming/nodes/)で詳しく説明しています。
+
+ノードを選んだら、概要タブから利用するサーバーの次の2項目を確認します。
 
 | OBS の項目     | ダッシュボードからコピーする値       |
 | -------------- | ------------------------------------ |
@@ -57,7 +73,7 @@ OBS Studio の **設定 → 配信**を開き、次のように設定します�
 | 映像ビットレート | 最初は 1,000〜1,500 kbps を目安にし、組織合計をプラン上限以内にする |
 | キーフレーム間隔 | 1 秒を推奨                                                          |
 
-サーバーは映像・音声を再エンコードしません。H.264 / AAC 以外を選ぶと、配信を開始できても視聴側で映像や音声が再生されない場合があります。LPCM を使う場合や設定済みプロファイルを利用する場合は、[低遅延 OBS プロファイル](/services/streaming-service/nyan-streaming/obs-profile/)をご覧ください。
+サーバーは映像・音声を再エンコードしません。H.264 / AAC 以外を選ぶと、配信を開始できても視聴側で映像や音声が再生されない場合があります。**LPCM を使う場合は、配信・視聴ともに RTSP を選択してください。** 設定済みプロファイルは [低遅延 OBS プロファイル](/services/streaming-service/nyan-streaming/obs-profile/) で配布しています。
 
 :::caution
 入力ビットレートの上限は、1配信ごとではなく**組織内で同時配信している全ストリームの合計**です。複数配信では合計値が上限を超えないようにしてください。
@@ -86,6 +102,7 @@ OBS Studio の **配信終了**を押し、ダッシュボードでキーが非�
 
 ## 関連ページ
 
+- [ノードの選び方](/services/streaming-service/nyan-streaming/nodes/)
 - [配信方法（取り込み）](/services/streaming-service/nyan-streaming/streaming-methods/)
 - [視聴方法（再生）](/services/streaming-service/nyan-streaming/viewing-methods/)
 - [プラン・制限・ポリシー](/services/streaming-service/nyan-streaming/plans-and-limits/)

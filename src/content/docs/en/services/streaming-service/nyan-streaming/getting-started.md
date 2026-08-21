@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
-description: "Create a stream key, publish from OBS, and verify playback in a browser or VRChat"
-lastUpdated: 2026-08-21T00:00:00.000Z
+description: "Choose a node and stream key, publish from OBS, and verify playback in a browser or VRChat"
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 2
 ---
@@ -31,7 +31,23 @@ The **publish secret** and the **view key** contained in playback URLs are diffe
 
 ## 2. Find the Ingest Details
 
-On the Overview tab, copy these two values for the server you want to use.
+### Choose a node
+
+Select a node that matches your stream when creating the stream key.
+
+| Content or requirement | Node |
+| --- | --- |
+| Use music managed by JASRAC or NexTone | **Node01** |
+| Ordinary streams, events, worldwide delivery, or recording | **Node02** |
+| Low-bitrate streams that need to run for more than 24 hours | **Node03** |
+
+:::tip
+If you have no special requirements and are unsure which one to use, select **Node02**. Node02 is also the only node that supports recording.
+:::
+
+See [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/) for music reporting, recording support, duration limits, and other differences.
+
+After choosing a node, copy these two values from the Overview tab for the server you want to use.
 
 | OBS field  | Value from the dashboard    |
 | ---------- | --------------------------- |
@@ -57,7 +73,7 @@ Open **Settings → Stream** in OBS Studio and use these settings.
 | Video bitrate     | Start around 1,000–1,500 kbps and keep the organization total within the plan limit |
 | Keyframe interval | 1 second recommended                                                                |
 
-The server does not re-encode video or audio. A stream may connect but fail to play correctly if it is not H.264 / AAC. For LPCM or a ready-made configuration, see the [Low-Latency OBS Profile](/en/services/streaming-service/nyan-streaming/obs-profile/).
+The server does not re-encode video or audio. A stream may connect but fail to play correctly if it is not H.264 / AAC. **To use LPCM, select RTSP for both streaming and playback.** Ready-made configurations are available in the [Low-Latency OBS Profile](/en/services/streaming-service/nyan-streaming/obs-profile/).
 
 :::caution
 The input bitrate limit applies to the **combined total of every simultaneous stream in the organization**, not separately to each stream.
@@ -86,6 +102,7 @@ If the stream does not start, has missing video or audio, or changes to a restri
 
 ## Related Pages
 
+- [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/)
 - [Streaming Methods (Ingest)](/en/services/streaming-service/nyan-streaming/streaming-methods/)
 - [Viewing Methods (Playback)](/en/services/streaming-service/nyan-streaming/viewing-methods/)
 - [Plans, Limits, and Policies](/en/services/streaming-service/nyan-streaming/plans-and-limits/)

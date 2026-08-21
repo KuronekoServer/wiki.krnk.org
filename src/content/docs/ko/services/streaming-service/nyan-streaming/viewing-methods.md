@@ -54,5 +54,6 @@ RTMP 재생에 대응하는 플레이어로 시청할 수 있습니다(약 1~2�
 
 ## 관련 페이지
 
+- [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/)
 - [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)
 - [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/)

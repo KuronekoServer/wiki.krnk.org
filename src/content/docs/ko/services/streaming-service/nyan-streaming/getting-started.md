@@ -1,7 +1,7 @@
 ---
 title: "시작 가이드"
-description: "스트림 키 생성부터 OBS 송출, 브라우저·VRChat 재생 확인까지"
-lastUpdated: 2026-08-21T00:00:00.000Z
+description: "노드와 스트림 키 선택부터 OBS 송출, 브라우저·VRChat 재생 확인까지"
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 2
 ---
@@ -31,7 +31,23 @@ sidebar:
 
 ## 2. 송출 정보를 확인하기
 
-개요 탭에서 사용할 서버의 다음 두 값을 복사합니다.
+### 노드 선택 방법
+
+스트림 키를 만들 때 송출 목적에 맞는 노드를 선택합니다.
+
+| 송출 내용·조건 | 선택할 노드 |
+| --- | --- |
+| JASRAC 또는 NexTone이 관리하는 음악을 사용 | **Node01** |
+| 일반 송출, 이벤트, 전 세계 송출 또는 녹화 이용 | **Node02** |
+| 낮은 비트레이트로 24시간을 초과하는 장시간 송출 | **Node03** |
+
+:::tip
+특별한 조건이 없고 어떤 노드를 사용할지 모르겠다면 **Node02**를 선택하세요. 녹화를 이용할 수 있는 노드도 Node02뿐입니다.
+:::
+
+음악 이용 보고, 녹화 지원, 송출 시간 등의 차이는 [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/)에서 자세히 설명합니다.
+
+노드를 선택한 다음 개요 탭에서 사용할 서버의 다음 두 값을 복사합니다.
 
 | OBS 항목  | 대시보드에서 복사할 값    |
 | --------- | ------------------------- |
@@ -57,7 +73,7 @@ OBS Studio에서 **설정 → 방송**을 열고 다음과 같이 설정합니�
 | 비디오 비트레이트 | 우선 1,000~1,500 kbps 정도로 시작하고 조직 합계를 요금제 상한 이내로 유지 |
 | 키프레임 간격     | 1초 권장                                                                  |
 
-서버는 영상과 음성을 재인코딩하지 않습니다. H.264 / AAC가 아니면 연결은 되어도 시청 측에서 영상이나 음성이 재생되지 않을 수 있습니다. LPCM 또는 미리 설정된 구성을 사용하려면 [저지연 OBS 프로파일](/ko/services/streaming-service/nyan-streaming/obs-profile/)을 확인하세요.
+서버는 영상과 음성을 재인코딩하지 않습니다. H.264 / AAC가 아니면 연결은 되어도 시청 측에서 영상이나 음성이 재생되지 않을 수 있습니다. **LPCM을 이용할 때는 송출과 시청 모두 RTSP를 선택하세요.** 미리 설정된 구성은 [저지연 OBS 프로파일](/ko/services/streaming-service/nyan-streaming/obs-profile/)에서 배포하고 있습니다.
 
 :::caution
 입력 비트레이트 상한은 스트림별 상한이 아니라 **조직에서 동시에 송출 중인 모든 스트림의 합계**에 적용됩니다.
@@ -86,6 +102,7 @@ OBS Studio에서 **방송 종료**를 누르고 대시보드에서 키가 비활
 
 ## 관련 페이지
 
+- [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/)
 - [송출 방법(인제스트)](/ko/services/streaming-service/nyan-streaming/streaming-methods/)
 - [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/)
 - [요금제·제한·정책](/ko/services/streaming-service/nyan-streaming/plans-and-limits/)

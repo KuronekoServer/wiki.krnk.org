@@ -54,5 +54,6 @@ If your organization uses "program broadcasting (channels)", viewing via the **o
 
 ## Related Pages
 
+- [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/)
 - [List of Supported Codecs](/en/services/streaming-service/nyan-streaming/codecs/)
 - [Video Player Settings / Verification](/en/services/streaming-service/nyan-streaming/video-player-settings/)

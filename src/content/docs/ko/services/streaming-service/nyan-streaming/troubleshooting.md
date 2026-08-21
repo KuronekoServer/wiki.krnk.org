@@ -1,7 +1,7 @@
 ---
 title: "문제 해결"
 description: "송출·재생 문제와 비트레이트·24시간·이용약관 위반 제한의 해결 방법"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 9
 ---
@@ -16,7 +16,7 @@ sidebar:
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | 송출이 시작되지 않음             | RTMP URL과 송출용 시크릿, 노드 상태, 키의 제한 배너                                                        |
 | 영상이 나오지 않음               | 비디오 코덱이 H.264 (AVC)인지 확인                                                                         |
-| 음성이 나오지 않음               | 오디오 코덱이 AAC인지 확인. WebRTC는 Opus를 사용하며 지원 경로에서는 LPCM도 이용 가능                      |
+| 음성이 나오지 않음               | 오디오 코덱이 AAC인지 확인. WebRTC는 Opus를 사용하며 LPCM은 RTSP 송출·시청에서만 이용 가능                |
 | 브라우저에서 HLS가 재생되지 않음 | URL이 `.m3u8`인지, Safari 이외에서는 hls.js 호환 플레이어를 사용하는지 확인                                |
 | VRChat에서 재생되지 않음         | AVPro 호환 플레이어인지, RTSP / RTSPT URL을 사용하는지, Stream Mode / Low Latency가 활성화되어 있는지 확인 |
 | 지연이 큼                        | 가능하면 HLS 대신 RTSP 또는 WebRTC (WHEP) 사용                                                             |
@@ -92,6 +92,7 @@ sidebar:
 
 ## 관련 페이지
 
+- [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/)
 - [시작 가이드](/ko/services/streaming-service/nyan-streaming/getting-started/)
 - [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)
 - [요금제·제한·정책](/ko/services/streaming-service/nyan-streaming/plans-and-limits/)

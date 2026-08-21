@@ -1,6 +1,6 @@
 ---
 title: "저지연 OBS 프로파일"
-lastUpdated: 2026-05-10T16:00:58.776Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 11
 ---
@@ -30,6 +30,10 @@ https://lemonkaju.booth.pm/items/7497730 의 프로파일을 기반으로 개조
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 
 ### LPCM (최고 음질)
+
+:::caution
+LPCM은 **RTSP를 통한 송출 및 시청에서만** 이용할 수 있습니다. RTMP / HLS / WebRTC에서는 이용할 수 없습니다.
+:::
 
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip

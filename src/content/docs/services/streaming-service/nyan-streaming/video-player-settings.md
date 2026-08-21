@@ -8,7 +8,7 @@ sidebar:
 # Video Playerの設定について
 
 AVPro を使用している動画プレイヤーでは、「Stream Mode」のAVPro Video Player Componentで「Low Latency」を有効にする必要があります。
-以下の動画プレイヤーのリストは、弊組織(KuronekoServer)スタッフと利用者様の協力で検証を行った動画プレイヤーを掲載しています。
+以下の動画プレイヤーのリストは、当組織(KuronekoServer)スタッフと利用者様の協力で検証を行った動画プレイヤーを掲載しています。
 
 ## YamaPlayer
 

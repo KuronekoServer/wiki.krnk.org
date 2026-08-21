@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
 description: "Resolve publishing and playback issues and understand bitrate, 24-hour, and terms-of-service restrictions"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 9
 ---
@@ -16,7 +16,7 @@ First, open the stream-key list and key details in the dashboard. Check the key 
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Publishing does not start       | RTMP URL and publish secret, node health, and any restriction banner on the key                             |
 | No video                        | Confirm that the video codec is H.264 (AVC)                                                                 |
-| No audio                        | Confirm that the audio codec is AAC. WebRTC uses Opus, and supported paths can also use LPCM                |
+| No audio                        | Confirm that the audio codec is AAC. WebRTC uses Opus; LPCM is available only for RTSP streaming/playback  |
 | HLS does not play in a browser  | Confirm that the URL ends in `.m3u8`; outside Safari, use an hls.js-compatible player                       |
 | Playback fails in VRChat        | Use an AVPro-compatible player and an RTSP / RTSPT URL, with Stream Mode / Low Latency enabled              |
 | Latency is too high             | Use RTSP or WebRTC (WHEP) instead of HLS when possible                                                      |
@@ -92,6 +92,7 @@ Nodes or plans limited to Japan cannot be viewed from outside the permitted regi
 
 ## Related Pages
 
+- [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/)
 - [Getting Started](/en/services/streaming-service/nyan-streaming/getting-started/)
 - [Supported Codecs](/en/services/streaming-service/nyan-streaming/codecs/)
 - [Plans, Limits, and Policies](/en/services/streaming-service/nyan-streaming/plans-and-limits/)

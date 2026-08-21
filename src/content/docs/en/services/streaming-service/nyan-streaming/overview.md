@@ -1,7 +1,7 @@
 ---
 title: "Feature Overview & Supported Protocols"
 description: "An overview of Nyan Streaming's supported protocols, codecs, latency, and main features"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 3
 ---
@@ -38,7 +38,7 @@ If you are aiming for the lowest latency, use **RTSP** or **WebRTC (WHEP)**; if 
 
 ## Supported Codecs
 
-The standard is **H.264** for video and **AAC** for audio. Audio also supports **LPCM (RTMP, highest quality)** and **Opus (WebRTC)**. **AV1 / VP9 / VP8 / H.265 (HEVC) are not supported.** For details, see the [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/).
+The standard is **H.264** for video and **AAC** for audio. Audio also supports **LPCM (RTSP only, highest quality)** and **Opus (WebRTC)**. **AV1 / VP9 / VP8 / H.265 (HEVC) are not supported.** For details, see the [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/).
 
 ## Main Features
 
@@ -55,6 +55,7 @@ The standard is **H.264** for video and **AAC** for audio. Audio also supports *
 
 ## Related Pages
 
+- [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/)
 - [Streaming Methods (Ingest)](/en/services/streaming-service/nyan-streaming/streaming-methods/)
 - [Viewing Methods (Playback)](/en/services/streaming-service/nyan-streaming/viewing-methods/)
 - [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/)

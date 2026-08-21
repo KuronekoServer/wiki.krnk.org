@@ -159,6 +159,14 @@ export default defineConfig({
                           },
                         },
                         {
+                          slug: "services/streaming-service/nyan-streaming/nodes",
+                          label: "ノードの選び方",
+                          translations: {
+                            en: "Choosing a Node",
+                            ko: "노드 선택 가이드",
+                          },
+                        },
+                        {
                           slug: "services/streaming-service/nyan-streaming/overview",
                           label: "機能概要",
                           translations: {

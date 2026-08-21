@@ -1,7 +1,7 @@
 ---
 title: "Supported Codecs"
 description: "Codecs available for streaming and viewing on Nyan Streaming (current server)"
-lastUpdated: 2026-06-26T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 6
 ---
@@ -27,7 +27,7 @@ Video codecs such as **AV1 / VP9 / VP8 / H.265 (HEVC)** are not supported. In en
 
 In addition to the basic codecs, the standard server also supports the following audio codecs.
 
-- **LPCM (pcm_s16le / uncompressed, highest audio quality)** — Available for **streaming over RTMP** (OBS, etc.). A pre-configured OBS profile is distributed in the [Low-latency OBS profile](/en/services/streaming-service/nyan-streaming/obs-profile/).
+- **LPCM (pcm_s16le / uncompressed, highest audio quality)** — Available **only for streaming and playback over RTSP**. It cannot be used over RTMP, HLS, or WebRTC.
 - **Opus** — Available for **WebRTC (WHIP streaming / WHEP viewing)**.
 - **RTSP viewing with L16 (PCM)** — For environments such as AV Pro / Windows Media Foundation that cannot properly play AAC over RTSP, you can receive the audio for RTSP viewing as L16 (PCM).
 
@@ -37,7 +37,7 @@ In addition to the basic codecs, the standard server also supports the following
 VRChat only supports playback of the following codecs.
 
 - Video: **H.264**
-- Audio: **AAC (MPEG-4 Audio)**, **LPCM (pcm_s16le)**
+- Audio: **AAC (MPEG-4 Audio)**, **LPCM (pcm_s16le, RTSP playback only)**
   :::
 
 For VRChat, we recommend viewing over **RTSP**, which has the lowest latency. For per-player settings, see [Configuring/Checking the Video Player](/en/services/streaming-service/nyan-streaming/video-player-settings/).

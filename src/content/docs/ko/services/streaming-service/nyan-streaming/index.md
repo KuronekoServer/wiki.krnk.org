@@ -1,7 +1,7 @@
 ---
 title: "Nyan Streaming"
 description: "Nyan Streaming 서비스 개요"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 1
 ---
@@ -17,17 +17,26 @@ https://nyst.live/
 
 ### 문서
 
-- [시작 가이드](/ko/services/streaming-service/nyan-streaming/getting-started/)
-- [기능 개요・지원 프로토콜](/ko/services/streaming-service/nyan-streaming/overview/)
-- [송출 방법(인입)](/ko/services/streaming-service/nyan-streaming/streaming-methods/)
-- [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/)
-- [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)
-- [요금제・제한・정책](/ko/services/streaming-service/nyan-streaming/plans-and-limits/)
-- [대시보드 사용법](/ko/services/streaming-service/nyan-streaming/dashboard/)
-- [문제 해결](/ko/services/streaming-service/nyan-streaming/troubleshooting/)
-- [공개 API](/ko/services/streaming-service/nyan-streaming/api/)
-- [저지연 OBS 프로파일](/ko/services/streaming-service/nyan-streaming/obs-profile/)
-- [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/)
+#### 먼저 읽기
+
+- [시작 가이드](/ko/services/streaming-service/nyan-streaming/getting-started/) — 스트림 키 생성부터 송출·재생 확인까지
+- [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/) — Node01·Node02·Node03의 용도와 제한 비교
+- [기능 개요·지원 프로토콜](/ko/services/streaming-service/nyan-streaming/overview/) — 이용할 수 있는 송출·시청 방식 확인
+- [요금제·제한·정책](/ko/services/streaming-service/nyan-streaming/plans-and-limits/) — 비트레이트, 송출 시간, 녹화 등의 조건 확인
+
+#### 송출·시청 설정
+
+- [송출 방법(인입)](/ko/services/streaming-service/nyan-streaming/streaming-methods/) — RTMP·RTSP·WebRTC로 송출하는 방법
+- [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/) — HLS·RTSP·WebRTC 등으로 시청하는 방법
+- [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/) — 방식별 영상·음성 코덱 확인
+- [저지연 OBS 프로파일](/ko/services/streaming-service/nyan-streaming/obs-profile/) — OBS로 가져올 수 있는 권장 설정
+- [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/) — VRChat 등의 플레이어 설정
+
+#### 관리·문제 해결
+
+- [대시보드 사용법](/ko/services/streaming-service/nyan-streaming/dashboard/) — 스트림 키, 분석, 녹화, 음악 이용 보고 관리
+- [문제 해결](/ko/services/streaming-service/nyan-streaming/troubleshooting/) — 송출·시청 문제와 제한 화면에 대처
+- [공개 API](/ko/services/streaming-service/nyan-streaming/api/) — 외부 도구에서 송출 정보 조회·관리
 
 <hr>
 법인 이용이나 대규모 이벤트를 희망하시는 경우에는 사전에 저희 조직으로 문의해 주시기 바랍니다.<br />

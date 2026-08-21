@@ -97,6 +97,7 @@ JASRAC / NexTone 관리 악곡 등을 송출에서 이용하는 경우에는 대
 
 ## 관련 페이지
 
+- [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/)
 - [시작 가이드](/ko/services/streaming-service/nyan-streaming/getting-started/)
 - [기능 개요·지원 프로토콜](/ko/services/streaming-service/nyan-streaming/overview/)
 - [송출 방법(인제스트)](/ko/services/streaming-service/nyan-streaming/streaming-methods/)

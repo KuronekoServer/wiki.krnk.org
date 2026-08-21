@@ -28,7 +28,7 @@ Select Node02 whenever a recording is required. Even on Node02, recording must a
 3. Start streaming.
 4. After the stream ends and processing finishes, the recording appears in Archives.
 
-Recording availability, pooled organization storage, and retention depend on the plan. See [Plans, Limits, and Policies](../../plans-and-limits/) and [Choosing a node](../servers/#choosing-a-node).
+Recording availability, pooled organization storage, and retention depend on the plan. See [Plans, Limits, and Policies](../../plans-and-limits/) and [Choosing a Node](../../nodes/).
 
 ## Summary cards
 

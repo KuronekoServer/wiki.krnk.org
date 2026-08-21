@@ -97,6 +97,7 @@ For detailed steps on each operation, see [Using the Dashboard](/en/services/str
 
 ## Related Pages
 
+- [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/)
 - [Getting Started](/en/services/streaming-service/nyan-streaming/getting-started/)
 - [Feature Overview and Supported Protocols](/en/services/streaming-service/nyan-streaming/overview/)
 - [Streaming Methods (Ingest)](/en/services/streaming-service/nyan-streaming/streaming-methods/)

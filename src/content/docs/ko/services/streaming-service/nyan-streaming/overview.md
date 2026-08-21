@@ -1,7 +1,7 @@
 ---
 title: "기능 개요 및 지원 프로토콜"
 description: "Nyan Streaming의 지원 프로토콜·코덱·지연 시간·주요 기능 총정리"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 3
 ---
@@ -38,7 +38,7 @@ Nyan Streaming은 **고화질 영상을 낮은 지연 시간(최단 약 1초)으
 
 ## 지원 코덱
 
-영상은 **H.264**, 음성은 **AAC** 가 표준입니다. 음성은 **LPCM(RTMP·최고 음질)** 이나 **Opus(WebRTC)** 도 지원합니다. **AV1 / VP9 / VP8 / H.265 (HEVC)는 지원하지 않습니다.** 자세한 내용은 [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)을 참조하십시오.
+영상은 **H.264**, 음성은 **AAC** 가 표준입니다. 음성은 **LPCM(RTSP 전용·최고 음질)** 이나 **Opus(WebRTC)** 도 지원합니다. **AV1 / VP9 / VP8 / H.265 (HEVC)는 지원하지 않습니다.** 자세한 내용은 [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)을 참조하십시오.
 
 ## 주요 기능
 
@@ -55,6 +55,7 @@ Nyan Streaming은 **고화질 영상을 낮은 지연 시간(최단 약 1초)으
 
 ## 관련 페이지
 
+- [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/)
 - [송출 방법(입력)](/ko/services/streaming-service/nyan-streaming/streaming-methods/)
 - [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/)
 - [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)

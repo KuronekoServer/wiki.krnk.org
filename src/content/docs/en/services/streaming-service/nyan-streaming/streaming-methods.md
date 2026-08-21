@@ -1,18 +1,20 @@
 ---
 title: "Streaming Methods (Ingest)"
 description: "How to stream via RTMP, WebRTC (WHIP), RTSP, and browser streaming, and how to find your streaming address"
-lastUpdated: 2026-06-26T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 4
 ---
 
 # Streaming Methods (Ingest)
 
-You can send video to Nyan Streaming via **RTMP / WebRTC (WHIP) / RTSP push / browser streaming**. The standard video codec is **H.264**, and the default audio codec is **AAC** (**LPCM is also supported over RTMP**, and **Opus over WebRTC**). The server does not re-encode, so streams using unsupported codecs will not be displayed.
+You can send video to Nyan Streaming via **RTMP / WebRTC (WHIP) / RTSP push / browser streaming**. The standard video codec is **H.264**, and the default audio codec is **AAC** (**LPCM is also supported over RTSP**, and **Opus over WebRTC**). The server does not re-encode, so streams using unsupported codecs will not be displayed.
 
 ## Finding Your Streaming Address and Stream Key
 
 You can find the **server address** and **stream key** used for streaming on the stream key screen of the [dashboard](https://nyst.live/). When you select a server (node) or region, the corresponding streaming/viewing addresses for each are displayed.
+
+See [Choosing a Node](../nodes/) to decide whether to use Node01, Node02, or Node03.
 
 :::caution
 If your stream key (streaming secret) becomes known to others, there is a risk that someone could stream without your permission. Do not share it with third parties. If it is ever leaked, regenerate the key from the dashboard.
@@ -45,7 +47,11 @@ From "Browser Streaming" in the dashboard, you can stream directly using your ca
 From surveillance cameras and certain devices, you can stream directly via RTSP push streaming (ANNOUNCE → RECORD).
 
 - **Stream URL**: `rtsp://<server-address>:554/<org-slug>/...` (standard port **554**)
-- **Video**: H.264 / **Audio**: AAC
+- **Video**: H.264 / **Audio**: AAC / LPCM
+
+:::caution
+**LPCM is available only for streaming and playback over RTSP.** It cannot be used over RTMP, HLS, or WebRTC.
+:::
 
 ## Multitrack Streaming (Enhanced Broadcasting)
 

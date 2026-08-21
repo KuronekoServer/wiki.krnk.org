@@ -1,6 +1,6 @@
 ---
 title: "低遅延OBSプロファイル"
-lastUpdated: 2026-05-10T16:00:58.776Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 11
 ---
@@ -30,6 +30,10 @@ https://lemonkaju.booth.pm/items/7497730 のプロファイルを元に、改変
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 
 ### LPCM (最高音質)
+
+:::caution
+LPCM は **RTSP での配信・視聴でのみ**利用できます。RTMP / HLS / WebRTC では利用できません。
+:::
 
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip

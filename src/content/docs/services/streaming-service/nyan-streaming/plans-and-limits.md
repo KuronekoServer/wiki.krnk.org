@@ -21,7 +21,7 @@ Nyan Streaming は **組織（チーム）単位**でプランを契約します
 プランは **無料 / Standard / Pro / Enterprise** が用意されています。Pro 以上では、追加のビットレート・視聴者・ストレージ・ストリームキーなどの**アドオン**も利用できます（追加ビットレートのご利用には管理者の承認が必要です）。
 
 :::note
-各プランの具体的な数値・料金は変更されることがあります。最新の内容は公式サイト https://nyst.live/ およびダッシュボードのプラン画面をご確認ください。法人利用をご希望の場合は、事前に弊組織までお問い合わせくださいませ。
+各プランの具体的な数値・料金は変更されることがあります。最新の内容は公式サイト https://nyst.live/ およびダッシュボードのプラン画面をご確認ください。法人利用をご希望の場合は、事前に当組織までお問い合わせくださいませ。
 :::
 
 ## 配信・視聴に関する主な制限
@@ -97,6 +97,7 @@ JASRAC / NexTone 管理楽曲などを配信で利用する場合は、ダッシ
 
 ## 関連ページ
 
+- [ノードの選び方](/services/streaming-service/nyan-streaming/nodes/)
 - [入門ガイド](/services/streaming-service/nyan-streaming/getting-started/)
 - [機能概要・対応プロトコル](/services/streaming-service/nyan-streaming/overview/)
 - [配信方法（取り込み）](/services/streaming-service/nyan-streaming/streaming-methods/)

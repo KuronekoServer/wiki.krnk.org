@@ -12,10 +12,10 @@ sidebar:
 
 ## Check before use
 
-Only works whose database entry permits **interactive streaming** may be used through Nyan Streaming. Report managed music used on the applicable node before or after the stream.
+Only works whose database entry permits **interactive streaming** may be used through Nyan Streaming. Select **Node01** for a stream that uses JASRAC- or NexTone-managed music and submit a report before or after use. A post-use report must be completed **by the end of the month in which the work was used**.
 
 :::caution
-Unreported or inaccurate use may result in an account penalty or additional fee. Verify the work code, title, and use date before submitting.
+Missing the reporting deadline or submitting inaccurate information may result in an account penalty or additional fee. Verify the work code, title, and use date before submitting.
 :::
 
 ## JASRAC-managed music
@@ -43,4 +43,3 @@ The Free plan shows an upgrade prompt instead of the reporting form.
 
 - [Plans, Limits, and Policies](../../plans-and-limits/)
 - [Stream Keys](../stream-keys/)
-

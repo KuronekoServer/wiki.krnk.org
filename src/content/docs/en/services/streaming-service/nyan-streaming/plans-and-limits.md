@@ -28,7 +28,15 @@ The specific figures and pricing for each plan are subject to change. For the la
 
 ### Maximum Continuous Streaming Time (24 Hours)
 
-If one publish session runs continuously for **24 hours** on a node where the duration limit is enabled, the stream is disconnected and **every stream key in the organization is blocked for one day**. Reconnecting starts a new continuous-session timer. Contact the operators in advance if you require continuous operation beyond 24 hours.
+If one publish session runs continuously for **24 hours** on a node where the duration limit is enabled, the stream is disconnected and **every stream key in the organization is blocked for one day**. Reconnecting starts a new continuous-session timer.
+
+**Node03 is exempt from this 24-hour limit.** Select Node03 for low-bitrate continuous streams that must run beyond 24 hours. Contact the operators in advance if your long-running stream does not fit the intended use of Node03.
+
+### Recording-Compatible Node
+
+**Recording is available only on Node02.** Under the licensing agreements with JASRAC and NexTone, recording data from Node01 cannot be made available to users. Node03 does not support recording because it is intended for long-running streams and recording could consume excessive server storage.
+
+Even when using Node02, recording must be included in your plan and the organization must have available storage. See [Archives](../dashboard/archives/) for instructions.
 
 ### Exceeding the Bitrate Limit
 
@@ -77,7 +85,7 @@ If you use music managed by JASRAC / NexTone or similar in your stream, please a
 ## What You Can Do in the Dashboard
 
 - Create, regenerate, and delete stream keys, and check viewing URLs
-- Manage and download recordings (archives)
+- Manage and download archives recorded on Node02
 - Configure restreaming (external RTMP destinations)
 - Switch program output (channels)
 - Issue API keys (for using the public API)

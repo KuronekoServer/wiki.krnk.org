@@ -19,6 +19,8 @@ Use **Stream Keys** to create, rotate, and revoke streaming credentials and to f
 
 If the view key is blank, one is generated randomly. Custom view keys may contain letters, numbers, hyphens (`-`), and underscores (`_`). The ingest secret is always random.
 
+If you are unsure which node to use, see [Choosing a node](../servers/#choosing-a-node) on the Server Status page. Select the standard Node02 when you have no special requirements.
+
 :::caution
 Treat the ingest stream key like a password. Do not include it in screenshots or share it with viewers. If it leaks, select **Regenerate Key** to invalidate the old value immediately.
 :::
@@ -44,11 +46,15 @@ Selecting a node in the dashboard does not pin the key to that node. The URL con
 | **Browser Viewing**   | Low-latency playback with WebRTC (WHEP)                     |
 | **HLS Viewing**       | Preview the `.m3u8` stream in the dashboard                 |
 | **Statistics**        | Live totals and per-node statistics                         |
-| **Recordings**        | Enable automatic recording and manage this key's recordings |
+| **Recordings**        | Enable automatic recording on Node02 and manage this key's recordings |
 | **Restreaming**       | Manage external RTMP destinations such as YouTube or Twitch |
 | **Equalizer**         | Configure EQ and reverb                                     |
 
 EQ presets are Flat / Voice / Music / Bass Boost / Treble Boost. Reverb presets are Studio / Room / Hall / Cathedral. Changes normally reach viewers within about three seconds.
+
+:::note
+Recording is available only on Node02. See [Archives](../archives/#recording-compatible-node) for the reasons Node01 and Node03 do not support recording and for the other requirements.
+:::
 
 ## Channel Output
 

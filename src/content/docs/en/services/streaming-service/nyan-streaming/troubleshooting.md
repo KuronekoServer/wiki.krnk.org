@@ -32,7 +32,7 @@ The language of warning screens and email, webhook, and in-app notifications is 
 
 ### More Than 24 Hours of Continuous Streaming
 
-This restriction applies when one publish session runs continuously for 24 hours on a node where the duration limit is enabled. The stream is stopped and **every stream key in the organization is blocked for one day**. Reconnecting starts a new continuous-session timer.
+This restriction applies when one publish session runs continuously for 24 hours on a node where the duration limit is enabled. The stream is stopped and **every stream key in the organization is blocked for one day**. Reconnecting starts a new continuous-session timer. **Node03 is exempt from this restriction.**
 
 ![Restriction screen for more than 24 hours of continuous streaming](https://cdn.krnk.org/kuronekoserver/nyst/warning/24h-en.png)
 
@@ -41,7 +41,7 @@ This restriction applies when one publish session runs continuously for 24 hours
 1. Check the scheduled lift time in the dashboard.
 2. Publishing cannot resume until the restriction lifts.
 3. Start a new publishing session after it lifts.
-4. [Contact us](https://krnk.org/contact/) in advance if you require continuous operation beyond 24 hours.
+4. Use Node03 for low-bitrate continuous streaming beyond 24 hours. [Contact us](https://krnk.org/contact/) in advance when the required operating conditions do not fit Node03.
 
 ### Input Bitrate Limit Exceeded
 

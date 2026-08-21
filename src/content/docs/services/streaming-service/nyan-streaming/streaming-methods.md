@@ -8,7 +8,7 @@ sidebar:
 
 # 配信方法（取り込み）
 
-Nyan Streaming へは **RTMP / WebRTC (WHIP) / RTSP プッシュ / ブラウザ配信** で映像を送れます。映像は **H.264** が標準で、音声は **AAC** が基本です（**RTSP では LPCM**、**WebRTC では Opus** にも対応）。映像はサーバー側で再エンコードしないため、非対応コーデックでは配信が映りません。LPCM 配信を RTSP 以外で視聴する場合、音声は AAC になります。
+Nyan Streaming へは **RTMP / WebRTC (WHIP) / RTSP プッシュ / ブラウザ配信** で映像を送れます。映像は **H.264**、音声は **AAC / PCM（s16be）** に対応しています（PCM（s16be）は RTSP、Opus は WebRTC で利用できます）。映像はサーバー側で再エンコードしないため、非対応コーデックでは配信が映りません。PCM（s16be）配信を RTSP 以外で視聴する場合、音声は AAC になります。
 
 ## 配信アドレスとストリームキーの確認
 
@@ -47,10 +47,10 @@ OBS をかんたんに低遅延設定にできるプロファイルを配布し�
 監視カメラや一部の機材から、RTSP のプッシュ配信（ANNOUNCE → RECORD）で直接配信できます。
 
 - **配信先 URL**: `rtsp://<サーバーアドレス>:554/<組織スラッグ>/...`（標準ポート **554**）
-- **映像**: H.264 / **音声**: AAC / LPCM
+- **映像**: H.264 / **音声**: AAC / PCM（s16be）
 
-:::caution[LPCM 配信と視聴]
-LPCM で配信できるのは **RTSP プッシュのみ**です。RTSP で視聴する場合は LPCM / L16（PCM）で受け取れますが、HLS / RTMP / WebRTC など **RTSP 以外で視聴する場合、音声は AAC になります**。
+:::caution[PCM（s16be）の配信と視聴]
+PCM（s16be）で配信できるのは **RTSP プッシュのみ**です。RTSP では PCM（s16be）で視聴できますが、HLS / RTMP / WebRTC など **RTSP 以外で視聴する場合、音声は AAC になります**。
 :::
 
 :::caution[プロバイダーによる RTSP 通信制限]

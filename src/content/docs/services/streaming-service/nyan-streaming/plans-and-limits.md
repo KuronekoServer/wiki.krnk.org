@@ -48,7 +48,7 @@ Node02を使用する場合でも、契約プランで録画機能が提供さ�
 
 ### コーデックの制限
 
-映像はサーバー側で再エンコードしないため、**H.264（映像）／ AAC（音声）** など対応コーデックでの配信が必要です。RTSP で LPCM 配信した音声を RTSP 以外で視聴する場合は AAC になります。詳細は [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) をご覧ください。
+映像はサーバー側で再エンコードしないため、**H.264（映像）／ AAC または PCM（s16be）（音声）** など対応コーデックでの配信が必要です。RTSP で PCM（s16be）配信した音声を RTSP 以外で視聴する場合は AAC になります。詳細は [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) をご覧ください。
 
 ## 制限中に視聴者へ表示される画面
 

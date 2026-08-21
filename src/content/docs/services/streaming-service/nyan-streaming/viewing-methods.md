@@ -33,7 +33,7 @@ sidebar:
 
 - **URL**: `rtsp://<サーバーアドレス>/<組織スラッグ>/<視聴キー>`
 - **TCP（RTSPT）**: ネットワーク環境により、TCP インターリーブ（RTSPT）での視聴も利用できます。
-- **音声**: AAC が標準です。AV Pro / Windows Media Foundation など RTSP の AAC を再生できない環境向けに、**L16（PCM）** での視聴にも対応しています。
+- **音声**: **AAC** と **PCM（s16be）** に対応しています。AV Pro / Windows Media Foundation など RTSP の AAC を再生できない環境では、PCM（s16be）で視聴できます。
 - プレイヤーごとの低遅延設定は [ビデオプレイヤーの設定/確認](/services/streaming-service/nyan-streaming/video-player-settings/) をご覧ください。
 
 ## RTMP

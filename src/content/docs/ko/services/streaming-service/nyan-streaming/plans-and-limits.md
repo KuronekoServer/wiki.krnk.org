@@ -48,7 +48,7 @@ Node02를 사용하더라도 계약한 요금제에서 녹화 기능을 제공�
 
 ### 코덱 제한
 
-서버는 영상을 재인코딩하지 않으므로 **H.264(영상) / AAC(음성)** 등 지원 코덱으로 송출해야 합니다. RTSP로 LPCM 송출한 음성을 RTSP 이외의 방식으로 시청하면 AAC로 제공됩니다. 자세한 내용은 [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)을 참고해 주세요.
+서버는 영상을 재인코딩하지 않으므로 **H.264(영상) / AAC 또는 PCM(s16be)(음성)** 등 지원 코덱으로 송출해야 합니다. RTSP로 PCM(s16be) 송출한 음성을 RTSP 이외의 방식으로 시청하면 AAC로 제공됩니다. 자세한 내용은 [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)을 참고해 주세요.
 
 ## 제한 중 시청자에게 표시되는 화면
 

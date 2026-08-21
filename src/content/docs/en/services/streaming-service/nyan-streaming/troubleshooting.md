@@ -16,7 +16,7 @@ First, open the stream-key list and key details in the dashboard. Check the key 
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Publishing does not start       | RTMP URL and publish secret, node health, and any restriction banner on the key                             |
 | No video                        | Confirm that the video codec is H.264 (AVC)                                                                 |
-| No audio                        | Confirm that the audio codec is AAC. LPCM ingest requires RTSP; non-RTSP playback delivers LPCM audio as AAC |
+| No audio                        | Confirm that the audio codec is AAC or PCM (s16be). PCM ingest requires RTSP; non-RTSP playback uses AAC     |
 | RTSP publishing does not start | Check whether your provider restricts port 554 or RTSP traffic                                              |
 | HLS does not play in a browser  | Confirm that the URL ends in `.m3u8`; outside Safari, use an hls.js-compatible player                       |
 | Playback fails in VRChat        | Use an AVPro-compatible player and an RTSP / RTSPT URL, with Stream Mode / Low Latency enabled              |

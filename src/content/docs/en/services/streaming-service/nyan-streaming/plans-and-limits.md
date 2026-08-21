@@ -48,7 +48,7 @@ Depending on the plan and server (node) settings, **viewing may be limited to wi
 
 ### Codec Restrictions
 
-Because the server does not re-encode video, you must stream using supported codecs such as **H.264 (video) / AAC (audio)**. Audio from an LPCM stream published over RTSP is delivered as AAC when viewers use a non-RTSP playback method. For details, see the [List of Supported Codecs](/en/services/streaming-service/nyan-streaming/codecs/).
+Because the server does not re-encode video, you must stream using supported codecs such as **H.264 (video) / AAC or PCM (s16be) (audio)**. Audio from a PCM (s16be) stream published over RTSP is delivered as AAC when viewers use a non-RTSP playback method. For details, see the [List of Supported Codecs](/en/services/streaming-service/nyan-streaming/codecs/).
 
 ## Screens Shown to Viewers During a Restriction
 

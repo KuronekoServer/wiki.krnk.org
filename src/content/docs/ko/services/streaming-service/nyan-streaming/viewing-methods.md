@@ -33,7 +33,7 @@ sidebar:
 
 - **URL**: `rtsp://<서버-주소>/<조직-슬러그>/<시청-키>`
 - **TCP（RTSPT）**: 네트워크 환경에 따라 TCP 인터리브(RTSPT)로의 시청도 이용할 수 있습니다.
-- **음성**: AAC가 표준입니다. AV Pro / Windows Media Foundation 등 RTSP의 AAC를 재생할 수 없는 환경을 위해 **L16(PCM)** 으로의 시청에도 대응하고 있습니다.
+- **음성**: **AAC**와 **PCM(s16be)** 을 지원합니다. AV Pro / Windows Media Foundation 등 RTSP의 AAC를 재생할 수 없는 환경에서는 PCM(s16be)으로 시청할 수 있습니다.
 - 플레이어별 저지연 설정은 [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/)을 참고하세요.
 
 ## RTMP

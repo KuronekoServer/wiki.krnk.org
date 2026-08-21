@@ -8,7 +8,7 @@ sidebar:
 
 # Streaming Methods (Ingest)
 
-You can send video to Nyan Streaming via **RTMP / WebRTC (WHIP) / RTSP push / browser streaming**. The standard video codec is **H.264**, and the default audio codec is **AAC** (**LPCM is also supported over RTSP**, and **Opus over WebRTC**). The server does not re-encode video, so streams using unsupported video codecs will not be displayed. When an LPCM stream is played through a non-RTSP method, its audio is delivered as AAC.
+You can send video to Nyan Streaming via **RTMP / WebRTC (WHIP) / RTSP push / browser streaming**. The supported formats are **H.264** for video and **AAC / PCM (s16be)** for audio (PCM (s16be) is available over RTSP and Opus over WebRTC). The server does not re-encode video, so streams using unsupported video codecs will not be displayed. When a PCM (s16be) stream is played through a non-RTSP method, its audio is delivered as AAC.
 
 ## Finding Your Streaming Address and Stream Key
 
@@ -47,10 +47,10 @@ From "Browser Streaming" in the dashboard, you can stream directly using your ca
 From surveillance cameras and certain devices, you can stream directly via RTSP push streaming (ANNOUNCE → RECORD).
 
 - **Stream URL**: `rtsp://<server-address>:554/<org-slug>/...` (standard port **554**)
-- **Video**: H.264 / **Audio**: AAC / LPCM
+- **Video**: H.264 / **Audio**: AAC / PCM (s16be)
 
-:::caution[LPCM ingest and playback]
-LPCM ingest is available **only through RTSP push**. RTSP playback can deliver LPCM / L16 (PCM), while **non-RTSP playback methods such as HLS, RTMP, and WebRTC deliver the audio as AAC**.
+:::caution[PCM (s16be) ingest and playback]
+PCM (s16be) ingest is available **only through RTSP push**. RTSP playback can deliver PCM (s16be), while **non-RTSP playback methods such as HLS, RTMP, and WebRTC deliver the audio as AAC**.
 :::
 
 :::caution[RTSP restrictions imposed by internet providers]

@@ -29,14 +29,14 @@ https://lemonkaju.booth.pm/items/7497730 のプロファイルを元に、改変
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 
-### LPCM (最高音質)
+### PCM（s16be・最高音質）
 
 :::caution
-LPCM で配信できるのは **RTSP のみ**です。LPCM のまま視聴できるのも RTSP のみで、HLS / RTMP / WebRTC など RTSP 以外で視聴する場合、音声は AAC になります。
+PCM（s16be）で配信・視聴できるのは **RTSP のみ**です。HLS / RTMP / WebRTC など RTSP 以外で視聴する場合、音声は AAC になります。
 :::
 
-- Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
-- Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip
+- Nvidia: [PCM（s16be）プロファイルをダウンロード](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip)
+- Radeon: [PCM（s16be）プロファイルをダウンロード](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip)
 
 ## OBSでのプロファイルインポート
 

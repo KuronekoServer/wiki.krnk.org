@@ -73,7 +73,7 @@ Open **Settings → Stream** in OBS Studio and use these settings.
 | Video bitrate     | Start around 1,000–1,500 kbps and keep the organization total within the plan limit |
 | Keyframe interval | 1 second recommended                                                                |
 
-The server does not re-encode video. A stream using unsupported video or audio codecs may connect but fail to play correctly. AAC is the standard audio format. **LPCM ingest is available only over RTSP; non-RTSP playback of an LPCM stream delivers the audio as AAC.** Ready-made configurations are available in the [Low-Latency OBS Profile](/en/services/streaming-service/nyan-streaming/obs-profile/).
+The server does not re-encode video. A stream using unsupported video or audio codecs may connect but fail to play correctly. The supported audio formats are AAC and PCM (s16be). **PCM (s16be) ingest is available only over RTSP; non-RTSP playback of a PCM stream delivers the audio as AAC.** Ready-made configurations are available in the [Low-Latency OBS Profile](/en/services/streaming-service/nyan-streaming/obs-profile/).
 
 :::caution
 The input bitrate limit applies to the **combined total of every simultaneous stream in the organization**, not separately to each stream.

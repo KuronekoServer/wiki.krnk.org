@@ -29,14 +29,14 @@ https://lemonkaju.booth.pm/items/7497730 의 프로파일을 기반으로 개조
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 
-### LPCM (최고 음질)
+### PCM(s16be·최고 음질)
 
 :::caution
-LPCM 송출은 **RTSP에서만** 이용할 수 있습니다. LPCM 그대로 시청할 수 있는 방식도 RTSP뿐이며, HLS / RTMP / WebRTC 등 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다.
+PCM(s16be) 송출과 시청은 **RTSP에서만** 이용할 수 있습니다. HLS / RTMP / WebRTC 등 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다.
 :::
 
-- Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
-- Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip
+- Nvidia: [PCM(s16be) 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip)
+- Radeon: [PCM(s16be) 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip)
 
 ## OBS에서 프로파일 가져오기
 

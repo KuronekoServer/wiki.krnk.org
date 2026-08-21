@@ -8,7 +8,7 @@ sidebar:
 
 # 기능 개요 및 지원 프로토콜
 
-Nyan Streaming은 **고화질 영상을 낮은 지연 시간(최단 약 1초)으로 송출하는 것**을 목표로 하는 영상 송출 서비스입니다. 자체 개발한 송출 서버에서 동작하며 영상은 서버 측에서 **트랜스코딩(재인코딩)하지 않고** 시청자에게 전달합니다. RTSP로 입력된 LPCM 음성을 RTSP 이외의 방식으로 시청할 때만 AAC로 변환합니다.
+Nyan Streaming은 **고화질 영상을 낮은 지연 시간(최단 약 1초)으로 송출하는 것**을 목표로 하는 영상 송출 서비스입니다. 자체 개발한 송출 서버에서 동작하며 영상은 서버 측에서 **트랜스코딩(재인코딩)하지 않고** 시청자에게 전달합니다. RTSP로 입력된 PCM(s16be) 음성을 RTSP 이외의 방식으로 시청할 때만 AAC로 변환합니다.
 
 공식 사이트: https://nyst.live/
 
@@ -38,7 +38,7 @@ Nyan Streaming은 **고화질 영상을 낮은 지연 시간(최단 약 1초)으
 
 ## 지원 코덱
 
-영상은 **H.264**, 음성은 **AAC** 가 표준입니다. 음성은 **LPCM(RTSP 송출·최고 음질)** 이나 **Opus(WebRTC)** 도 지원합니다. LPCM 송출을 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다. **AV1 / VP9 / VP8 / H.265 (HEVC)는 지원하지 않습니다.** 자세한 내용은 [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)을 참조하십시오.
+영상은 **H.264**, 음성은 **AAC / PCM(s16be·RTSP)** 을 지원합니다. WebRTC에서는 Opus도 이용할 수 있습니다. PCM(s16be) 송출을 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다. **AV1 / VP9 / VP8 / H.265 (HEVC)는 지원하지 않습니다.** 자세한 내용은 [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)을 참조하십시오.
 
 ## 주요 기능
 

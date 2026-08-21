@@ -29,14 +29,14 @@ The software you need to install in advance is as follows.
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
 - Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
 
-### LPCM (Highest Audio Quality)
+### PCM (s16be, Highest Audio Quality)
 
 :::caution
-LPCM ingest is available **only over RTSP**. LPCM playback is also limited to RTSP; HLS, RTMP, WebRTC, and other non-RTSP playback methods deliver the audio as AAC.
+PCM (s16be) ingest and playback are available **only over RTSP**. HLS, RTMP, WebRTC, and other non-RTSP playback methods deliver the audio as AAC.
 :::
 
-- Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip
-- Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip
+- Nvidia: [Download the PCM (s16be) profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip)
+- Radeon: [Download the PCM (s16be) profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip)
 
 ## Importing the Profile in OBS
 

@@ -8,7 +8,7 @@ sidebar:
 
 # 송출 방법(인제스트)
 
-Nyan Streaming 으로는 **RTMP / WebRTC (WHIP) / RTSP 푸시 / 브라우저 송출** 로 영상을 보낼 수 있습니다. 영상은 **H.264** 가 표준이며, 음성은 **AAC** 가 기본입니다(**RTSP 에서는 LPCM**, **WebRTC 에서는 Opus** 도 지원). 서버는 영상을 재인코딩하지 않으므로 지원하지 않는 영상 코덱에서는 송출이 표시되지 않습니다. LPCM 송출을 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다.
+Nyan Streaming 으로는 **RTMP / WebRTC (WHIP) / RTSP 푸시 / 브라우저 송출** 로 영상을 보낼 수 있습니다. 영상은 **H.264**, 음성은 **AAC / PCM(s16be)** 을 지원합니다(PCM(s16be)은 RTSP, Opus는 WebRTC에서 이용할 수 있습니다). 서버는 영상을 재인코딩하지 않으므로 지원하지 않는 영상 코덱에서는 송출이 표시되지 않습니다. PCM(s16be) 송출을 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다.
 
 ## 송출 주소와 스트림 키 확인
 
@@ -47,10 +47,10 @@ OBS 를 간편하게 저지연 설정으로 만들 수 있는 프로필을 배�
 감시 카메라나 일부 장비로부터 RTSP 의 푸시 송출(ANNOUNCE → RECORD)로 직접 송출할 수 있습니다.
 
 - **송출 대상 URL**: `rtsp://<server-address>:554/<org-slug>/...`（표준 포트 **554**）
-- **영상**: H.264 / **음성**: AAC / LPCM
+- **영상**: H.264 / **음성**: AAC / PCM(s16be)
 
-:::caution[LPCM 송출과 시청]
-LPCM 송출은 **RTSP 푸시에서만** 이용할 수 있습니다. RTSP 시청에서는 LPCM / L16(PCM)으로 받을 수 있지만, HLS / RTMP / WebRTC 등 **RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다**.
+:::caution[PCM(s16be) 송출과 시청]
+PCM(s16be) 송출은 **RTSP 푸시에서만** 이용할 수 있습니다. RTSP에서는 PCM(s16be)으로 시청할 수 있지만, HLS / RTMP / WebRTC 등 **RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다**.
 :::
 
 :::caution[인터넷 제공업체의 RTSP 통신 제한]

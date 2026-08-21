@@ -33,7 +33,7 @@ This offers the lowest latency (about 1 second). It is recommended for VRChat an
 
 - **URL**: `rtsp://<server-address>/<org-slug>/<view-key>`
 - **TCP (RTSPT)**: Depending on your network environment, viewing over TCP interleaving (RTSPT) is also available.
-- **Audio**: AAC is the standard. For environments that cannot play AAC over RTSP, such as AV Pro / Windows Media Foundation, viewing via **L16 (PCM)** is also supported.
+- **Audio**: **AAC** and **PCM (s16be)** are supported. Environments such as AV Pro / Windows Media Foundation that cannot play AAC over RTSP can use PCM (s16be) playback.
 - For low-latency settings on a per-player basis, see [Video Player Settings / Verification](/en/services/streaming-service/nyan-streaming/video-player-settings/).
 
 ## RTMP

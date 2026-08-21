@@ -8,7 +8,7 @@ sidebar:
 
 # Streaming Methods (Ingest)
 
-You can send video to Nyan Streaming via **RTMP / WebRTC (WHIP) / RTSP push / browser streaming**. The standard video codec is **H.264**, and the default audio codec is **AAC** (**LPCM is also supported over RTSP**, and **Opus over WebRTC**). The server does not re-encode, so streams using unsupported codecs will not be displayed.
+You can send video to Nyan Streaming via **RTMP / WebRTC (WHIP) / RTSP push / browser streaming**. The standard video codec is **H.264**, and the default audio codec is **AAC** (**LPCM is also supported over RTSP**, and **Opus over WebRTC**). The server does not re-encode video, so streams using unsupported video codecs will not be displayed. When an LPCM stream is played through a non-RTSP method, its audio is delivered as AAC.
 
 ## Finding Your Streaming Address and Stream Key
 
@@ -49,8 +49,12 @@ From surveillance cameras and certain devices, you can stream directly via RTSP 
 - **Stream URL**: `rtsp://<server-address>:554/<org-slug>/...` (standard port **554**)
 - **Video**: H.264 / **Audio**: AAC / LPCM
 
-:::caution
-**LPCM is available only for streaming and playback over RTSP.** It cannot be used over RTMP, HLS, or WebRTC.
+:::caution[LPCM ingest and playback]
+LPCM ingest is available **only through RTSP push**. RTSP playback can deliver LPCM / L16 (PCM), while **non-RTSP playback methods such as HLS, RTMP, and WebRTC deliver the audio as AAC**.
+:::
+
+:::caution[RTSP restrictions imposed by internet providers]
+Some internet service providers (ISPs) restrict port 554 or RTSP traffic, which can prevent RTSP publishing from starting. In this case, **the provider's network restriction is the cause; it is not a Nyan Streaming outage**. Contact your provider or use another connection. If RTSP is unavailable, change the audio codec to AAC and publish over RTMP or WebRTC.
 :::
 
 ## Multitrack Streaming (Enhanced Broadcasting)

@@ -8,7 +8,7 @@ sidebar:
 
 # Supported Codecs
 
-Nyan Streaming runs on an in-house developed streaming server and is designed to **not perform transcoding (re-encoding) on the server side**. Because the video and audio sent from the broadcaster are delivered to viewers as-is, **you must stream using supported codecs**. If you stream with an unsupported codec, problems such as the video not displaying or the audio not being heard will occur.
+Nyan Streaming runs on an in-house developed streaming server and does **not transcode (re-encode) video on the server side**. AAC is the standard audio format. The only audio conversion is that LPCM received over RTSP is converted to AAC when viewers use a non-RTSP playback method. **You must stream using supported codecs**; unsupported codecs can result in missing video or audio.
 
 ## Basic Codecs (common to all nodes)
 
@@ -27,7 +27,7 @@ Video codecs such as **AV1 / VP9 / VP8 / H.265 (HEVC)** are not supported. In en
 
 In addition to the basic codecs, the standard server also supports the following audio codecs.
 
-- **LPCM (pcm_s16le / uncompressed, highest audio quality)** — Available **only for streaming and playback over RTSP**. It cannot be used over RTMP, HLS, or WebRTC.
+- **LPCM (pcm_s16le / uncompressed, highest audio quality)** — LPCM ingest is available **only through RTSP push**. RTSP playback can deliver LPCM / L16 (PCM), while **non-RTSP playback methods such as HLS, RTMP, and WebRTC deliver the audio as AAC**.
 - **Opus** — Available for **WebRTC (WHIP streaming / WHEP viewing)**.
 - **RTSP viewing with L16 (PCM)** — For environments such as AV Pro / Windows Media Foundation that cannot properly play AAC over RTSP, you can receive the audio for RTSP viewing as L16 (PCM).
 

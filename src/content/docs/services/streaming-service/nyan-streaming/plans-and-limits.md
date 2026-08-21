@@ -1,7 +1,7 @@
 ---
 title: "プラン・制限・ポリシー"
 description: "プランの考え方、配信・視聴に関する制限、利用ポリシーの概要"
-lastUpdated: 2026-08-21T00:00:00.000Z
+lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 7
 ---
@@ -48,7 +48,7 @@ Node02を使用する場合でも、契約プランで録画機能が提供さ�
 
 ### コーデックの制限
 
-サーバーは再エンコードを行わないため、**H.264（映像）／ AAC（音声）** など対応コーデックでの配信が必要です。詳細は [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) をご覧ください。
+映像はサーバー側で再エンコードしないため、**H.264（映像）／ AAC（音声）** など対応コーデックでの配信が必要です。RTSP で LPCM 配信した音声を RTSP 以外で視聴する場合は AAC になります。詳細は [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) をご覧ください。
 
 ## 制限中に視聴者へ表示される画面
 

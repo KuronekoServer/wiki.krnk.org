@@ -16,11 +16,18 @@ First, open the stream-key list and key details in the dashboard. Check the key 
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Publishing does not start       | RTMP URL and publish secret, node health, and any restriction banner on the key                             |
 | No video                        | Confirm that the video codec is H.264 (AVC)                                                                 |
-| No audio                        | Confirm that the audio codec is AAC. WebRTC uses Opus; LPCM is available only for RTSP streaming/playback  |
+| No audio                        | Confirm that the audio codec is AAC. LPCM ingest requires RTSP; non-RTSP playback delivers LPCM audio as AAC |
+| RTSP publishing does not start | Check whether your provider restricts port 554 or RTSP traffic                                              |
 | HLS does not play in a browser  | Confirm that the URL ends in `.m3u8`; outside Safari, use an hls.js-compatible player                       |
 | Playback fails in VRChat        | Use an AVPro-compatible player and an RTSP / RTSPT URL, with Stream Mode / Low Latency enabled              |
 | Latency is too high             | Use RTSP or WebRTC (WHEP) instead of HLS when possible                                                      |
 | The stream stopped unexpectedly | Check notifications and restriction banners for bitrate, 24-hour continuous streaming, or a terms violation |
+
+## Only RTSP Publishing Fails
+
+Some internet service providers (ISPs) restrict port 554 or RTSP traffic. If RTMP and WebRTC work on the same connection but RTSP alone cannot connect, **the provider's network restriction is the cause; it is not a Nyan Streaming outage**.
+
+Ask your provider whether RTSP traffic is permitted or try another connection. If RTSP is unavailable, change the audio codec to AAC and publish over RTMP or WebRTC.
 
 ## A Restriction Screen Appeared
 

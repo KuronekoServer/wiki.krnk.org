@@ -32,7 +32,7 @@ https://lemonkaju.booth.pm/items/7497730 의 프로파일을 기반으로 개조
 ### LPCM (최고 음질)
 
 :::caution
-LPCM은 **RTSP를 통한 송출 및 시청에서만** 이용할 수 있습니다. RTMP / HLS / WebRTC에서는 이용할 수 없습니다.
+LPCM 송출은 **RTSP에서만** 이용할 수 있습니다. LPCM 그대로 시청할 수 있는 방식도 RTSP뿐이며, HLS / RTMP / WebRTC 등 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다.
 :::
 
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip

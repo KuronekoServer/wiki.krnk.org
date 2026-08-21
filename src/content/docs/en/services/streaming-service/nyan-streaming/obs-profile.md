@@ -32,7 +32,7 @@ The software you need to install in advance is as follows.
 ### LPCM (Highest Audio Quality)
 
 :::caution
-LPCM is available **only for streaming and playback over RTSP**. It cannot be used over RTMP, HLS, or WebRTC.
+LPCM ingest is available **only over RTSP**. LPCM playback is also limited to RTSP; HLS, RTMP, WebRTC, and other non-RTSP playback methods deliver the audio as AAC.
 :::
 
 - Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip

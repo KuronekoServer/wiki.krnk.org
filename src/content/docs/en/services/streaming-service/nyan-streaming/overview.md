@@ -8,7 +8,7 @@ sidebar:
 
 # Feature Overview & Supported Protocols
 
-Nyan Streaming is a video delivery service designed with the goal of **delivering high-quality video with low latency (as low as about 1 second)**. It runs on our in-house developed delivery server, and **performs no transcoding (re-encoding)** on the server side, delivering the streamed video and audio to viewers exactly as they are.
+Nyan Streaming is a video delivery service designed with the goal of **delivering high-quality video with low latency (as low as about 1 second)**. It runs on our in-house developed delivery server and delivers video without server-side **transcoding (re-encoding)**. LPCM audio received over RTSP is converted to AAC only when viewers use a non-RTSP playback method.
 
 Official site: https://nyst.live/
 
@@ -38,7 +38,7 @@ If you are aiming for the lowest latency, use **RTSP** or **WebRTC (WHEP)**; if 
 
 ## Supported Codecs
 
-The standard is **H.264** for video and **AAC** for audio. Audio also supports **LPCM (RTSP only, highest quality)** and **Opus (WebRTC)**. **AV1 / VP9 / VP8 / H.265 (HEVC) are not supported.** For details, see the [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/).
+The standard is **H.264** for video and **AAC** for audio. Audio also supports **LPCM (RTSP ingest, highest quality)** and **Opus (WebRTC)**. Non-RTSP playback of an LPCM stream delivers the audio as AAC. **AV1 / VP9 / VP8 / H.265 (HEVC) are not supported.** For details, see the [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/).
 
 ## Main Features
 

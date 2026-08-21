@@ -1,11 +1,10 @@
 ---
 title: "요금제·제한·정책"
 description: "요금제의 개념, 송출·시청 관련 제한, 이용 정책 개요"
-lastUpdated: 2026-06-26T00:00:00.000Z
+lastUpdated: 2026-08-21T00:00:00.000Z
 sidebar:
-  order: 6
+  order: 7
 ---
-
 
 # 요금제·제한·정책
 
@@ -29,11 +28,11 @@ Nyan Streaming은 **조직(팀) 단위**로 요금제를 계약합니다. 요금
 
 ### 연속 송출 시간 상한(24시간)
 
-하나의 송출이 **24시간** 연속으로 지속된 경우, 해당 송출은 자동으로 끊기며 조직은 일정 시간 차단됩니다. 장시간 송출을 진행하는 경우에는 사전에 운영진에게 연락해 주세요.
+24시간 제한이 활성화된 노드에서 하나의 publish 세션이 **24시간** 연속으로 실행되면 해당 송출이 자동으로 끊기고 **조직의 모든 스트림 키가 하루 동안 차단**됩니다. 다시 연결하면 연속 시간은 새 세션으로 계산됩니다. 24시간을 넘는 연속 운영이 필요하면 사전에 운영진에게 연락해 주세요.
 
 ### 비트레이트 상한 초과
 
-조직 전체의 입력 비트레이트 합계가 요금제의 상한을 초과하면 송출이 끊기고 일정 시간 차단됩니다. 송출 중에 초과한 경우에는 시청자 측에 경고 화면이 표시될 수 있습니다. 상한을 올리고 싶은 경우에는 대시보드에서 **비트레이트 추가 신청**을 할 수 있습니다(관리자 승인제).
+조직 전체의 입력 비트레이트 합계가 요금제 상한을 **10분 이상** 계속 초과하면 합계가 상한 이하가 될 때까지 최근에 시작된 송출부터 중지됩니다. 중지 대상 스트림 키는 **1시간 동안** 다시 송출할 수 없습니다. 상한을 올리려면 대시보드에서 **비트레이트 추가 신청**을 할 수 있습니다(관리자 승인제).
 
 ### 시청 가능 지역
 
@@ -43,11 +42,33 @@ Nyan Streaming은 **조직(팀) 단위**로 요금제를 계약합니다. 요금
 
 서버는 재인코딩을 하지 않으므로 **H.264(영상) / AAC(음성)** 등 지원 코덱으로의 송출이 필요합니다. 자세한 내용은 [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)을 참고해 주세요.
 
+## 제한 중 시청자에게 표시되는 화면
+
+송출이 제한되면 정상 송출 대신 사유별 경고 화면이 시청자에게 표시됩니다. 자동 제한은 대시보드에 해제 예정 시각이 표시됩니다.
+
+:::note
+조직의 기본 언어가 일본어이면 일본어 이미지가, 그 밖의 언어이면 영어 이미지가 사용됩니다. 현재 한국어 전용 이미지는 제공되지 않습니다. 언어는 대시보드의 **설정 → 일반 → 기본 언어**에서 변경할 수 있습니다.
+:::
+
+### 24시간 이상 연속 송출
+
+![24시간 이상 연속 송출 제한 화면(영어)](https://cdn.krnk.org/kuronekoserver/nyst/warning/24h-en.png)
+
+### 비트레이트 상한 초과
+
+![입력 비트레이트 상한 초과 제한 화면(영어)](https://cdn.krnk.org/kuronekoserver/nyst/warning/bitrate-en.png)
+
+### 기타 이용약관 위반
+
+![이용약관 위반 제한 화면(영어)](https://cdn.krnk.org/kuronekoserver/nyst/warning/tos-en.png)
+
+각 제한의 해결 절차는 [문제 해결](/ko/services/streaming-service/nyan-streaming/troubleshooting/)을 확인하세요.
+
 ## 이용 정책
 
 ### 이용약관
 
-스트리밍 서비스에서 이용약관에 위반되는 송출이 확인된 경우, 송출 차단 등의 조치가 취해질 수 있습니다. 약관 위반이 확인된 경우에는 즉시 **abuse@krnk.org**로 신고해 주시기를 부탁드립니다.
+관리자가 [Nyan Streaming 이용약관](https://krnk.org/terms/nyan-streaming) 위반을 확인하면 대상 조직 또는 사용자의 송출을 중지하고 차단합니다. 이 차단은 자동으로 해제되지 않습니다. 검토 또는 해제는 [문의](https://krnk.org/contact/)해 주세요. 약관 위반을 발견한 경우 즉시 **abuse@krnk.org**로 신고해 주세요.
 
 ### 악곡 이용 신청
 
@@ -68,8 +89,10 @@ JASRAC / NexTone 관리 악곡 등을 송출에서 이용하는 경우에는 대
 
 ## 관련 페이지
 
+- [시작 가이드](/ko/services/streaming-service/nyan-streaming/getting-started/)
 - [기능 개요·지원 프로토콜](/ko/services/streaming-service/nyan-streaming/overview/)
 - [송출 방법(인제스트)](/ko/services/streaming-service/nyan-streaming/streaming-methods/)
 - [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/)
 - [대시보드 사용법](/ko/services/streaming-service/nyan-streaming/dashboard/)
+- [문제 해결](/ko/services/streaming-service/nyan-streaming/troubleshooting/)
 - [공개 API](/ko/services/streaming-service/nyan-streaming/api/)

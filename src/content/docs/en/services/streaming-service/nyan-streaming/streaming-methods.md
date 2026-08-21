@@ -3,9 +3,8 @@ title: "Streaming Methods (Ingest)"
 description: "How to stream via RTMP, WebRTC (WHIP), RTSP, and browser streaming, and how to find your streaming address"
 lastUpdated: 2026-06-26T00:00:00.000Z
 sidebar:
-  order: 3
+  order: 4
 ---
-
 
 # Streaming Methods (Ingest)
 

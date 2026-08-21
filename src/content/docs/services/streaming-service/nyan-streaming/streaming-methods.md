@@ -3,9 +3,8 @@ title: "配信方法（取り込み）"
 description: "RTMP・WebRTC(WHIP)・RTSP・ブラウザ配信の方法と配信アドレスの確認方法"
 lastUpdated: 2026-06-26T00:00:00.000Z
 sidebar:
-  order: 3
+  order: 4
 ---
-
 
 # 配信方法（取り込み）
 

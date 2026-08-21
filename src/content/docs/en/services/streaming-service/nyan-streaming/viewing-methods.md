@@ -3,9 +3,8 @@ title: "Viewing (Playback) Methods"
 description: "How to watch via HLS, RTSP, RTMP, and WebRTC (WHEP), and the format of viewing URLs"
 lastUpdated: 2026-06-26T00:00:00.000Z
 sidebar:
-  order: 4
+  order: 5
 ---
-
 
 # Viewing (Playback) Methods
 

@@ -3,9 +3,8 @@ title: "視聴方法（再生）"
 description: "HLS・RTSP・RTMP・WebRTC(WHEP) での視聴方法と視聴 URL の形式"
 lastUpdated: 2026-06-26T00:00:00.000Z
 sidebar:
-  order: 4
+  order: 5
 ---
-
 
 # 視聴方法（再生）
 

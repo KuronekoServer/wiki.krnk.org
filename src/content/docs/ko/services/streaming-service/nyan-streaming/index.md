@@ -1,26 +1,30 @@
 ---
 title: "Nyan Streaming"
 description: "Nyan Streaming 서비스 개요"
-lastUpdated: 2025-11-12T08:36:31.796Z
+lastUpdated: 2026-08-21T00:00:00.000Z
 sidebar:
   order: 1
 ---
 
-
 # Nyan Streaming
+
 ### 서비스 개요
+
 본 서비스는 고화질 영상을 1초 이내의 지연으로 송출하는 것을 목표로 하는 영상 송출 서비스입니다.
 ※HLS로 시청할 때의 지연은 예외로 합니다.
 
 https://nyst.live/
 
 ### 문서
+
+- [시작 가이드](/ko/services/streaming-service/nyan-streaming/getting-started/)
 - [기능 개요・지원 프로토콜](/ko/services/streaming-service/nyan-streaming/overview/)
 - [송출 방법(인입)](/ko/services/streaming-service/nyan-streaming/streaming-methods/)
 - [시청 방법(재생)](/ko/services/streaming-service/nyan-streaming/viewing-methods/)
 - [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/)
 - [요금제・제한・정책](/ko/services/streaming-service/nyan-streaming/plans-and-limits/)
 - [대시보드 사용법](/ko/services/streaming-service/nyan-streaming/dashboard/)
+- [문제 해결](/ko/services/streaming-service/nyan-streaming/troubleshooting/)
 - [공개 API](/ko/services/streaming-service/nyan-streaming/api/)
 - [저지연 OBS 프로파일](/ko/services/streaming-service/nyan-streaming/obs-profile/)
 - [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/)

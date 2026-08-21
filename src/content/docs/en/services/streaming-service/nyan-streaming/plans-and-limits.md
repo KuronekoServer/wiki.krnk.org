@@ -1,11 +1,10 @@
 ---
 title: "Plans, Limits, and Policies"
 description: "An overview of how plans work, the limits on streaming and viewing, and usage policies"
-lastUpdated: 2026-06-26T00:00:00.000Z
+lastUpdated: 2026-08-21T00:00:00.000Z
 sidebar:
-  order: 6
+  order: 7
 ---
-
 
 # Plans, Limits, and Policies
 
@@ -29,11 +28,11 @@ The specific figures and pricing for each plan are subject to change. For the la
 
 ### Maximum Continuous Streaming Time (24 Hours)
 
-If a single stream continues for **24 hours** without interruption, that stream is automatically disconnected and the organization is blocked for a certain period of time. If you plan to run a long stream, please contact the operators in advance.
+If one publish session runs continuously for **24 hours** on a node where the duration limit is enabled, the stream is disconnected and **every stream key in the organization is blocked for one day**. Reconnecting starts a new continuous-session timer. Contact the operators in advance if you require continuous operation beyond 24 hours.
 
 ### Exceeding the Bitrate Limit
 
-If the total input bitrate across the entire organization exceeds the plan's upper limit, the stream is disconnected and blocked for a certain period of time. If the limit is exceeded during a stream, a warning screen may be displayed to viewers. If you want to raise the limit, you can submit a **request to add bitrate** from the dashboard (subject to administrator approval).
+If the organization's combined input bitrate remains above the plan limit for **more than 10 minutes**, the newest streams are disconnected until the total falls within the limit. Affected stream keys cannot publish again for **one hour**. To raise the limit, submit a **request for additional bitrate** from the dashboard (subject to administrator approval).
 
 ### Available Viewing Regions
 
@@ -43,11 +42,33 @@ Depending on the plan and server (node) settings, **viewing may be limited to wi
 
 Because the server does not re-encode, you must stream using supported codecs such as **H.264 (video) / AAC (audio)**. For details, see the [List of Supported Codecs](/en/services/streaming-service/nyan-streaming/codecs/).
 
+## Screens Shown to Viewers During a Restriction
+
+When publishing is restricted, viewers see a reason-specific warning screen in place of the normal stream. Automatic restrictions show their scheduled lift time in the dashboard.
+
+:::note
+The Japanese asset is used when the organization's default language is Japanese. Every other language uses the English asset. Change this under **Settings → General → Default language** in the dashboard.
+:::
+
+### More Than 24 Hours of Continuous Streaming
+
+![Restriction screen for more than 24 hours of continuous streaming](https://cdn.krnk.org/kuronekoserver/nyst/warning/24h-en.png)
+
+### Bitrate Limit Exceeded
+
+![Restriction screen for exceeding the input bitrate limit](https://cdn.krnk.org/kuronekoserver/nyst/warning/bitrate-en.png)
+
+### Other Terms-of-Service Violations
+
+![Restriction screen for a terms-of-service violation](https://cdn.krnk.org/kuronekoserver/nyst/warning/tos-en.png)
+
+See [Troubleshooting](/en/services/streaming-service/nyan-streaming/troubleshooting/) for the recovery steps for each restriction.
+
 ## Usage Policies
 
 ### Terms of Service
 
-If a stream that violates the Terms of Service is identified on the streaming service, measures such as blocking the stream may be taken. If you find a violation of the terms, please report it immediately to **abuse@krnk.org**.
+When an administrator confirms a violation of the [Nyan Streaming Terms of Service](https://krnk.org/terms/nyan-streaming), publishing by the affected organization or user is stopped and blocked. This block does not lift automatically. [Contact us](https://krnk.org/contact/) to request a review. If you find a violation, report it immediately to **abuse@krnk.org**.
 
 ### Applying to Use Music
 
@@ -68,8 +89,10 @@ For detailed steps on each operation, see [Using the Dashboard](/en/services/str
 
 ## Related Pages
 
+- [Getting Started](/en/services/streaming-service/nyan-streaming/getting-started/)
 - [Feature Overview and Supported Protocols](/en/services/streaming-service/nyan-streaming/overview/)
 - [Streaming Methods (Ingest)](/en/services/streaming-service/nyan-streaming/streaming-methods/)
 - [Viewing Methods (Playback)](/en/services/streaming-service/nyan-streaming/viewing-methods/)
 - [Using the Dashboard](/en/services/streaming-service/nyan-streaming/dashboard/)
+- [Troubleshooting](/en/services/streaming-service/nyan-streaming/troubleshooting/)
 - [Public API](/en/services/streaming-service/nyan-streaming/api/)

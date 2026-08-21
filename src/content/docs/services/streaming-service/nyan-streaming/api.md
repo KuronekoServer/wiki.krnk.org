@@ -3,9 +3,8 @@ title: "公開 API"
 description: "Nyan Streaming の公開 API（サーバー稼働状況・配信状況・視聴者数の取得）の仕様と使い方"
 lastUpdated: 2026-07-16T00:00:00.000Z
 sidebar:
-  order: 8
+  order: 10
 ---
-
 
 # 公開 API
 
@@ -166,13 +165,13 @@ curl https://api.nyst.live/api/v1/viewers/STREAM_ID \
 
 ## 主なエラー
 
-| HTTP | code | 内容 |
-| --- | --- | --- |
-| 401 | `UNAUTHORIZED` | API キーが指定されていない |
-| 401 | `API_KEY_INVALID` | API キーが無効または失効している |
-| 401 | `API_KEY_EXPIRED` | API キーの有効期限切れ |
-| 404 | `NOT_FOUND` | 指定したストリームが組織内に見つからない |
-| 429 | `RATE_LIMIT_EXCEEDED` | レート上限の超過（`Retry-After` を参照） |
+| HTTP | code                  | 内容                                     |
+| ---- | --------------------- | ---------------------------------------- |
+| 401  | `UNAUTHORIZED`        | API キーが指定されていない               |
+| 401  | `API_KEY_INVALID`     | API キーが無効または失効している         |
+| 401  | `API_KEY_EXPIRED`     | API キーの有効期限切れ                   |
+| 404  | `NOT_FOUND`           | 指定したストリームが組織内に見つからない |
+| 429  | `RATE_LIMIT_EXCEEDED` | レート上限の超過（`Retry-After` を参照） |
 
 ## 関連ページ
 

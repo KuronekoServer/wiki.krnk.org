@@ -3,9 +3,8 @@ title: "Public API"
 description: "The specification and usage of Nyan Streaming's public API (retrieving server status, streaming status, and viewer counts)"
 lastUpdated: 2026-07-16T00:00:00.000Z
 sidebar:
-  order: 8
+  order: 10
 ---
-
 
 # Public API
 
@@ -166,13 +165,13 @@ curl https://api.nyst.live/api/v1/viewers/STREAM_ID \
 
 ## Main Errors
 
-| HTTP | code | Meaning |
-| --- | --- | --- |
-| 401 | `UNAUTHORIZED` | No API key was provided |
-| 401 | `API_KEY_INVALID` | The API key is invalid or has been revoked |
-| 401 | `API_KEY_EXPIRED` | The API key has expired |
-| 404 | `NOT_FOUND` | The specified stream was not found in the organization |
-| 429 | `RATE_LIMIT_EXCEEDED` | The rate limit was exceeded (see `Retry-After`) |
+| HTTP | code                  | Meaning                                                |
+| ---- | --------------------- | ------------------------------------------------------ |
+| 401  | `UNAUTHORIZED`        | No API key was provided                                |
+| 401  | `API_KEY_INVALID`     | The API key is invalid or has been revoked             |
+| 401  | `API_KEY_EXPIRED`     | The API key has expired                                |
+| 404  | `NOT_FOUND`           | The specified stream was not found in the organization |
+| 429  | `RATE_LIMIT_EXCEEDED` | The rate limit was exceeded (see `Retry-After`)        |
 
 ## Related Pages
 

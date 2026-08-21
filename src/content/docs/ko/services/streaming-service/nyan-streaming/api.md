@@ -3,9 +3,8 @@ title: "공개 API"
 description: "Nyan Streaming의 공개 API(서버 가동 상태·송출 상태·시청자 수 조회) 사양과 사용법"
 lastUpdated: 2026-07-16T00:00:00.000Z
 sidebar:
-  order: 8
+  order: 10
 ---
-
 
 # 공개 API
 
@@ -166,13 +165,13 @@ curl https://api.nyst.live/api/v1/viewers/STREAM_ID \
 
 ## 주요 에러
 
-| HTTP | code | 내용 |
-| --- | --- | --- |
-| 401 | `UNAUTHORIZED` | API 키가 지정되지 않음 |
-| 401 | `API_KEY_INVALID` | API 키가 무효 또는 실효됨 |
-| 401 | `API_KEY_EXPIRED` | API 키의 유효 기간 만료 |
-| 404 | `NOT_FOUND` | 지정한 스트림이 조직 내에서 발견되지 않음 |
-| 429 | `RATE_LIMIT_EXCEEDED` | 레이트 상한 초과(`Retry-After` 참조) |
+| HTTP | code                  | 내용                                      |
+| ---- | --------------------- | ----------------------------------------- |
+| 401  | `UNAUTHORIZED`        | API 키가 지정되지 않음                    |
+| 401  | `API_KEY_INVALID`     | API 키가 무효 또는 실효됨                 |
+| 401  | `API_KEY_EXPIRED`     | API 키의 유효 기간 만료                   |
+| 404  | `NOT_FOUND`           | 지정한 스트림이 조직 내에서 발견되지 않음 |
+| 429  | `RATE_LIMIT_EXCEEDED` | 레이트 상한 초과(`Retry-After` 참조)      |
 
 ## 관련 페이지
 

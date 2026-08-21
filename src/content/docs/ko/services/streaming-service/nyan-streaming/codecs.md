@@ -3,9 +3,8 @@ title: "지원 코덱 목록"
 description: "Nyan Streaming(현행 서버)의 송출·시청에서 이용할 수 있는 코덱"
 lastUpdated: 2026-06-26T00:00:00.000Z
 sidebar:
-  order: 5
+  order: 6
 ---
-
 
 # 지원 코덱 목록
 
@@ -13,9 +12,9 @@ Nyan Streaming은 자체 개발한 송출 서버에서 동작하며, **서버 �
 
 ## 기본 코덱(전 노드 공통)
 
-| 종류 | 지원 코덱 |
-| --- | --- |
-| 영상 | **H.264 (AVC)** |
+| 종류 | 지원 코덱              |
+| ---- | ---------------------- |
+| 영상 | **H.264 (AVC)**        |
 | 음성 | **AAC (MPEG-4 Audio)** |
 
 영상은 **H.264**, 음성은 **AAC**가 표준입니다. 송출(RTMP / RTSP / WebRTC)·시청(HLS / RTSP / RTMP / WebRTC) 어느 경로에서든 이 조합이라면 확실하게 동작합니다.
@@ -36,8 +35,9 @@ Nyan Streaming은 자체 개발한 송출 서버에서 동작하며, **서버 �
 
 :::caution
 VRChat에서는 다음 코덱만 재생을 지원합니다.
+
 - 영상: **H.264**
 - 음성: **AAC(MPEG-4 Audio)**, **LPCM(pcm_s16le)**
-:::
+  :::
 
 VRChat에는 가장 저지연인 **RTSP** 시청을 권장합니다. 플레이어별 설정은 [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/)을 참조해 주세요.

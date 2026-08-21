@@ -3,9 +3,8 @@ title: "Supported Codecs"
 description: "Codecs available for streaming and viewing on Nyan Streaming (current server)"
 lastUpdated: 2026-06-26T00:00:00.000Z
 sidebar:
-  order: 5
+  order: 6
 ---
-
 
 # Supported Codecs
 
@@ -13,9 +12,9 @@ Nyan Streaming runs on an in-house developed streaming server and is designed to
 
 ## Basic Codecs (common to all nodes)
 
-| Type | Supported Codec |
-| --- | --- |
-| Video | **H.264 (AVC)** |
+| Type  | Supported Codec        |
+| ----- | ---------------------- |
+| Video | **H.264 (AVC)**        |
 | Audio | **AAC (MPEG-4 Audio)** |
 
 The standard is **H.264** for video and **AAC** for audio. This combination is guaranteed to work over any route, whether streaming (RTMP / RTSP / WebRTC) or viewing (HLS / RTSP / RTMP / WebRTC).
@@ -36,8 +35,9 @@ In addition to the basic codecs, the standard server also supports the following
 
 :::caution
 VRChat only supports playback of the following codecs.
+
 - Video: **H.264**
 - Audio: **AAC (MPEG-4 Audio)**, **LPCM (pcm_s16le)**
-:::
+  :::
 
 For VRChat, we recommend viewing over **RTSP**, which has the lowest latency. For per-player settings, see [Configuring/Checking the Video Player](/en/services/streaming-service/nyan-streaming/video-player-settings/).

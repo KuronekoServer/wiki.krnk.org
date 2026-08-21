@@ -1,11 +1,10 @@
 ---
 title: "プラン・制限・ポリシー"
 description: "プランの考え方、配信・視聴に関する制限、利用ポリシーの概要"
-lastUpdated: 2026-06-26T00:00:00.000Z
+lastUpdated: 2026-08-21T00:00:00.000Z
 sidebar:
-  order: 6
+  order: 7
 ---
-
 
 # プラン・制限・ポリシー
 
@@ -29,11 +28,11 @@ Nyan Streaming は **組織（チーム）単位**でプランを契約します
 
 ### 連続配信時間の上限（24 時間）
 
-1 本の配信が **24 時間**連続で続いた場合、その配信は自動的に切断され、組織は一定時間ブロックされます。長時間配信を行う場合は、事前に運営にご連絡ください。
+24 時間制限が有効なノードで、1 本の publish セッションが **24 時間**連続した場合、その配信は自動的に切断され、**組織の全ストリームキーが 1 日間ブロック**されます。再接続すると連続時間は新しいセッションとして数え直されます。24 時間を超える継続運用が必要な場合は、事前に運営へご連絡ください。
 
 ### ビットレート上限の超過
 
-組織全体の入力ビットレート合計がプランの上限を超えると、配信が切断され、一定時間ブロックされます。配信中に超過した場合は、視聴側に警告画面が表示されることがあります。上限を引き上げたい場合は、ダッシュボードから**ビットレート追加の申請**が行えます（管理者の承認制）。
+組織全体の入力ビットレート合計がプラン上限を **10 分以上**超え続けると、合計が上限以下になるまで新しく開始された配信から切断されます。切断対象のストリームキーは **1 時間**再配信できません。上限を引き上げたい場合は、ダッシュボードから**ビットレート追加の申請**が行えます（管理者の承認制）。
 
 ### 視聴可能な地域
 
@@ -43,11 +42,33 @@ Nyan Streaming は **組織（チーム）単位**でプランを契約します
 
 サーバーは再エンコードを行わないため、**H.264（映像）／ AAC（音声）** など対応コーデックでの配信が必要です。詳細は [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) をご覧ください。
 
+## 制限中に視聴者へ表示される画面
+
+配信が制限されると、通常の配信内容の代わりに理由別の警告画面が視聴者へ表示されます。自動解除される制限はダッシュボードに解除予定時刻が表示されます。
+
+:::note
+組織のデフォルト言語が日本語なら日本語版、それ以外の言語なら英語版が使用されます。言語はダッシュボードの **設定 → 一般 → デフォルト言語**で変更できます。
+:::
+
+### 24 時間以上の配信
+
+![24時間以上の連続配信による制限画面](https://cdn.krnk.org/kuronekoserver/nyst/warning/24h-jp.png)
+
+### ビットレート超過
+
+![入力ビットレート上限の超過による制限画面](https://cdn.krnk.org/kuronekoserver/nyst/warning/bitrate-jp.png)
+
+### その他の利用規約違反
+
+![利用規約違反による制限画面](https://cdn.krnk.org/kuronekoserver/nyst/warning/tos-jp.png?t=1787304185303)
+
+各制限の解除手順は[トラブルシューティング](/services/streaming-service/nyan-streaming/troubleshooting/)をご覧ください。
+
 ## 利用ポリシー
 
 ### 利用規約
 
-配信サービスにて利用規約に反する配信が確認された場合、配信のブロックなどの措置が取られることがあります。規約違反を確認された場合は、直ちに **abuse@krnk.org** へご報告くださいますようお願いいたします。
+管理者が[Nyan Streaming 利用規約](https://krnk.org/terms/nyan-streaming)への違反を確認した場合、対象組織またはユーザーの配信を停止・ブロックします。このブロックは自動解除されません。解除の審査は[お問い合わせ](https://krnk.org/contact/)ください。規約違反を確認された場合は、直ちに **abuse@krnk.org** へご報告くださいますようお願いいたします。
 
 ### 楽曲利用の申請
 
@@ -68,8 +89,10 @@ JASRAC / NexTone 管理楽曲などを配信で利用する場合は、ダッシ
 
 ## 関連ページ
 
+- [入門ガイド](/services/streaming-service/nyan-streaming/getting-started/)
 - [機能概要・対応プロトコル](/services/streaming-service/nyan-streaming/overview/)
 - [配信方法（取り込み）](/services/streaming-service/nyan-streaming/streaming-methods/)
 - [視聴方法（再生）](/services/streaming-service/nyan-streaming/viewing-methods/)
 - [ダッシュボードの使い方](/services/streaming-service/nyan-streaming/dashboard/)
+- [トラブルシューティング](/services/streaming-service/nyan-streaming/troubleshooting/)
 - [公開 API](/services/streaming-service/nyan-streaming/api/)

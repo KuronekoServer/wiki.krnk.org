@@ -3,9 +3,8 @@ title: "송출 방법(인제스트)"
 description: "RTMP·WebRTC(WHIP)·RTSP·브라우저 송출 방법과 송출 주소 확인 방법"
 lastUpdated: 2026-06-26T00:00:00.000Z
 sidebar:
-  order: 3
+  order: 4
 ---
-
 
 # 송출 방법(인제스트)
 

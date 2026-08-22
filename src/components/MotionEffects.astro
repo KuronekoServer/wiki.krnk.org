@@ -1,0 +1,147 @@
+<script>
+  import { animate } from 'framer-motion/dom/mini';
+
+  let cleanups: Array<() => void> = [];
+
+  const clearMotion = () => {
+    for (const cleanup of cleanups) cleanup();
+    cleanups = [];
+  };
+
+  const setupMotion = () => {
+    const page = document.querySelector<HTMLElement>('main[data-pagefind-body]');
+    if (!page || page.dataset.motionReady === 'true') return;
+
+    clearMotion();
+    page.dataset.motionReady = 'true';
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const content = page.querySelector<HTMLElement>('.sl-markdown-content');
+    if (content) {
+      const intro = Array.from(content.children)
+        .filter((element): element is HTMLElement => element instanceof HTMLElement)
+        .slice(0, 5);
+
+      for (const [index, element] of intro.entries()) {
+        animate(
+          element,
+          {
+            opacity: [0, 1],
+            transform: ['translateY(10px)', 'translateY(0px)'],
+          },
+          {
+            duration: 0.42,
+            delay: index * 0.045,
+            ease: [0.22, 1, 0.36, 1],
+          },
+        );
+      }
+
+      const introElements = new Set(intro);
+      const revealTargets = content.querySelectorAll<HTMLElement>(
+        ':scope > h2, :scope > h3, :scope > .starlight-aside, :scope > .card-grid, :scope > table, :scope > pre, :scope > figure, :scope > img',
+      );
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+
+              const target = entry.target as HTMLElement;
+              observer.unobserve(target);
+              animate(
+                target,
+                { opacity: 1, transform: 'translateY(0px)' },
+                { duration: 0.46, ease: [0.22, 1, 0.36, 1] },
+              );
+            }
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.15 },
+        );
+
+        for (const target of revealTargets) {
+          if (introElements.has(target)) continue;
+
+          target.style.opacity = '0';
+          target.style.transform = 'translateY(12px)';
+          observer.observe(target);
+        }
+
+        cleanups.push(() => observer.disconnect());
+      } else {
+        for (const target of revealTargets) {
+          if (introElements.has(target)) continue;
+
+          animate(
+            target,
+            {
+              opacity: [0, 1],
+              transform: ['translateY(12px)', 'translateY(0px)'],
+            },
+            { duration: 0.46, ease: [0.22, 1, 0.36, 1] },
+          );
+        }
+      }
+    }
+
+    const sidebarParts = document.querySelectorAll<HTMLElement>(
+      '.sidebar-utility, .sidebar-navigation, .sidebar-preferences',
+    );
+    for (const [index, element] of sidebarParts.entries()) {
+      animate(
+        element,
+        {
+          opacity: [0, 1],
+          transform: ['translateX(-8px)', 'translateX(0px)'],
+        },
+        {
+          duration: 0.36,
+          delay: index * 0.055,
+          ease: [0.22, 1, 0.36, 1],
+        },
+      );
+    }
+
+    const interactiveCards = document.querySelectorAll<HTMLElement>(
+      '.card, .pagination-links a',
+    );
+    for (const card of interactiveCards) {
+      const lift = () => {
+        animate(
+          card,
+          { transform: 'translateY(-3px)' },
+          { duration: 0.18, ease: 'ease-out' },
+        );
+      };
+      const reset = () => {
+        animate(
+          card,
+          { transform: 'translateY(0px)' },
+          { duration: 0.22, ease: 'ease-out' },
+        );
+      };
+
+      card.addEventListener('pointerenter', lift);
+      card.addEventListener('pointerleave', reset);
+      card.addEventListener('focusin', lift);
+      card.addEventListener('focusout', reset);
+
+      cleanups.push(() => {
+        card.removeEventListener('pointerenter', lift);
+        card.removeEventListener('pointerleave', reset);
+        card.removeEventListener('focusin', lift);
+        card.removeEventListener('focusout', reset);
+      });
+    }
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupMotion, { once: true });
+  } else {
+    setupMotion();
+  }
+
+  document.addEventListener('astro:page-load', setupMotion);
+</script>

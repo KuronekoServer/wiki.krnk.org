@@ -2,6 +2,7 @@
 // Starlight 既定のフッター(前/次ナビ・最終更新・編集リンク)はそのまま残し、
 // その下にサイト共通フッターを追加するオーバーライド。
 import Default from '@astrojs/starlight/components/Footer.astro';
+import MotionEffects from './MotionEffects.astro';
 
 const lang = (Astro.locals.starlightRoute.lang || 'ja').split('-')[0];
 
@@ -38,6 +39,8 @@ const year = new Date().getFullYear();
   </nav>
   <p class="site-footer__copyright">© 2018–{year} KuronekoServer</p>
 </footer>
+
+<MotionEffects />
 
 <style>
   .site-footer {

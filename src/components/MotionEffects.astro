@@ -2,6 +2,7 @@
   import { animate } from 'framer-motion/dom/mini';
 
   let cleanups: Array<() => void> = [];
+  let isInitialPage = true;
 
   const clearMotion = () => {
     for (const cleanup of cleanups) cleanup();
@@ -17,24 +18,35 @@
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+    const animateInitialPage = isInitialPage;
+    isInitialPage = false;
+
     const content = page.querySelector<HTMLElement>('.sl-markdown-content');
     if (content) {
       const intro = Array.from(content.children)
         .filter((element): element is HTMLElement => element instanceof HTMLElement)
         .slice(0, 5);
 
-      for (const [index, element] of intro.entries()) {
+      if (animateInitialPage) {
+        for (const [index, element] of intro.entries()) {
+          animate(
+            element,
+            {
+              opacity: [0, 1],
+              transform: ['translateY(10px)', 'translateY(0px)'],
+            },
+            {
+              duration: 0.42,
+              delay: index * 0.045,
+              ease: [0.22, 1, 0.36, 1],
+            },
+          );
+        }
+      } else {
         animate(
-          element,
-          {
-            opacity: [0, 1],
-            transform: ['translateY(10px)', 'translateY(0px)'],
-          },
-          {
-            duration: 0.42,
-            delay: index * 0.045,
-            ease: [0.22, 1, 0.36, 1],
-          },
+          content,
+          { transform: ['translateY(5px)', 'translateY(0px)'] },
+          { duration: 0.26, ease: [0.22, 1, 0.36, 1] },
         );
       }
 
@@ -86,22 +98,24 @@
       }
     }
 
-    const sidebarParts = document.querySelectorAll<HTMLElement>(
-      '.sidebar-utility, .sidebar-navigation, .sidebar-preferences',
-    );
-    for (const [index, element] of sidebarParts.entries()) {
-      animate(
-        element,
-        {
-          opacity: [0, 1],
-          transform: ['translateX(-8px)', 'translateX(0px)'],
-        },
-        {
-          duration: 0.36,
-          delay: index * 0.055,
-          ease: [0.22, 1, 0.36, 1],
-        },
+    if (animateInitialPage) {
+      const sidebarParts = document.querySelectorAll<HTMLElement>(
+        '.sidebar-utility, .sidebar-navigation, .sidebar-preferences',
       );
+      for (const [index, element] of sidebarParts.entries()) {
+        animate(
+          element,
+          {
+            opacity: [0, 1],
+            transform: ['translateX(-8px)', 'translateX(0px)'],
+          },
+          {
+            duration: 0.36,
+            delay: index * 0.055,
+            ease: [0.22, 1, 0.36, 1],
+          },
+        );
+      }
     }
 
     const interactiveCards = document.querySelectorAll<HTMLElement>(

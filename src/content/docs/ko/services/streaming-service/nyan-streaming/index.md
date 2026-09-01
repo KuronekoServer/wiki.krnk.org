@@ -31,6 +31,7 @@ https://nyst.live/
 - [지원 코덱 목록](/ko/services/streaming-service/nyan-streaming/codecs/) — 방식별 영상·음성 코덱 확인
 - [저지연 OBS 프로파일](/ko/services/streaming-service/nyan-streaming/obs-profile/) — OBS로 가져올 수 있는 권장 설정
 - [비디오 플레이어 설정/확인](/ko/services/streaming-service/nyan-streaming/video-player-settings/) — VRChat 등의 플레이어 설정
+- [VRChat 월드 도메인 설정](/ko/services/streaming-service/nyan-streaming/vrchat-world-domains/) — Public·Group Public에 필요한 허용 설정
 
 #### 관리·문제 해결
 

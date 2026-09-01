@@ -20,6 +20,7 @@ sidebar:
 | RTSP 송출을 시작할 수 없음       | 인터넷 제공업체가 포트 554 또는 RTSP 통신을 제한하는지 확인                                              |
 | 브라우저에서 HLS가 재생되지 않음 | URL이 `.m3u8`인지, Safari 이외에서는 hls.js 호환 플레이어를 사용하는지 확인                                |
 | VRChat에서 재생되지 않음         | AVPro 호환 플레이어인지, RTSP / RTSPT URL을 사용하는지, Stream Mode / Low Latency가 활성화되어 있는지 확인 |
+| VRChat Public에서만 재생 불가    | [월드 허용 도메인](/ko/services/streaming-service/nyan-streaming/vrchat-world-domains/)과 `Allow Untrusted URLs` 확인 |
 | 지연이 큼                        | 가능하면 HLS 대신 RTSP 또는 WebRTC (WHEP) 사용                                                             |
 | 송출이 도중에 끊김               | 비트레이트, 24시간 연속 송출, 약관 위반에 관한 제한 배너와 알림 확인                                       |
 

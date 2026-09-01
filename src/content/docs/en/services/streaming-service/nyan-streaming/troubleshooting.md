@@ -20,6 +20,7 @@ First, open the stream-key list and key details in the dashboard. Check the key 
 | RTSP publishing does not start | Check whether your provider restricts port 554 or RTSP traffic                                              |
 | HLS does not play in a browser  | Confirm that the URL ends in `.m3u8`; outside Safari, use an hls.js-compatible player                       |
 | Playback fails in VRChat        | Use an AVPro-compatible player and an RTSP / RTSPT URL, with Stream Mode / Low Latency enabled              |
+| VRChat Public playback fails    | Check the [world domain allowlist](/en/services/streaming-service/nyan-streaming/vrchat-world-domains/) and `Allow Untrusted URLs` |
 | Latency is too high             | Use RTSP or WebRTC (WHEP) instead of HLS when possible                                                      |
 | The stream stopped unexpectedly | Check notifications and restriction banners for bitrate, 24-hour continuous streaming, or a terms violation |
 

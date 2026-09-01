@@ -31,6 +31,7 @@ https://nyst.live/
 - [対応コーデック一覧](/services/streaming-service/nyan-streaming/codecs/) — 方式ごとに対応する映像・音声コーデック
 - [低遅延OBSプロファイル](/services/streaming-service/nyan-streaming/obs-profile/) — OBSへ読み込める推奨設定
 - [ビデオプレイヤーの設定・確認](/services/streaming-service/nyan-streaming/video-player-settings/) — VRChatなどのプレイヤー設定
+- [VRChatワールドのドメイン設定](/services/streaming-service/nyan-streaming/vrchat-world-domains/) — Public・Group Publicで必要な許可設定
 
 #### 管理・問題解決
 

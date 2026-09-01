@@ -20,6 +20,7 @@ sidebar:
 | RTSP 配信を開始できない       | プロバイダーがポート 554 または RTSP 通信を制限していないか                                 |
 | ブラウザで HLS を再生できない | URL が `.m3u8` か、Safari 以外では hls.js 対応プレイヤーを利用しているか                    |
 | VRChat で再生できない         | AVPro 対応プレイヤーか、RTSP / RTSPT URL を使っているか、Stream Mode / Low Latency が有効か |
+| VRChat の Public だけ再生不可 | [ワールドの許可ドメイン](/services/streaming-service/nyan-streaming/vrchat-world-domains/)と `Allow Untrusted URLs` |
 | 遅延が大きい                  | HLS ではなく RTSP または WebRTC (WHEP) を利用できるか                                       |
 | 配信が途中で切れた            | ビットレート、24時間連続配信、規約違反の制限バナーや通知                                    |
 

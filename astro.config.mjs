@@ -225,6 +225,14 @@ export default defineConfig({
                             ko: "비디오 플레이어 설정",
                           },
                         },
+                        {
+                          slug: "services/streaming-service/nyan-streaming/vrchat-world-domains",
+                          label: "VRChatワールドのドメイン設定",
+                          translations: {
+                            en: "VRChat World Domain Settings",
+                            ko: "VRChat 월드 도메인 설정",
+                          },
+                        },
                       ],
                     },
                     {

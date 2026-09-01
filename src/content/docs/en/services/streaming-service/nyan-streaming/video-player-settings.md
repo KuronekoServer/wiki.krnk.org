@@ -10,6 +10,8 @@ sidebar:
 When using AVPro, enable the "Low Latency" option in the AVPro VideoPlayer component's Stream Mode.
 The list below includes players verified by KuronekoServer staff and users.
 
+When using a playback URL outside VRChat's default allowlist in Public / Group Public, also complete the [VRChat World Domain Settings](/en/services/streaming-service/nyan-streaming/vrchat-world-domains/).
+
 ## YamaPlayer
 
 YamaPlayer supports low latency by default; no configuration changes are required.

@@ -31,6 +31,7 @@ https://nyst.live/
 - [Supported Codecs List](/en/services/streaming-service/nyan-streaming/codecs/) — Check video and audio codecs by protocol
 - [Low-Latency OBS Profile](/en/services/streaming-service/nyan-streaming/obs-profile/) — Import recommended OBS settings
 - [Video Player Settings / Verification](/en/services/streaming-service/nyan-streaming/video-player-settings/) — Configure players such as those used in VRChat
+- [VRChat World Domain Settings](/en/services/streaming-service/nyan-streaming/vrchat-world-domains/) — Configure permissions required for Public and Group Public instances
 
 #### Manage and troubleshoot
 

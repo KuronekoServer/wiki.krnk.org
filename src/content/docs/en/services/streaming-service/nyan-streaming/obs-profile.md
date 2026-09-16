@@ -21,13 +21,12 @@ The software you need to install in advance is as follows.
 
 ## Profiles
 
-> By default, the address for Node02 is set.
-> When actually using it, please check the address from the Nyan Streaming tool yourself and start streaming.
+> Before streaming, please check the address using the Nyan Streaming tool.
 
 ### CoreAudio AAC
 
-- Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
-- Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
+- Nvidia: [Download the CoreAudio AAC Nvidia profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip)
+- Radeon: [Download the CoreAudio AAC Radeon profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip)
 
 ### PCM (s16be, Highest Audio Quality)
 
@@ -35,8 +34,13 @@ The software you need to install in advance is as follows.
 PCM (s16be) ingest and playback are available **only over RTSP**. HLS, RTMP, WebRTC, and other non-RTSP playback methods deliver the audio as AAC.
 :::
 
-- Nvidia: [Download the PCM (s16be) profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip)
-- Radeon: [Download the PCM (s16be) profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip)
+- Nvidia: [Download the PCM (s16be) Nvidia profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip)
+- Radeon: [Download the PCM (s16be) Radeon profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip)
+
+### WebRTC
+
+- Nvidia: [Download the WebRTC Nvidia profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_webrtc.zip)
+- Radeon: [Download the WebRTC Radeon profile](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_webrtc.zip)
 
 ## Importing the Profile in OBS
 

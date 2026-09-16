@@ -28,6 +28,19 @@ Nyan Streaming の視聴 URL に含まれるホスト名が VRChat の標準許�
 | Friends                 | 不要                                       | **必要**                          |
 | Invite+ / Invite        | 不要                                       | **必要**                          |
 
+## Nyan Streamingのノード別ドメイン
+
+Public / Group Public で使用するノードに応じて、以下のホスト名を `Video Player Allowed Domains` へ登録します。
+
+| ノード | 登録するドメイン |
+| ------ | ---------------- |
+| Free   | `free.nyst.live` |
+| Node01 | `stream-01.nyst.live` |
+| Node02 | `stream.nyst.live` |
+| Node03 | ダッシュボードに表示される視聴 URL のホスト名を確認 |
+
+Node03 は接続先が異なる場合があるため、ダッシュボードのストリームキー詳細に表示される RTSP / RTSPT / HLS などの視聴 URL からホスト名を確認してください。
+
 ## 設定の判断フロー
 
 ```mermaid

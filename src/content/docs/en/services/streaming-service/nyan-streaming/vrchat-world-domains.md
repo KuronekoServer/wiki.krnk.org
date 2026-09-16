@@ -28,6 +28,19 @@ The following applies when using a domain that is not on VRChat's default allowl
 | Friends                 | Not required                         | **Required**                |
 | Invite+ / Invite        | Not required                         | **Required**                |
 
+## Nyan Streaming Domains by Node
+
+For Public / Group Public instances, add the host name for the node you use to `Video Player Allowed Domains`.
+
+| Node   | Domain to add |
+| ------ | ------------- |
+| Free   | `free.nyst.live` |
+| Node01 | `stream-01.nyst.live` |
+| Node02 | `stream.nyst.live` |
+| Node03 | Check the host name in the playback URL shown in the dashboard |
+
+Node03 can use different destinations. Open the stream-key details in the dashboard and obtain the host name from the displayed RTSP, RTSPT, HLS, or other playback URL.
+
 ## Configuration Decision Flow
 
 ```mermaid

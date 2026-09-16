@@ -21,13 +21,12 @@ https://lemonkaju.booth.pm/items/7497730 의 프로파일을 기반으로 개조
 
 ## 프로파일
 
-> 기본값으로는 Node02의 주소가 들어 있습니다.
 > 실제로 사용할 경우에는 각자 Nyan Streaming 도구에서 주소를 확인한 후 방송을 진행해 주세요.
 
 ### CoreAudio AAC
 
-- Nvidia: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip
-- Radeon: https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip
+- Nvidia: [CoreAudio AAC Nvidia 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_coreaudio_aac.zip)
+- Radeon: [CoreAudio AAC Radeon 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_coreaudio_aac.zip)
 
 ### PCM(s16be·최고 음질)
 
@@ -35,8 +34,13 @@ https://lemonkaju.booth.pm/items/7497730 의 프로파일을 기반으로 개조
 PCM(s16be) 송출과 시청은 **RTSP에서만** 이용할 수 있습니다. HLS / RTMP / WebRTC 등 RTSP 이외의 방식으로 시청하면 음성은 AAC로 제공됩니다.
 :::
 
-- Nvidia: [PCM(s16be) 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip)
-- Radeon: [PCM(s16be) 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip)
+- Nvidia: [PCM(s16be) Nvidia 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_lpcm.zip)
+- Radeon: [PCM(s16be) Radeon 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_lpcm.zip)
+
+### WebRTC
+
+- Nvidia: [WebRTC Nvidia 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_nvidia_webrtc.zip)
+- Radeon: [WebRTC Radeon 프로파일 다운로드](https://cdn.krnk.org/kuronekoserver/wiki/nyst/obs-profile/nyst_radeon_webrtc.zip)
 
 ## OBS에서 프로파일 가져오기
 

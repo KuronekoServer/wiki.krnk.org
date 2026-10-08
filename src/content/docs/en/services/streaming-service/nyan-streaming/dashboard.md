@@ -28,7 +28,7 @@ The home screen shows active streams, total viewers, active stream keys, recordi
 | Check streaming-node availability                   | [Server Status](./servers/)        |
 | Report JASRAC / NexTone-managed music               | [Music Reports](./music-reports/)  |
 | Invite members and manage roles                     | [Users](./users/)                  |
-| Configure the organization, billing, and security   | [Settings](./settings/)            |
+| Configure the organization, billing, notifications, and security   | [Settings](./settings/)            |
 
 ## Left Sidebar
 

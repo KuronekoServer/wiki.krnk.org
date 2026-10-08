@@ -10,5 +10,5 @@ lastUpdated: 2025-03-13T08:09:35.903Z
 - [Whois API](/ko/services/api-service/whois-api/)
 - [히라가나 변환 API](/ko/services/api-service/hiragana-api/)
 - [원신 API](/ko/services/api-service/genshin-api/)
-- [원신 빌드 카드 API](/ko/services/api-service/genshin-image-gen-api/)
+- [Artifacter 빌드 카드 생성 API](/ko/services/api-service/genshin-image-gen-api/)
 - [환율 API](/ko/services/api-service/exchange-rate-api/)

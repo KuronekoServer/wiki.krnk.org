@@ -57,11 +57,11 @@ sample <kbd>CTRL</kbd> + <kbd>C</kbd>
 
 ---
 
-斜めになる *sample*
+Italic text: *sample*
 
 ---
 
-色をつける `sample`
+Inline code: `sample`
 
 ---
 
@@ -74,7 +74,7 @@ sample <kbd>CTRL</kbd> + <kbd>C</kbd>
 
 ---
 
-引用を作成
+Create footnotes
 
 This sentence[^1] needs a few footnotes.[^2]
 
@@ -89,7 +89,7 @@ Can be also be used :fire: inline
 
 ---
 
-Tab形式のテーブル
+Table in tab format
 
 # Tabs
 ## First Tab

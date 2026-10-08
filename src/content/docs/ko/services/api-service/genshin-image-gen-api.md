@@ -1,25 +1,20 @@
 ---
-title: "원신 빌드 카드 API"
+title: "Artifacter 빌드 카드 생성 API"
 lastUpdated: 2025-03-13T08:02:42.108Z
 ---
 
-
-# 원신 빌드 카드 API
+# Artifacter 빌드 카드 생성 API
 ## 개요
-이 API는 Enka.Network의 데이터를 사용하고 Artifacter의 디자인을 활용해 빌드 카드 이미지를 생성합니다.
+이 API는 Enka.Network의 API 정보를 사용하여 Artifacter 디자인의 이미지를 생성합니다.
+GET 요청을 보내면 다양한 빌드 카드 이미지를 생성할 수 있습니다.
 
-현재 베타 서비스로 가용성이 보장되지 않을 수 있습니다.
+## API 사양
 
-### 캐릭터 목록 조회
-```
-https://genshin-image-gen-api.krnk.org/api/genshindata/?uid=UID
-```
+https://artifacter-imagegen-api.krnk.org/docs
 
-### 빌드 카드 생성
-```
-https://genshin-image-gen-api.krnk.org/api/generation/?uid=UID&scoretype=SCORE&charaName=CHARACTER
-```
+서비스 페이지: https://artifacter-imagegen-api.krnk.org
 
-서비스 페이지: https://genshin-api.krnk.org
-
-주의: 10초간 100회 이상 요청 시 429 Too Many Requests가 반환됩니다.
+:::danger
+1초에 10회 이상 요청하면 `429 Too Many Requests`가 반환됩니다.
+API 요청 제한 완화를 원하시면 [문의](https://discord.krnk.org)해 주세요.
+:::

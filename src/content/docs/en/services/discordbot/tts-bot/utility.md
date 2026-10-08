@@ -30,6 +30,13 @@ Check the bot response time.
 /ping
 ```
 
+## /dashboard
+Show the server dashboard URL.
+
+```text
+/dashboard
+```
+
 ## /exvoice
 Show the URL for the available ExVoice list.
 

@@ -33,6 +33,10 @@ The **publish secret** and the **view key** contained in playback URLs are diffe
 
 ### Choose a node
 
+:::note
+You can skip this step when using the Free plan.
+:::
+
 Select a node that matches your stream when creating the stream key.
 
 | Content or requirement | Node |

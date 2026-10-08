@@ -3,10 +3,23 @@
 
   let cleanups: Array<() => void> = [];
   let isInitialPage = true;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const animations = new Set<ReturnType<typeof animate>>();
+
+  const playAnimation: typeof animate = (...args) => {
+    const animation = animate(...args);
+    animations.add(animation);
+    animation.then(() => animations.delete(animation));
+    return animation;
+  };
 
   const clearMotion = () => {
     for (const cleanup of cleanups) cleanup();
     cleanups = [];
+    // Finish active effects so interrupted navigation or a preference change
+    // cannot leave content at a partially transparent keyframe.
+    for (const animation of animations) animation.complete();
+    animations.clear();
   };
 
   const setupMotion = () => {
@@ -16,7 +29,7 @@
     clearMotion();
     page.dataset.motionReady = 'true';
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (reducedMotion.matches) return;
 
     const animateInitialPage = isInitialPage;
     isInitialPage = false;
@@ -29,7 +42,7 @@
 
       if (animateInitialPage) {
         for (const [index, element] of intro.entries()) {
-          animate(
+          playAnimation(
             element,
             {
               opacity: [0, 1],
@@ -43,7 +56,7 @@
           );
         }
       } else {
-        animate(
+        playAnimation(
           content,
           { transform: ['translateY(5px)', 'translateY(0px)'] },
           { duration: 0.26, ease: [0.22, 1, 0.36, 1] },
@@ -63,21 +76,24 @@
 
               const target = entry.target as HTMLElement;
               observer.unobserve(target);
-              animate(
+              playAnimation(
                 target,
-                { opacity: 1, transform: 'translateY(0px)' },
+                {
+                  opacity: [0, 1],
+                  transform: ['translateY(12px)', 'translateY(0px)'],
+                },
                 { duration: 0.46, ease: [0.22, 1, 0.36, 1] },
               );
             }
           },
-          { rootMargin: '0px 0px -8% 0px', threshold: 0.15 },
+          // Long tables can never reach a percentage-based threshold. Animate
+          // as soon as any part enters the viewport, keeping the base visible.
+          { threshold: 0 },
         );
 
         for (const target of revealTargets) {
           if (introElements.has(target)) continue;
 
-          target.style.opacity = '0';
-          target.style.transform = 'translateY(12px)';
           observer.observe(target);
         }
 
@@ -86,7 +102,7 @@
         for (const target of revealTargets) {
           if (introElements.has(target)) continue;
 
-          animate(
+          playAnimation(
             target,
             {
               opacity: [0, 1],
@@ -103,7 +119,7 @@
         '.sidebar-utility, .sidebar-navigation, .sidebar-preferences',
       );
       for (const [index, element] of sidebarParts.entries()) {
-        animate(
+        playAnimation(
           element,
           {
             opacity: [0, 1],
@@ -122,18 +138,20 @@
       '.card, .pagination-links a',
     );
     for (const card of interactiveCards) {
+      const originalTransform = card.style.transform;
+      let hoverAnimation: ReturnType<typeof animate> | undefined;
       const lift = () => {
-        animate(
+        hoverAnimation = animate(
           card,
           { transform: 'translateY(-3px)' },
-          { duration: 0.18, ease: 'ease-out' },
+          { duration: 0.18, ease: 'easeOut' },
         );
       };
       const reset = () => {
-        animate(
+        hoverAnimation = animate(
           card,
           { transform: 'translateY(0px)' },
-          { duration: 0.22, ease: 'ease-out' },
+          { duration: 0.22, ease: 'easeOut' },
         );
       };
 
@@ -143,6 +161,8 @@
       card.addEventListener('focusout', reset);
 
       cleanups.push(() => {
+        hoverAnimation?.cancel();
+        card.style.transform = originalTransform;
         card.removeEventListener('pointerenter', lift);
         card.removeEventListener('pointerleave', reset);
         card.removeEventListener('focusin', lift);
@@ -158,4 +178,11 @@
   }
 
   document.addEventListener('astro:page-load', setupMotion);
+  document.addEventListener('astro:before-swap', clearMotion);
+  reducedMotion.addEventListener('change', () => {
+    clearMotion();
+    const page = document.querySelector<HTMLElement>('main[data-pagefind-body]');
+    if (page) delete page.dataset.motionReady;
+    setupMotion();
+  });
 </script>

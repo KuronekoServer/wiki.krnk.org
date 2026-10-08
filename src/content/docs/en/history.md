@@ -1,7 +1,7 @@
 ---
 title: "History"
 description: "KuronekoServer operation history"
-lastUpdated: 2025-09-08T16:36:30.820Z
+lastUpdated: 2025-12-12T14:35:21.997Z
 ---
 
 
@@ -31,7 +31,7 @@ Music BOT service ended | 2022/06/01
 KuronekoServer HTTP Proxy service started | 2022/09/24
 Partnership with Rext started | 2022/11/23
 Partnership with FnoTes started | 2022/12/28
------ 2023年 ------ |
+----- 2023 ------ |
 Partnership with mc-fdc-dev started | 2023/03/01
 Artifacter Modified provided | 2023/03/18
 KuronekoServer HTTP Proxy service ended | 2023/04/20
@@ -44,7 +44,7 @@ OpenJTalk API provided | 2023/05/21
 Partnership with Neody started | 2023/06/18
 Partnership with NAKN Internet (formerly Narikakun Network) started | 2023/06/18
 Partnership with mc-fdc-dev ended | 2023/10/22
------ 2024年 ------ |
+----- 2024 ------ |
 Renamed Artifacter Modified to Artifacter | 2024/01/19
 Partnership with AoHaru I/O (formerly Rext) ended | 2024/02/02
 Large-scale disruptive vandalism occurred on decentralized SNS lowering organization reputation | 2024/02/17
@@ -57,7 +57,7 @@ Notification subdomain changed from support. to news. | 2024/04/30
 Organization domain changed from kuroneko6423.com to krnk.org | 2024/06/29
 KuronekoServer CDN Server provided | 2024/08/10
 Partnership with UptimeRobot started | 2024/08/10
------ 2025年 ------ |
+----- 2025 ------ |
 Partnership with USLOG begins | 2025/01/13
 KuronekoServer VRC Streaming Service beta launch | 2025/01/18
 VRC Streaming Service renamed to Nyan Streaming | 2025/08/10

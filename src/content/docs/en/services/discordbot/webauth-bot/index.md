@@ -6,7 +6,7 @@ lastUpdated: 2025-03-13T08:07:36.710Z
 
 # Web Authentication BOT
 ## About
-The web authentication BOT uses hcaptcha for verification.
+The web authentication BOT uses hCaptcha for verification.
 
 ## Commands and Guide
 Command | Description
@@ -17,11 +17,14 @@ Command | Description
 ## FAQ
 > I authenticated but didn't get the role or an error occurred.
 
-Please ensure the web authentication BOT is placed below the role you want to grant. If settings are correct, contact [Support](https://discord.krnk.org).
+:::caution
+Ensure the web authentication BOT's role is placed above the role you want to grant.
+If the roles are already configured correctly, contact [Support](https://discord.krnk.org).
+:::
 
 ![image](https://cdn.krnk.org/kuronekoserver/wiki/webauth-bot/role.webp)
 
-> `The application did not respond` or `Interaction failed` errors appear.
+> `The application did not respond` or `Interaction failed` errors appear, or the bot does not respond.
 
 The bot may be undergoing maintenance or experiencing errors. Please check #📢service-アナウンス on our [support server](https://discord.krnk.org) and notify us via #お問い合わせ if needed.
 

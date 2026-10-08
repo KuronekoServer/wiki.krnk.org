@@ -56,7 +56,7 @@ sample <kbd>CTRL</kbd> + <kbd>C</kbd>
 
 ---
 
-斜めになる *sample*
+기울임꼴: *sample*
 
 ---
 

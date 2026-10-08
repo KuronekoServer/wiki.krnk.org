@@ -3,32 +3,43 @@ title: "Whois API"
 lastUpdated: 2025-03-13T08:00:48.388Z
 ---
 
-
 # Whois API
 ## Overview
 This API retrieves Whois information for a domain.
 
-### Endpoints
-- **GET /api/whois**
-  - Returns raw Whois text for the specified domain. Parameter: `domain`.
+### Error Responses
+- **500 Internal Server Error**: An error occurred while fetching Whois data.
+- **400 Bad Request**: The `domain` parameter was not specified.
+- **403 Forbidden**: Whois information was requested for a restricted TLD: `.edu` or `.mil`.
 
-- **GET /api/whois/json**
-  - Returns parsed Whois information in JSON format. Parameter: `domain`.
+### API Specification
+- **GET /api/whois**
+  - Retrieve Whois information for the specified domain.
+  - Parameter: `domain` (the domain name to look up).
+  - Response: Whois information in text format.
 
 Example:
 ```
 https://whois-api.krnk.org/api/whois?domain=google.com
 ```
 
-### Error Responses
-- 500 Internal Server Error: An error occurred while fetching Whois data.
-- 400 Bad Request: The `domain` parameter was not specified.
-- 403 Forbidden: Attempt to retrieve restricted TLD Whois (e.g. .edu, .mil)
+- **GET /api/whois/json**
+  - Retrieve Whois information for the specified domain in JSON format.
+  - Parameter: `domain` (the domain name to look up).
+  - Response: Parsed Whois information in JSON format.
+
+Example:
+```
+https://whois-api.krnk.org/api/whois/json?domain=google.com
+```
 
 :::caution
-Note: Some TLDs are restricted and may not return data. The JSON endpoint currently works reliably for .com/.net, but may fail for .jp or .int — this is being improved.
+Some TLDs have restrictions on Whois lookups.
+The JSON endpoint has been verified to work for `.com` and `.net`, but not for `.jp` and `.int`.
+We plan to address this issue gradually.
 :::
 
 :::danger
-If you make more than 100 requests in 10 seconds, you'll receive `429 Too Many Requests`.
+If you make 50 or more requests per second, you will receive `429 Too Many Requests`.
+If you would like the API rate limit relaxed, please [contact us](https://discord.krnk.org).
 :::

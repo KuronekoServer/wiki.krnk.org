@@ -19,15 +19,15 @@ Command | Description
 ## FAQ
 > What is the number at the top of the image?
 
-The number helps identify the time and internal ID when an image issue occurs. It contains no personally identifiable information.
+The number helps identify the time and internal ID when an image issue occurs. It contains no personally identifiable information, so you do not need to hide it.
 
 > Why do images look similar to other bots?
 
 The image generation code is published (https://github.com/FuroBath/ArtifacterImageGen) and multiple developers make bots based on it.
 
-> `The application did not respond` or `Interaction failed` errors appear.
+> `The application did not respond` or `Interaction failed` errors appear, or the bot does not respond.
 
-The bot or EnkaNetwork might be under maintenance. Check [Enka.Network Status](https://status.enka.network) and [KuronekoServer Status](https://status.krnk.org). If not listed, please notify #🚨お問い合わせ on our [support server](https://discord.krnk.org).
+The bot or EnkaNetwork might be under maintenance or experiencing errors. Check [Enka.Network Status](https://status.enka.network) and [KuronekoServer Status](https://status.krnk.org). If not listed, please notify #🚨お問い合わせ｜contact-us on our [support server](https://discord.krnk.org).
 
 ## Credits
 Development: [@nekok500](https://x.com/nekok500) | [@ap12](https://x.com/akpcap12)

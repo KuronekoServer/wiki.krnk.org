@@ -72,6 +72,7 @@ This table lists languages supported by the Twitch translation bot and the API/s
 | Kinyarwanda | Google Translate | rw |
 | Konkani | Google Translate | gom |
 | Korean | Google / Deepl | ko |
+| Krio | Google Translate | kri |
 | Kurdish | Google Translate | ku |
 | Kurdish (Sorani) | Google Translate | ckb |
 | Kyrgyz | Google Translate | ky |

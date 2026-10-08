@@ -72,6 +72,7 @@ Twitch 번역 봇에서 지원하는 언어와 사용되는 API를 나열합니�
 | 키냐르완다어 | Google 번역 | rw |
 | 콘카니어 | Google 번역 | gom |
 | 한국어 | Google / Deepl | ko |
+| 크리오어 | Google 번역 | kri |
 | 쿠르드어 | Google 번역 | ku |
 | 쿠르드어(소라니) | Google 번역 | ckb |
 | 키르기스어 | Google 번역 | ky |

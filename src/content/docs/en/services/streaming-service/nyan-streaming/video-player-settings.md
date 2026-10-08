@@ -24,6 +24,8 @@ BOOTH: https://booth.pm/ja/items/4768863
 For low-latency viewing with iwaSync, change player settings in Unity and enable the options shown below.
 ![iwaSync3](https://cdn.krnk.org/kuronekoserver/wiki/nyst/iwasync.webp)
 
+BOOTH: https://booth.pm/ja/items/2666275
+
 You may consider resync tools useful for VJs.
 
 - BOOTH: https://nmxi.booth.pm/items/4883377
@@ -33,6 +35,8 @@ You may consider resync tools useful for VJs.
 
 For VizVid, enable the settings shown in the screenshot below for low-latency playback.
 ![VizVid](https://cdn.krnk.org/kuronekoserver/wiki/nyst/vizvid.webp)
+
+BOOTH: https://xtl.booth.pm/items/5056077
 
 ## ProTV 3.0
 

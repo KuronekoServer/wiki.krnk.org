@@ -16,11 +16,13 @@ src/content/docs/
 ├─ what-is-kuronekoserver.md
 ├─ services/ …
 ├─ en/                       … English  (/en/...)
-└─ ko/                       … 한국어   (/ko/...)
+├─ ko/                       … 한국어   (/ko/...)
+├─ zh-hans/                  … 简体中文 (/zh-hans/...)
+└─ zh-hant/                  … 繁體中文 (/zh-hant/...)
 ```
 
 - 既定言語は **日本語**で、`src/content/docs/` 直下がそのまま日本語ページになります。
-- `en/` `ko/` に同じ相対パスでファイルを置くと、その言語版になります。
+- `en/` `ko/` `zh-hans/` `zh-hant/` に同じ相対パスでファイルを置くと、その言語版になります。
 - **未翻訳のページは自動的に日本語へフォールバック**します（ページが無くてもリンク切れになりません）。
 
 ### ページの追加・編集
@@ -57,6 +59,8 @@ npm install
 npm run dev       # http://localhost:4321 で確認
 npm run build     # dist/ に静的ビルド
 npm run preview   # ビルド結果をプレビュー
+npm run check:i18n # 各言語のページ欠落・余剰を検証（残っている日本語は音声例なども含めて報告）
+npm run check:links # 5言語のWiki内部リンクを検証
 ```
 
 ---

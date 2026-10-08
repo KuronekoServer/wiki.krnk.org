@@ -23,6 +23,6 @@ https://image-convert-api.krnk.org/docs
 
 
 :::danger
-If you make more than 50 requests per second, you will receive "429 Too many Requests".
+If you make 50 or more requests per second, you will receive "429 Too many Requests".
 If you would like the API rate limit relaxed, please [contact us](https://discord.krnk.org).
 :::

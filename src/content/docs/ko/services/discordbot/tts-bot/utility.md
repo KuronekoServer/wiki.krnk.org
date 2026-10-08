@@ -30,6 +30,13 @@ BOT 응답 속도를 확인합니다.
 /ping
 ```
 
+## /dashboard
+서버 대시보드 URL을 표시합니다.
+
+```text
+/dashboard
+```
+
 ## /exvoice
 사용 가능한 ExVoice 목록 URL을 표시합니다.
 

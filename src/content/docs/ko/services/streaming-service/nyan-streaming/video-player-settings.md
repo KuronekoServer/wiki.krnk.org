@@ -24,6 +24,8 @@ BOOTH: https://booth.pm/ja/items/4768863
 iwaSync에서 저지연 재생을 위해서는 Unity에서 플레이어 설정을 변경해야 합니다. 아래 이미지의 항목을 활성화하세요.
 ![iwaSync3](https://cdn.krnk.org/kuronekoserver/wiki/nyst/iwasync.webp)
 
+BOOTH: https://booth.pm/ja/items/2666275
+
 VJ 등에서 resync를 쉽게 추가할 수 있는 도구도 있으니 고려해 보시기 바랍니다.
 
 - BOOTH: https://nmxi.booth.pm/items/4883377
@@ -33,6 +35,8 @@ VJ 등에서 resync를 쉽게 추가할 수 있는 도구도 있으니 고려해
 
 VizVid에서도 저지연 재생을 위해 아래 이미지의 설정을 활성화해야 합니다.
 ![VizVid](https://cdn.krnk.org/kuronekoserver/wiki/nyst/vizvid.webp)
+
+BOOTH: https://xtl.booth.pm/items/5056077
 
 ## ProTV 3.0
 

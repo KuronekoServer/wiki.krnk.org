@@ -1,29 +1,20 @@
 ---
-title: "Genshin Build Card API"
+title: "Artifacter Build Card Generation API"
 lastUpdated: 2025-03-13T08:02:42.108Z
 ---
 
-
-# Genshin Build Card API
+# Artifacter Build Card Generation API
 ## Overview
-This API uses Enka.Network data and Artifacter designs to generate build card images.
+This API uses Enka.Network data and Artifacter designs to generate images.
+Send a GET request to generate various build card images.
 
-:::caution
-This service is in beta and availability is not guaranteed.
-:::
+## API Specification
 
-### API: Character list
-```
-https://genshin-image-gen-api.krnk.org/api/genshindata/?uid=UID
-```
+https://artifacter-imagegen-api.krnk.org/docs
 
-### Build card generation
-```
-https://genshin-image-gen-api.krnk.org/api/generation/?uid=UID&scoretype=SCORE&charaName=CHARACTER
-```
-
-Service page: https://genshin-api.krnk.org
+Service page: https://artifacter-imagegen-api.krnk.org
 
 :::danger
-If you make more than 100 requests in 10 seconds, you'll receive 429 Too Many Requests.
+If you make 10 or more requests per second, you will receive `429 Too Many Requests`.
+If you would like the API rate limit relaxed, please [contact us](https://discord.krnk.org).
 :::

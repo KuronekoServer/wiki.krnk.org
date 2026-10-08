@@ -22,5 +22,6 @@ https://openjtalk-api.krnk.org/synthesize?text=TEXT&type=SPEAKER&speed=0.7&pitch
 서비스 페이지: https://openjtalk-api.krnk.org
 
 :::danger
-10초간 100회 이상 요청 시 `429 Too Many Requests`가 반환됩니다.
+1초에 50회 이상 요청하면 `429 Too Many Requests`가 반환됩니다.
+API 요청 제한 완화를 원하시면 [문의](https://discord.krnk.org)해 주세요.
 :::

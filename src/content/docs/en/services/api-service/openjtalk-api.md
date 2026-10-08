@@ -22,5 +22,6 @@ https://openjtalk-api.krnk.org/synthesize?text=TEXT&type=SPEAKER&speed=0.7&pitch
 Service page: https://openjtalk-api.krnk.org
 
 :::danger
-If you make more than 100 requests in 10 seconds, you'll receive 429 Too Many Requests.
+If you make 50 or more requests per second, you will receive `429 Too Many Requests`.
+If you would like the API rate limit relaxed, please [contact us](https://discord.krnk.org).
 :::

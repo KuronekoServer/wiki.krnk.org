@@ -13,6 +13,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "check:i18n": "node scripts/i18n-status.mjs --check",
+    "check:links": "node scripts/check-links.mjs",
     "convert": "node scripts/convert-wikijs.mjs",
     "deploy": "node scripts/deploy-bunny.mjs"
   },

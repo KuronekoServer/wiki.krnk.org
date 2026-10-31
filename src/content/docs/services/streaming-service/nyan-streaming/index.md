@@ -6,6 +6,16 @@ sidebar:
   order: 1
 ---
 
+:::note
+**Nyan Streaming Japan では、配信の録画とファイルのアップロード機能を利用できません。** このページの録画・メディア関連の説明は、対応する Nyan Streaming の機能についてのものです。
+:::
+
+
+:::note
+Nyan Streaming の無料サーバー `free.nyst.live` はダッシュボードへの登録なしで利用できます。Nyan Streaming の管理画面は [dash.nyst.live](https://dash.nyst.live/)、Nyan Streaming Japan の管理画面は [dash.jp.nyst.live](https://dash.jp.nyst.live/) です。サービスと契約に合う配信・視聴 URL を確認してください。
+:::
+
+
 # Nyan Streaming
 
 ### サービス概要
@@ -20,7 +30,7 @@ https://nyst.live/
 #### 最初に読む
 
 - [入門ガイド](/services/streaming-service/nyan-streaming/getting-started/) — ストリームキーの作成から配信・再生確認まで
-- [ノードの選び方](/services/streaming-service/nyan-streaming/nodes/) — Node01・Node02・Node03の用途と制限を比較
+- [ノードの選び方](/services/streaming-service/nyan-streaming/nodes/) — サービスと接続先を確認
 - [機能概要・対応プロトコル](/services/streaming-service/nyan-streaming/overview/) — 利用できる配信・視聴方式を確認
 - [プラン・制限・ポリシー](/services/streaming-service/nyan-streaming/plans-and-limits/) — ビットレート、配信時間、録画などの条件を確認
 

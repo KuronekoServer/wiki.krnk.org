@@ -32,14 +32,14 @@ Nyan Streaming の視聴 URL に含まれるホスト名が VRChat の標準許�
 
 Public / Group Public で使用するノードに応じて、以下のホスト名を `Video Player Allowed Domains` へ登録します。
 
-| ノード | 登録するドメイン |
-| ------ | ---------------- |
-| Free   | `free.nyst.live` |
-| Node01 | `stream-01.nyst.live` |
-| Node02 | `stream.nyst.live` |
-| Node03 | ダッシュボードに表示される視聴 URL のホスト名を確認 |
+| サービス | 接続先 | 用途・確認事項 |
+| --- | --- | --- |
+| Nyan Streaming の無料サーバー | `free.nyst.live` | 無料サーバー用。利用方法は公式サイトのツールを確認してください。 |
+| Nyan Streaming の通常サーバー | `stream.nyst.live` | ダッシュボードに表示される配信・視聴 URL を使用します。 |
+| Nyan Streaming の Enterprise ノード | カスタム | カスタム構成です。契約時の案内やダッシュボードでホスト名と利用条件を確認してください。 |
+| Nyan Streaming Japan | `stream.jp.nyst.live` | 日本向けサービス。対象楽曲の利用条件と報告方法は公式サイトと楽曲利用申請を確認してください。 |
 
-Node03 は接続先が異なる場合があるため、ダッシュボードのストリームキー詳細に表示される RTSP / RTSPT / HLS などの視聴 URL からホスト名を確認してください。
+VRChat での登録は視聴 URL のホスト名を使用します。カスタムノードでは表示された URL を確認してください。
 
 ## 設定の判断フロー
 

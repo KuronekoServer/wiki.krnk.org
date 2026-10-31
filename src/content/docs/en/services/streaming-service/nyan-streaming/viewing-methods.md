@@ -6,13 +6,18 @@ sidebar:
   order: 5
 ---
 
+:::note
+The Nyan Streaming free server, `free.nyst.live`, can be used without registering for a dashboard. Use [dash.nyst.live](https://dash.nyst.live/) for Nyan Streaming and [dash.jp.nyst.live](https://dash.jp.nyst.live/) for Nyan Streaming Japan. Check the publishing and playback URLs for your service and agreement.
+:::
+
+
 # Viewing (Playback) Methods
 
 Streams can be viewed via **HLS / RTSP / RTMP / WebRTC (WHEP)**. Choose the method that fits your needs: **RTSP / WebRTC** when low latency matters, or **HLS** when compatibility matters.
 
 ## Checking the Viewing URL
 
-You can find the viewing URL in the stream key details on the [dashboard](https://nyst.live/). The URL is composed of an "**organization slug**" and a "**view key**", and the corresponding address is shown for each server (node).
+You can find the viewing URL in the stream key details on the [dashboard](https://dash.nyst.live/). The URL is composed of an "**organization slug**" and a "**view key**", and the corresponding address is shown for each server (node).
 
 :::note
 The **view key** is different from the stream key (secret) used for broadcasting. Sharing a viewing URL will not let anyone hijack your stream. If you regenerate the view key, any previously issued viewing URLs become invalid.

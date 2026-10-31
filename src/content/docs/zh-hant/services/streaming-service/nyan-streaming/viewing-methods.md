@@ -6,13 +6,18 @@ sidebar:
   order: 5
 ---
 
+:::note
+Nyan Streaming 免費伺服器 `free.nyst.live` 無須註冊控制台即可使用。Nyan Streaming 使用 [dash.nyst.live](https://dash.nyst.live/)，Nyan Streaming Japan 使用 [dash.jp.nyst.live](https://dash.jp.nyst.live/)。請確認適用於所用服務和合約的串流與觀看 URL。
+:::
+
+
 # 觀看方式（播放）
 
 可透過 **HLS / RTSP / RTMP / WebRTC (WHEP)** 觀看直播。請根據用途選擇：重視低延遲時使用 **RTSP / WebRTC**，重視兼容性時使用 **HLS**。
 
 ## 查看觀看 URL
 
-觀看 URL 可從[控制台](https://nyst.live/)的串流金鑰詳情中查看。URL 由“**組織 slug**”和“**觀看金鑰（view key）**”構成，每個伺服器（節點）都有對應的地址。
+觀看 URL 可從[控制台](https://dash.nyst.live/)的串流金鑰詳情中查看。URL 由“**組織 slug**”和“**觀看金鑰（view key）**”構成，每個伺服器（節點）都有對應的地址。
 
 :::note
 **觀看金鑰**與串流金鑰（機密值）不同。分享觀看 URL 不會導致推流被他人接管。重新生成觀看金鑰後，之前的觀看 URL 將失效。

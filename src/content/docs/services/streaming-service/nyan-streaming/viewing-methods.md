@@ -6,13 +6,18 @@ sidebar:
   order: 5
 ---
 
+:::note
+Nyan Streaming の無料サーバー `free.nyst.live` はダッシュボードへの登録なしで利用できます。Nyan Streaming の管理画面は [dash.nyst.live](https://dash.nyst.live/)、Nyan Streaming Japan の管理画面は [dash.jp.nyst.live](https://dash.jp.nyst.live/) です。サービスと契約に合う配信・視聴 URL を確認してください。
+:::
+
+
 # 視聴方法（再生）
 
 配信は **HLS / RTSP / RTMP / WebRTC (WHEP)** で視聴できます。用途に応じて、低遅延を重視するなら **RTSP / WebRTC**、互換性を重視するなら **HLS** をお選びください。
 
 ## 視聴 URL の確認
 
-視聴用の URL は [ダッシュボード](https://nyst.live/) のストリームキー詳細から確認できます。URL は「**組織スラッグ**」と「**視聴キー（view key）**」で構成され、サーバー（ノード）ごとに対応したアドレスが表示されます。
+視聴用の URL は [ダッシュボード](https://dash.nyst.live/) のストリームキー詳細から確認できます。URL は「**組織スラッグ**」と「**視聴キー（view key）**」で構成され、サーバー（ノード）ごとに対応したアドレスが表示されます。
 
 :::note
 **視聴キー**は配信用のストリームキー（シークレット）とは別物です。視聴 URL を共有しても配信を乗っ取られることはありません。視聴キーを再生成すると、それまでの視聴 URL は無効になります。

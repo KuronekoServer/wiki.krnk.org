@@ -18,7 +18,7 @@ Use **Refresh** to retrieve the current state. A dedicated message appears when 
 
 ## Choosing a node
 
-The uses, recording support, music-reporting requirements, and 24-hour restrictions of Node01, Node02, and Node03 are explained on [Choosing a Node](../../nodes/). Check the guide before publishing.
+See [Choosing a Service and Node](../../nodes/) for services and connection hosts.
 
 ## Before publishing or during an incident
 

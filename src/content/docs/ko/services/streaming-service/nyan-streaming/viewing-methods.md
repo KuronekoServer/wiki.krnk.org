@@ -6,13 +6,18 @@ sidebar:
   order: 5
 ---
 
+:::note
+Nyan Streaming 무료 서버 `free.nyst.live`는 대시보드 가입 없이 이용할 수 있습니다. Nyan Streaming은 [dash.nyst.live](https://dash.nyst.live/), Nyan Streaming Japan은 [dash.jp.nyst.live](https://dash.jp.nyst.live/)를 사용합니다. 서비스와 계약에 맞는 송출·시청 URL을 확인하세요.
+:::
+
+
 # 시청 방법(재생)
 
 방송은 **HLS / RTSP / RTMP / WebRTC (WHEP)** 로 시청할 수 있습니다. 용도에 따라 저지연을 중시한다면 **RTSP / WebRTC**, 호환성을 중시한다면 **HLS** 를 선택하세요.
 
 ## 시청 URL 확인
 
-시청용 URL은 [대시보드](https://nyst.live/)의 스트림 키 상세에서 확인할 수 있습니다. URL은 "**조직 슬러그**"와 "**시청 키(view key)**"로 구성되며, 서버(노드)별로 대응하는 주소가 표시됩니다.
+시청용 URL은 [대시보드](https://dash.nyst.live/)의 스트림 키 상세에서 확인할 수 있습니다. URL은 "**조직 슬러그**"와 "**시청 키(view key)**"로 구성되며, 서버(노드)별로 대응하는 주소가 표시됩니다.
 
 :::note
 **시청 키**는 방송용 스트림 키(시크릿)와는 별개입니다. 시청 URL을 공유해도 방송을 탈취당하지 않습니다. 시청 키를 재생성하면 그때까지의 시청 URL은 무효가 됩니다.

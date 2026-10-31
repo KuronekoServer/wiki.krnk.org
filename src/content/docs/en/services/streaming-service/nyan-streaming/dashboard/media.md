@@ -6,6 +6,11 @@ sidebar:
   order: 3
 ---
 
+:::note
+**Nyan Streaming Japan does not support stream recording or file uploads.** References to recordings and media on this page describe features available on supported Nyan Streaming plans.
+:::
+
+
 **Media** uploads videos, images, and other files for delivery through the CDN. Recordings and manual uploads share the same organization storage pool.
 
 ![Nyan Streaming Media page](/images/nyan-streaming/dashboard/media.png)
@@ -22,7 +27,7 @@ New recordings or uploads can fail when storage is full. Download anything you n
 2. Wait for progress to reach 100% and the status to become **Ready**.
 3. Verify its name, type, size, and status in the list.
 
-The per-file limit is **1 GB**. A video may not be playable while it is processing. If it becomes **Failed**, check its size and your connection before trying again.
+The per-file limit is **10 GB**. A video may not be playable while it is processing. If it becomes **Failed**, check its size and your connection before trying again.
 
 ## Actions after upload
 

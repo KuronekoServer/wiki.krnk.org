@@ -6,13 +6,23 @@ sidebar:
   order: 2
 ---
 
+:::note
+**Nyan Streaming Japan 不支持直播录制和文件上传功能。** 本页面关于录制和媒体的说明适用于支持这些功能的 Nyan Streaming 服务。
+:::
+
+
+:::note
+Nyan Streaming 免费服务器 `free.nyst.live` 无需注册控制台即可使用。Nyan Streaming 使用 [dash.nyst.live](https://dash.nyst.live/)，Nyan Streaming Japan 使用 [dash.jp.nyst.live](https://dash.jp.nyst.live/)。请确认适用于所用服务和合同的推流与观看 URL。
+:::
+
+
 # 入门指南
 
 本页依次说明如何在 Nyan Streaming 控制台中创建推流密钥、从 OBS Studio 推流，以及实际检查播放效果。
 
 ## 事先准备
 
-- 可登录 [Nyan Streaming 控制台](https://nyst.live/)的账户
+- 可登录 [Nyan Streaming 控制台](https://dash.nyst.live/)的账户
 - OBS Studio 等支持使用 H.264 / AAC 进行 RTMP 推流的软件
 - 用于管理直播的组织（团队）
 
@@ -39,17 +49,7 @@ sidebar:
 
 创建推流密钥时，请选择符合直播内容的节点。
 
-| 直播内容与条件 | 应选择的节点 |
-| --- | --- |
-| 使用 JASRAC 或 NexTone 管理的音乐作品 | **Node01** |
-| 普通直播、活动、面向世界各地的直播或需要录制 | **Node02** |
-| 以低码率进行超过 24 小时的长时间直播 | **Node03** |
 
-:::tip
-如果没有特殊条件，又不确定应该选哪个，请选择 **Node02**。只有 Node02 支持录制。
-:::
-
-音乐使用报告、录制支持和直播时长等区别，请参阅[如何选择节点](/zh-hans/services/streaming-service/nyan-streaming/nodes/)。
 
 选择节点后，从概览选项卡确认要使用的服务器的以下两项信息。
 

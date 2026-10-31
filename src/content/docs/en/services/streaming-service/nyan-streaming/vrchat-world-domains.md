@@ -32,14 +32,14 @@ The following applies when using a domain that is not on VRChat's default allowl
 
 For Public / Group Public instances, add the host name for the node you use to `Video Player Allowed Domains`.
 
-| Node   | Domain to add |
-| ------ | ------------- |
-| Free   | `free.nyst.live` |
-| Node01 | `stream-01.nyst.live` |
-| Node02 | `stream.nyst.live` |
-| Node03 | Check the host name in the playback URL shown in the dashboard |
+| Service | Host | Notes |
+| --- | --- | --- |
+| Nyan Streaming free server | `free.nyst.live` | For the free server; see the tools on the official site. |
+| Nyan Streaming standard server | `stream.nyst.live` | Use the publishing and playback URLs shown in the dashboard. |
+| Nyan Streaming Enterprise node | Custom | Custom configuration; check your agreement or dashboard for the host and conditions. |
+| Nyan Streaming Japan | `stream.jp.nyst.live` | Japan service. Check the official site and Music Reports for eligible works and reporting. |
 
-Node03 can use different destinations. Open the stream-key details in the dashboard and obtain the host name from the displayed RTSP, RTSPT, HLS, or other playback URL.
+For VRChat, register the hostname from the playback URL. Check the displayed URL for custom nodes.
 
 ## Configuration Decision Flow
 

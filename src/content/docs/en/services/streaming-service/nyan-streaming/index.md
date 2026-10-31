@@ -6,6 +6,16 @@ sidebar:
   order: 1
 ---
 
+:::note
+**Nyan Streaming Japan does not support stream recording or file uploads.** References to recordings and media on this page describe features available on supported Nyan Streaming plans.
+:::
+
+
+:::note
+The Nyan Streaming free server, `free.nyst.live`, can be used without registering for a dashboard. Use [dash.nyst.live](https://dash.nyst.live/) for Nyan Streaming and [dash.jp.nyst.live](https://dash.jp.nyst.live/) for Nyan Streaming Japan. Check the publishing and playback URLs for your service and agreement.
+:::
+
+
 # Nyan Streaming
 
 ### Service Overview
@@ -20,7 +30,7 @@ https://nyst.live/
 #### Start here
 
 - [Getting Started](/en/services/streaming-service/nyan-streaming/getting-started/) — Create a stream key, publish, and verify playback
-- [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/) — Compare the uses and restrictions of Node01, Node02, and Node03
+- [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/) — Compare services and connection hosts
 - [Feature Overview / Supported Protocols](/en/services/streaming-service/nyan-streaming/overview/) — Review the available publishing and playback methods
 - [Plans, Limits, and Policies](/en/services/streaming-service/nyan-streaming/plans-and-limits/) — Check bitrate, duration, recording, and other limits
 

@@ -6,6 +6,11 @@ sidebar:
   order: 1
 ---
 
+:::note
+**Nyan Streaming Japan does not support stream recording or file uploads.** References to recordings and media on this page describe features available on supported Nyan Streaming plans.
+:::
+
+
 Use **Stream Keys** to create, rotate, and revoke streaming credentials and to find the URLs you share with viewers.
 
 ![Stream key list and channel output](/images/nyan-streaming/dashboard/stream-keys.png)
@@ -19,7 +24,7 @@ Use **Stream Keys** to create, rotate, and revoke streaming credentials and to f
 
 If the view key is blank, one is generated randomly. Custom view keys may contain letters, numbers, hyphens (`-`), and underscores (`_`). The ingest secret is always random.
 
-If you are unsure which node to use, see [Choosing a Node](../../nodes/). Select the standard Node02 when you have no special requirements.
+See [Choosing a Service and Node](../../nodes/) for services and connection hosts.
 
 :::caution
 Treat the ingest stream key like a password. Do not include it in screenshots or share it with viewers. If it leaks, select **Regenerate Key** to invalidate the old value immediately.
@@ -46,14 +51,14 @@ Selecting a node in the dashboard does not pin the key to that node. The URL con
 | **Browser Viewing**   | Low-latency playback with WebRTC (WHEP)                     |
 | **HLS Viewing**       | Preview the `.m3u8` stream in the dashboard                 |
 | **Statistics**        | Live totals and per-node statistics                         |
-| **Recordings**        | Enable automatic recording on Node02 and manage this key's recordings |
+|  **Recordings**        | Configure automatic recording and view this key’s recordings when available |
 | **Restreaming**       | Manage external RTMP destinations such as YouTube or Twitch |
 | **Equalizer**         | Configure EQ and reverb                                     |
 
 EQ presets are Flat / Voice / Music / Bass Boost / Treble Boost. Reverb presets are Studio / Room / Hall / Cathedral. Changes normally reach viewers within about three seconds.
 
 :::note
-Recording is available only on Node02. See [Archives](../archives/#recording-compatible-node) for the reasons Node01 and Node03 do not support recording and for the other requirements.
+Recording availability depends on the service, plan, and agreement. Check the dashboard or contact the operator before use.
 :::
 
 ## Channel Output

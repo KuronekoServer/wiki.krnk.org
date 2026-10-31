@@ -28,18 +28,18 @@ Nyan Streaming 觀看 URL 中的主機名未列入 VRChat 標準允許列表時�
 | Friends | 不需要 | **需要** |
 | Invite+ / Invite | 不需要 | **需要** |
 
-## Nyan Streaming 各節點的域名
+## 各服務的域名
 
-請根據在 Public / Group Public 中使用的節點，將以下主機名登記到 `Video Player Allowed Domains`。
+在 Public / Group Public 中，請將所用服務的觀看 URL 主機名稱登記到 `Video Player Allowed Domains`。
 
-| 節點 | 應登記的域名 |
-| --- | --- |
-| Free | `free.nyst.live` |
-| Node01 | `stream-01.nyst.live` |
-| Node02 | `stream.nyst.live` |
-| Node03 | 查看控制台中顯示的觀看 URL 的主機名 |
+| 服務 | 主機 | 說明 |
+| --- | --- | --- |
+| Nyan Streaming 免費伺服器 | `free.nyst.live` | 免費伺服器的使用方式請參閱官網工具。 |
+| Nyan Streaming 標準伺服器 | `stream.nyst.live` | 使用控制台顯示的串流與觀看 URL。 |
+| Nyan Streaming Enterprise 節點 | 自訂 | 採用自訂設定，請於合約說明或控制台確認主機名稱與使用條件。 |
+| Nyan Streaming Japan | `stream.jp.nyst.live` | 日本服務。可使用的音樂及申報要求請參閱官網與音樂使用申報。 |
 
-Node03 的連線目標可能不同，請從控制台串流金鑰詳情中顯示的 RTSP / RTSPT / HLS 等觀看 URL 確認主機名。
+VRChat 應登記觀看 URL 的主機名稱。自訂節點請以顯示的 URL 為準。
 
 ## 設定判斷流程
 

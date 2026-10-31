@@ -6,15 +6,20 @@ sidebar:
   order: 4
 ---
 
+:::note
+The Nyan Streaming free server, `free.nyst.live`, can be used without registering for a dashboard. Use [dash.nyst.live](https://dash.nyst.live/) for Nyan Streaming and [dash.jp.nyst.live](https://dash.jp.nyst.live/) for Nyan Streaming Japan. Check the publishing and playback URLs for your service and agreement.
+:::
+
+
 # Streaming Methods (Ingest)
 
 You can send video to Nyan Streaming via **RTMP / WebRTC (WHIP) / RTSP push / browser streaming**. The supported formats are **H.264** for video and **AAC / PCM (s16be)** for audio (PCM (s16be) is available over RTSP and Opus over WebRTC). The server does not re-encode video, so streams using unsupported video codecs will not be displayed. When a PCM (s16be) stream is played through a non-RTSP method, its audio is delivered as AAC.
 
 ## Finding Your Streaming Address and Stream Key
 
-You can find the **server address** and **stream key** used for streaming on the stream key screen of the [dashboard](https://nyst.live/). When you select a server (node) or region, the corresponding streaming/viewing addresses for each are displayed.
+You can find the **server address** and **stream key** used for streaming on the stream key screen of the [dashboard](https://dash.nyst.live/). When you select a server (node) or region, the corresponding streaming/viewing addresses for each are displayed.
 
-See [Choosing a Node](../nodes/) to decide whether to use Node01, Node02, or Node03.
+See [Choosing a Service and Node](../nodes/) for services and connection hosts.
 
 :::caution
 If your stream key (streaming secret) becomes known to others, there is a risk that someone could stream without your permission. Do not share it with third parties. If it is ever leaked, regenerate the key from the dashboard.

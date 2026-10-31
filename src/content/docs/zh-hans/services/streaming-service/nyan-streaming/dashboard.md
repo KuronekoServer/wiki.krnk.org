@@ -6,6 +6,16 @@ sidebar:
   order: 8
 ---
 
+:::note
+**Nyan Streaming Japan 不支持直播录制和文件上传功能。** 本页面关于录制和媒体的说明适用于支持这些功能的 Nyan Streaming 服务。
+:::
+
+
+:::note
+Nyan Streaming 免费服务器 `free.nyst.live` 无需注册控制台即可使用。Nyan Streaming 使用 [dash.nyst.live](https://dash.nyst.live/)，Nyan Streaming Japan 使用 [dash.jp.nyst.live](https://dash.jp.nyst.live/)。请确认适用于所用服务和合同的推流与观看 URL。
+:::
+
+
 Nyan Streaming 的推流密钥、录制、分析、通知和团队设置可从 [Web 控制台](https://dash.nyst.live/)管理。
 
 :::note

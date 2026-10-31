@@ -6,13 +6,23 @@ sidebar:
   order: 2
 ---
 
+:::note
+**Nyan Streaming Japan では、配信の録画とファイルのアップロード機能を利用できません。** このページの録画・メディア関連の説明は、対応する Nyan Streaming の機能についてのものです。
+:::
+
+
+:::note
+Nyan Streaming の無料サーバー `free.nyst.live` はダッシュボードへの登録なしで利用できます。Nyan Streaming の管理画面は [dash.nyst.live](https://dash.nyst.live/)、Nyan Streaming Japan の管理画面は [dash.jp.nyst.live](https://dash.jp.nyst.live/) です。サービスと契約に合う配信・視聴 URL を確認してください。
+:::
+
+
 # 入門ガイド
 
 このページでは、Nyan Streaming のダッシュボードでストリームキーを作り、OBS Studio から配信し、実際に再生を確認するまでを順番に説明します。
 
 ## 事前に用意するもの
 
-- [Nyan Streaming ダッシュボード](https://nyst.live/)へログインできるアカウント
+- [Nyan Streaming ダッシュボード](https://dash.nyst.live/)へログインできるアカウント
 - OBS Studio など、H.264 / AAC で RTMP 配信できるソフトウェア
 - 配信を管理する組織（チーム）
 
@@ -38,17 +48,7 @@ Freeプランでご利用中の場合、このステップは不要です。
 
 ストリームキーを作成するときに、配信内容に合うノードを選択します。
 
-| 配信内容・条件 | 選ぶノード |
-| --- | --- |
-| JASRACまたはNexToneが管理する楽曲を利用する | **Node01** |
-| 通常配信、イベント、世界各地への配信、録画を利用する | **Node02** |
-| 低ビットレートで24時間を超える長時間配信を行う | **Node03** |
 
-:::tip
-特別な条件がなく、どれを選ぶか迷った場合は **Node02** を選択してください。録画を利用できるのもNode02のみです。
-:::
-
-楽曲報告、録画対応、配信時間などの違いは、[ノードの選び方](/services/streaming-service/nyan-streaming/nodes/)で詳しく説明しています。
 
 ノードを選んだら、概要タブから利用するサーバーの次の2項目を確認します。
 

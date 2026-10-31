@@ -32,14 +32,14 @@ Nyan Streaming 시청 URL의 호스트 이름이 VRChat 기본 허용 목록에 
 
 Public / Group Public에서는 사용하는 노드에 따라 아래 호스트 이름을 `Video Player Allowed Domains`에 등록합니다.
 
-| 노드   | 등록할 도메인 |
-| ------ | ------------- |
-| Free   | `free.nyst.live` |
-| Node01 | `stream-01.nyst.live` |
-| Node02 | `stream.nyst.live` |
-| Node03 | 대시보드에 표시되는 시청 URL의 호스트 이름 확인 |
+| 서비스 | 호스트 | 확인 사항 |
+| --- | --- | --- |
+| Nyan Streaming 무료 서버 | `free.nyst.live` | 무료 서버입니다. 이용 방법은 공식 사이트의 도구를 확인하세요. |
+| Nyan Streaming 일반 서버 | `stream.nyst.live` | 대시보드에 표시된 송출 및 시청 URL을 사용하세요. |
+| Nyan Streaming Enterprise 노드 | 맞춤 | 맞춤 구성입니다. 계약 안내 또는 대시보드에서 호스트와 이용 조건을 확인하세요. |
+| Nyan Streaming Japan | `stream.jp.nyst.live` | 일본 서비스입니다. 대상 악곡의 이용 조건과 보고 방법은 공식 사이트와 음악 이용 보고를 확인하세요. |
 
-Node03은 접속 대상이 다를 수 있습니다. 대시보드의 스트림 키 상세에 표시되는 RTSP, RTSPT, HLS 등의 시청 URL에서 호스트 이름을 확인하세요.
+VRChat에는 시청 URL의 호스트 이름을 등록합니다. 맞춤 노드는 표시된 URL을 확인하세요.
 
 ## 설정 판단 흐름
 

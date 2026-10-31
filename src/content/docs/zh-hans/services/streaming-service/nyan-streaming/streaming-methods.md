@@ -6,15 +6,20 @@ sidebar:
   order: 4
 ---
 
+:::note
+Nyan Streaming 免费服务器 `free.nyst.live` 无需注册控制台即可使用。Nyan Streaming 使用 [dash.nyst.live](https://dash.nyst.live/)，Nyan Streaming Japan 使用 [dash.jp.nyst.live](https://dash.jp.nyst.live/)。请确认适用于所用服务和合同的推流与观看 URL。
+:::
+
+
 # 推流方式（接入）
 
 可通过 **RTMP / WebRTC (WHIP) / RTSP 推送／浏览器推流**向 Nyan Streaming 发送视频。视频支持 **H.264**，音频支持 **AAC / PCM（s16be）**（PCM（s16be）可通过 RTSP 使用，Opus 可通过 WebRTC 使用）。服务器端不会重新编码视频，因此使用不支持的编解码器时无法显示直播画面。通过 RTSP 以外的方式观看 PCM（s16be）直播时，音频会转换为 AAC。
 
 ## 查看推流地址和推流密钥
 
-用于推流的**服务器地址**和**推流密钥**可从[控制台](https://nyst.live/)的推流密钥页面查看。选择服务器（节点）或区域后，会显示对应的推流／观看地址。
+用于推流的**服务器地址**和**推流密钥**可从[控制台](https://dash.nyst.live/)的推流密钥页面查看。选择服务器（节点）或区域后，会显示对应的推流／观看地址。
 
-关于应该使用 Node01、Node02 还是 Node03，请参阅[如何选择节点](../nodes/)。
+服务和连接地址请参阅[选择服务和节点](../nodes/)。
 
 :::caution
 推流密钥（推流机密值）被他人获知后，可能被用于未经许可的推流。请勿与第三方分享。如发生泄露，请从控制台重新生成密钥。

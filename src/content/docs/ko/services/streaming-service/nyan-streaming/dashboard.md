@@ -6,6 +6,16 @@ sidebar:
   order: 8
 ---
 
+:::note
+**Nyan Streaming Japan에서는 방송 녹화와 파일 업로드 기능를 이용할 수 없습니다.** 이 페이지의 녹화 및 미디어 설명은 이를 지원하는 Nyan Streaming 기능에 관한 것입니다.
+:::
+
+
+:::note
+Nyan Streaming 무료 서버 `free.nyst.live`는 대시보드 가입 없이 이용할 수 있습니다. Nyan Streaming은 [dash.nyst.live](https://dash.nyst.live/), Nyan Streaming Japan은 [dash.jp.nyst.live](https://dash.jp.nyst.live/)를 사용합니다. 서비스와 계약에 맞는 송출·시청 URL을 확인하세요.
+:::
+
+
 Nyan Streaming의 스트림 키, 녹화, 분석, 알림, 팀 설정은 [웹 대시보드](https://dash.nyst.live/)에서 관리합니다.
 
 :::note

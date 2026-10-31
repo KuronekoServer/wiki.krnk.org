@@ -6,19 +6,19 @@ sidebar:
   order: 2
 ---
 
+:::note
+**Nyan Streaming Japan does not support stream recording or file uploads.** References to recordings and media on this page describe features available on supported Nyan Streaming plans.
+:::
+
+
 **Archives** lists past broadcasts recorded from your stream keys for the current organization.
 
 ![Nyan Streaming Archives page](/images/nyan-streaming/dashboard/archives.png)
 
 ## Recording-compatible node
 
-:::caution
-**Recording is available only on Node02.** Node01 and Node03 cannot be used for recording.
-
-- **Node01:** Under the licensing agreements with JASRAC and NexTone, recording data from this node cannot be made available to users.
-- **Node03:** This node is intended for long-running streams, so recording is disabled to prevent its server storage from being consumed by long recordings.
-
-Select Node02 whenever a recording is required. Even on Node02, recording must also be included in your plan.
+:::note
+Recording availability depends on the service, plan, and agreement. Check the dashboard or contact the operator before use.
 :::
 
 ## Create a recording
@@ -54,7 +54,7 @@ Deleted recordings cannot be restored. Download anything you need and verify the
 ## If a recording is missing
 
 - Confirm that recording was enabled on the stream key before publishing.
-- Confirm that the stream was published to Node02. Streams on Node01 and Node03 are not recorded.
+- Recording availability depends on the service, plan, and agreement. Check the dashboard or contact the operator before use.
 - Immediately after a stream ends, wait while its status is **Processing** or **Pending**.
 - Check pooled storage on [Media](../media/) for a full quota.
 - Confirm that the correct team is selected in the top-left team switcher.

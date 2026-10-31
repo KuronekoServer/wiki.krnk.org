@@ -6,13 +6,23 @@ sidebar:
   order: 2
 ---
 
+:::note
+**Nyan Streaming Japan에서는 방송 녹화와 파일 업로드 기능를 이용할 수 없습니다.** 이 페이지의 녹화 및 미디어 설명은 이를 지원하는 Nyan Streaming 기능에 관한 것입니다.
+:::
+
+
+:::note
+Nyan Streaming 무료 서버 `free.nyst.live`는 대시보드 가입 없이 이용할 수 있습니다. Nyan Streaming은 [dash.nyst.live](https://dash.nyst.live/), Nyan Streaming Japan은 [dash.jp.nyst.live](https://dash.jp.nyst.live/)를 사용합니다. 서비스와 계약에 맞는 송출·시청 URL을 확인하세요.
+:::
+
+
 # 시작 가이드
 
 이 페이지에서는 Nyan Streaming 대시보드에서 스트림 키를 만들고 OBS Studio에서 송출한 뒤 브라우저 또는 VRChat에서 재생을 확인하는 과정을 설명합니다.
 
 ## 준비 사항
 
-- [Nyan Streaming 대시보드](https://nyst.live/)에 로그인할 수 있는 계정
+- [Nyan Streaming 대시보드](https://dash.nyst.live/)에 로그인할 수 있는 계정
 - RTMP로 H.264 / AAC 송출이 가능한 OBS Studio 등의 소프트웨어
 - 송출을 관리할 조직(팀)
 
@@ -39,17 +49,7 @@ Free 요금제를 이용 중이라면 이 단계는 건너뛰어도 됩니다.
 
 스트림 키를 만들 때 송출 목적에 맞는 노드를 선택합니다.
 
-| 송출 내용·조건 | 선택할 노드 |
-| --- | --- |
-| JASRAC 또는 NexTone이 관리하는 음악을 사용 | **Node01** |
-| 일반 송출, 이벤트, 전 세계 송출 또는 녹화 이용 | **Node02** |
-| 낮은 비트레이트로 24시간을 초과하는 장시간 송출 | **Node03** |
 
-:::tip
-특별한 조건이 없고 어떤 노드를 사용할지 모르겠다면 **Node02**를 선택하세요. 녹화를 이용할 수 있는 노드도 Node02뿐입니다.
-:::
-
-음악 이용 보고, 녹화 지원, 송출 시간 등의 차이는 [노드 선택 가이드](/ko/services/streaming-service/nyan-streaming/nodes/)에서 자세히 설명합니다.
 
 노드를 선택한 다음 개요 탭에서 사용할 서버의 다음 두 값을 복사합니다.
 

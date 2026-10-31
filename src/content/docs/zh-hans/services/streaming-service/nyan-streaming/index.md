@@ -6,6 +6,16 @@ sidebar:
   order: 1
 ---
 
+:::note
+**Nyan Streaming Japan 不支持直播录制和文件上传功能。** 本页面关于录制和媒体的说明适用于支持这些功能的 Nyan Streaming 服务。
+:::
+
+
+:::note
+Nyan Streaming 免费服务器 `free.nyst.live` 无需注册控制台即可使用。Nyan Streaming 使用 [dash.nyst.live](https://dash.nyst.live/)，Nyan Streaming Japan 使用 [dash.jp.nyst.live](https://dash.jp.nyst.live/)。请确认适用于所用服务和合同的推流与观看 URL。
+:::
+
+
 # Nyan Streaming
 
 ### 服务概述
@@ -20,7 +30,7 @@ https://nyst.live/
 #### 首先阅读
 
 - [入门指南](/zh-hans/services/streaming-service/nyan-streaming/getting-started/) — 从创建推流密钥到推流和检查播放效果
-- [如何选择节点](/zh-hans/services/streaming-service/nyan-streaming/nodes/) — 比较 Node01、Node02、Node03 的用途与限制
+- [如何选择节点](/zh-hans/services/streaming-service/nyan-streaming/nodes/) — 查看服务和连接地址
 - [功能概述与支持的协议](/zh-hans/services/streaming-service/nyan-streaming/overview/) — 了解可用的推流和观看方式
 - [套餐、限制与政策](/zh-hans/services/streaming-service/nyan-streaming/plans-and-limits/) — 确认码率、直播时长和录制等条件
 

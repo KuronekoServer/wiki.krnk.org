@@ -1,79 +1,31 @@
 ---
-title: "ノードの選び方"
-description: "Node01・Node02・Node03の用途、録画対応、楽曲報告、配信時間の違い"
+title: "サービスとノードの選び方"
+description: "Nyan Streaming と Nyan Streaming Japan の接続先と選び方"
 lastUpdated: 2026-08-22T00:00:00.000Z
 sidebar:
   order: 3
 ---
 
-# ノードの選び方
-
-Nyan Streamingでは、ストリームキーを作成するときに配信先のノードを選択します。ノードごとに対象地域、録画対応、配信時間などが異なるため、配信内容に合うものを選んでください。
-
-## まずは用途から選ぶ
-
-| 配信内容・条件 | 選ぶノード |
-| --- | --- |
-| JASRACまたはNexToneが管理する楽曲を利用する | **Node01** |
-| 通常配信、イベント、世界各地への配信、録画を利用する | **Node02** |
-| 低ビットレートで24時間を超える長時間配信を行う | **Node03** |
-
-:::tip
-特別な条件がなく、どれを選ぶか迷った場合は **Node02** を選択してください。
-:::
-
-## Node01：管理楽曲を利用する配信
-
-Node01は、JASRACまたはNexToneが管理する楽曲を扱う配信向けのノードです。配信と視聴はいずれも日本国内に限られます。
-
-Node01を利用した場合は、使用した楽曲をダッシュボードの[楽曲利用申請](/services/streaming-service/nyan-streaming/dashboard/music-reports/)から、**利用した月の末日まで**に報告してください。期限までに報告しなかった場合や報告内容に不備がある場合は、ペナルティまたは追加利用料の対象になります。
-
-:::caution[録画は利用できません]
-JASRACおよびNexToneとの許諾契約上、Node01の録画データは利用者へ提供できません。
-:::
-
-## Node02：通常配信・世界向け配信
-
-Node02は、世界各地に設置された配信サーバーを利用し、幅広い国や地域へ安定して届けるための標準ノードです。通常配信やイベント配信に加え、録画を利用する配信にも適しています。
-
-:::note[録画に対応する唯一のノードです]
-録画を利用できるのは **Node02のみ**です。録画の利用可否、保存容量、保持期間はプランによって異なります。詳しくは[アーカイブ](/services/streaming-service/nyan-streaming/dashboard/archives/)を確認してください。
-:::
-
-## Node03：低ビットレートの長時間配信
-
-Node03は、低ビットレートで長時間・長期間の連続配信を行うためのノードです。24時間連続配信の制限対象外となるため、24時間を超える配信にも利用できます。
-
 :::note
-Node03でも、プランごとのビットレート上限、ストレージ上限、利用規約など、配信時間以外の条件は引き続き適用されます。
+**Nyan Streaming Japan では、配信の録画とファイルのアップロード機能を利用できません。** このページの録画・メディア関連の説明は、対応する Nyan Streaming の機能についてのものです。
 :::
 
-:::caution[録画は利用できません]
-Node03は長時間配信向けのため、録画によるサーバーの保存容量圧迫を避ける目的で録画に対応していません。
-:::
 
-## 録画対応を比較する
+# サービスとノードを選ぶ
 
-| ノード | 録画 | 理由・条件 |
+用途に応じてサービスを選び、実際の配信・視聴 URL は利用するサービスの案内またはダッシュボードで確認してください。
+
+| サービス | 接続先 | 用途・確認事項 |
 | --- | --- | --- |
-| **Node01** | 利用不可 | JASRAC・NexToneとの許諾契約上、録画データを提供できないため |
-| **Node02** | 利用可能 | プランの録画対応、保存容量、保持期間の範囲で利用可能 |
-| **Node03** | 利用不可 | 長時間配信によるサーバーの保存容量圧迫を避けるため |
+| Nyan Streaming の無料サーバー | `free.nyst.live` | 無料サーバー用。利用方法は公式サイトのツールを確認してください。 |
+| Nyan Streaming の通常サーバー | `stream.nyst.live` | ダッシュボードに表示される配信・視聴 URL を使用します。 |
+| Nyan Streaming の Enterprise ノード | カスタム | カスタム構成です。契約時の案内やダッシュボードでホスト名と利用条件を確認してください。 |
+| Nyan Streaming Japan | `stream.jp.nyst.live` | 日本向けサービス。対象楽曲の利用条件と報告方法は公式サイトと楽曲利用申請を確認してください。 |
 
-## ダッシュボードで選択する
+録画、配信時間、対応地域などはサービス・プラン・契約により異なります。長時間配信や録画が必要な場合は、利用前にダッシュボードまたは運営へ確認してください。
 
-1. ダッシュボードの **ストリームキー** を開きます。
-2. **新しいストリームキー** を選び、用途に合うノードとリージョンを指定します。
-3. 作成したキーの **概要** タブを開き、選択した配信先のURLをOBSなどへ設定します。
+VRChat での登録は視聴 URL のホスト名を使用します。カスタムノードでは表示された URL を確認してください。
 
-:::note
-ダッシュボードで表示・選択したノードだけで接続先が固定されるわけではありません。実際の接続先は、配信ソフトへ入力したURLで決まります。
-:::
-
-## 関連ページ
-
-- [入門ガイド](/services/streaming-service/nyan-streaming/getting-started/)
-- [ストリームキー](/services/streaming-service/nyan-streaming/dashboard/stream-keys/)
-- [楽曲利用申請](/services/streaming-service/nyan-streaming/dashboard/music-reports/)
-- [プラン・制限・ポリシー](/services/streaming-service/nyan-streaming/plans-and-limits/)
-- [サーバー稼働状況](/services/streaming-service/nyan-streaming/dashboard/servers/)
+- [Nyan Streaming](https://nyst.live/)
+- [Nyan Streaming Japan](https://jp.nyst.live/)
+- [VRChat](../vrchat-world-domains/)

@@ -6,6 +6,11 @@ sidebar:
   order: 3
 ---
 
+:::note
+**Nyan Streaming Japan does not support stream recording or file uploads.** References to recordings and media on this page describe features available on supported Nyan Streaming plans.
+:::
+
+
 # Feature Overview & Supported Protocols
 
 Nyan Streaming is a video delivery service designed with the goal of **delivering high-quality video with low latency (as low as about 1 second)**. It runs on our in-house developed delivery server and delivers video without server-side **transcoding (re-encoding)**. PCM (s16be) audio received over RTSP is converted to AAC only when viewers use a non-RTSP playback method.

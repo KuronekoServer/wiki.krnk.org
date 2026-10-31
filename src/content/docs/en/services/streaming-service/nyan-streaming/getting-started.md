@@ -6,13 +6,23 @@ sidebar:
   order: 2
 ---
 
+:::note
+**Nyan Streaming Japan does not support stream recording or file uploads.** References to recordings and media on this page describe features available on supported Nyan Streaming plans.
+:::
+
+
+:::note
+The Nyan Streaming free server, `free.nyst.live`, can be used without registering for a dashboard. Use [dash.nyst.live](https://dash.nyst.live/) for Nyan Streaming and [dash.jp.nyst.live](https://dash.jp.nyst.live/) for Nyan Streaming Japan. Check the publishing and playback URLs for your service and agreement.
+:::
+
+
 # Getting Started
 
 This guide walks through creating a stream key in the Nyan Streaming dashboard, publishing from OBS Studio, and checking the result in a browser or VRChat.
 
 ## Before You Begin
 
-- An account that can sign in to the [Nyan Streaming dashboard](https://nyst.live/)
+- An account that can sign in to the [Nyan Streaming dashboard](https://dash.nyst.live/)
 - OBS Studio or another application that can publish H.264 / AAC over RTMP
 - An organization (team) that will own the stream
 
@@ -39,17 +49,7 @@ You can skip this step when using the Free plan.
 
 Select a node that matches your stream when creating the stream key.
 
-| Content or requirement | Node |
-| --- | --- |
-| Use music managed by JASRAC or NexTone | **Node01** |
-| Ordinary streams, events, worldwide delivery, or recording | **Node02** |
-| Low-bitrate streams that need to run for more than 24 hours | **Node03** |
 
-:::tip
-If you have no special requirements and are unsure which one to use, select **Node02**. Node02 is also the only node that supports recording.
-:::
-
-See [Choosing a Node](/en/services/streaming-service/nyan-streaming/nodes/) for music reporting, recording support, duration limits, and other differences.
 
 After choosing a node, copy these two values from the Overview tab for the server you want to use.
 

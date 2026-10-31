@@ -12,7 +12,7 @@ sidebar:
 
 ## Check before use
 
-Only works whose database entry permits **interactive streaming** may be used through Nyan Streaming. Select **Node01** for a stream that uses JASRAC- or NexTone-managed music and submit a report before or after use. A post-use report must be completed **by the end of the month in which the work was used**.
+Only works whose database entry permits **interactive streaming** may be used through Nyan Streaming Japan. Select **Nyan Streaming Japan** for a stream that uses JASRAC- or NexTone-managed music and submit a report before or after use. A post-use report must be completed **by the end of the month in which the work was used**.
 
 :::caution
 Missing the reporting deadline or submitting inaccurate information may result in an account penalty or additional fee. Verify the work code, title, and use date before submitting.

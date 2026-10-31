@@ -6,6 +6,11 @@ sidebar:
   order: 7
 ---
 
+:::note
+**Nyan Streaming Japan does not support stream recording or file uploads.** References to recordings and media on this page describe features available on supported Nyan Streaming plans.
+:::
+
+
 # Plans, Limits, and Policies
 
 ## Plans
@@ -18,7 +23,7 @@ Nyan Streaming plans are contracted on a **per-organization (team) basis**. Depe
 - **Storage capacity** (storage capacity for recorded and uploaded media)
 - **Available features and servers (nodes)**
 
-The available plans are **Free / Standard / Pro / Enterprise**. On Pro and above, you can also use **add-ons** for additional bitrate, viewers, storage, stream keys, and more (using additional bitrate requires administrator approval).
+Plans and add-ons differ by service. Check the pricing information for [Nyan Streaming](https://nyst.live/) or [Nyan Streaming Japan](https://jp.nyst.live/) and the plan screen in the corresponding dashboard.
 
 :::note
 The specific figures and pricing for each plan are subject to change. For the latest information, please check the official site at https://nyst.live/ and the plan screen in the dashboard. If you wish to use the service for business purposes, please contact our organization in advance.
@@ -30,13 +35,11 @@ The specific figures and pricing for each plan are subject to change. For the la
 
 If one publish session runs continuously for **24 hours** on a node where the duration limit is enabled, the stream is disconnected and **every stream key in the organization is blocked for one day**. Reconnecting starts a new continuous-session timer.
 
-**Node03 is exempt from this 24-hour limit.** Select Node03 for low-bitrate continuous streams that must run beyond 24 hours. Contact the operators in advance if your long-running stream does not fit the intended use of Node03.
+Recording and stream duration conditions depend on the service, plan, and agreement. Check the dashboard or contact the operator.
 
 ### Recording-Compatible Node
 
-**Recording is available only on Node02.** Under the licensing agreements with JASRAC and NexTone, recording data from Node01 cannot be made available to users. Node03 does not support recording because it is intended for long-running streams and recording could consume excessive server storage.
-
-Even when using Node02, recording must be included in your plan and the organization must have available storage. See [Archives](../dashboard/archives/) for instructions.
+Recording availability depends on the service, plan, and agreement. Check the dashboard or contact the operator before use.
 
 ### Exceeding the Bitrate Limit
 
@@ -85,7 +88,7 @@ If you use music managed by JASRAC / NexTone or similar in your stream, please a
 ## What You Can Do in the Dashboard
 
 - Create, regenerate, and delete stream keys, and check viewing URLs
-- Manage and download archives recorded on Node02
+- Manage and download recordings when available
 - Configure restreaming (external RTMP destinations)
 - Switch program output (channels)
 - Issue API keys (for using the public API)

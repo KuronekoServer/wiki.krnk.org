@@ -17,12 +17,12 @@ importers:
       astro-mermaid:
         specifier: ^2.2.0
         version: 2.2.0(astro@7.4.4(@types/node@24.19.2)(esbuild@0.28.2)(yaml@2.9.1))(mermaid@12.2.0)
-      framer-motion:
-        specifier: ^14.9.0
-        version: 14.9.0
       mermaid:
         specifier: ^12.2.0
         version: 12.2.0
+      motion:
+        specifier: ^14.9.0
+        version: 14.9.0
       sharp:
         specifier: ^0.35.5
         version: 0.35.5(@types/node@24.19.2)
@@ -1713,6 +1713,20 @@ packages:
 
   motion-utils@14.7.0:
     resolution: {integrity: sha512-woO0/Nb7ys75f94fjvQi/6leiHGvZUYkeHUPEZ3vxsV+9OpEVhkxp01x8MlRwX0zt31EqgXsKDAoBoJLC148Tw==}
+
+  motion@14.9.0:
+    resolution: {integrity: sha512-Oc+jjq/AyhwsnEUaAq2xEu/SsfKTphgsXqoxddTSLzgTdXZc6FwHcp9RLGSECccTykN1/p3gWUN4kMJAamm+1g==}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+      remix: ^3.1.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      remix:
+        optional: true
 
   mrmime@2.0.1:
     resolution: {integrity: sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ==}
@@ -3951,6 +3965,11 @@ snapshots:
       motion-utils: 14.7.0
 
   motion-utils@14.7.0: {}
+
+  motion@14.9.0:
+    dependencies:
+      framer-motion: 14.9.0
+      tslib: 2.8.1
 
   mrmime@2.0.1: {}
 

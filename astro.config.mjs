@@ -11,7 +11,11 @@ export default defineConfig({
   build: { format: "directory" },
   integrations: [
     // mermaid は Starlight より前に登録する（remark プラグインを先に走らせるため）
-    mermaid({ theme: "default", autoTheme: true }),
+    mermaid({
+      theme: "default",
+      autoTheme: true,
+      mermaidConfig: { flowchart: { wrappingWidth: 240 } },
+    }),
     starlight({
       title: "KuronekoServer Wiki",
       description: "KuronekoServer の公式ドキュメント",

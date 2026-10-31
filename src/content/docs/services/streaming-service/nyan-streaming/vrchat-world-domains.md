@@ -57,9 +57,9 @@ flowchart TD
     addDomain --> enableSetting
     enableSetting --> playback
 
-    style addDomain fill:#FFECBD,stroke:#FFC943
-    style enableSetting fill:#C2E5FF,stroke:#3DADFF
-    style playback fill:#CDF4D3,stroke:#66D575
+    style addDomain fill:#FFECBD,stroke:#FFC943,color:#17212b
+    style enableSetting fill:#C2E5FF,stroke:#3DADFF,color:#17212b
+    style playback fill:#CDF4D3,stroke:#66D575,color:#17212b
 ```
 
 ## ワールド側でドメインを登録する

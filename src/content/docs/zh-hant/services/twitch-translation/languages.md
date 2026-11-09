@@ -6,6 +6,68 @@ lastUpdated: 2025-07-18T06:55:21.954Z
 
 # 支援的語言列表
 
+免費方案使用 LibreTranslate。付費方案計劃使用 Google 翻譯或 DeepL，但**目前尚未提供，推出時間也尚未確定**。
+
+## LibreTranslate（免費方案）
+
+[LibreTranslate 官方模型清單](https://docs.libretranslate.com/guides/supported_languages/)包含以下語言代碼：
+
+| 語言 | 語言代碼 |
+|---|---|
+| 阿爾巴尼亞文 | sq |
+| 阿拉伯文 | ar |
+| 亞塞拜然文 | az |
+| 巴斯克文 | eu |
+| 孟加拉文 | bn |
+| 保加利亞文 | bg |
+| 加泰蘭文 | ca |
+| 中文 | zh |
+| 中文（繁體） | zt |
+| 捷克文 | cs |
+| 丹麥文 | da |
+| 荷蘭文 | nl |
+| 英文 | en |
+| 世界文 | eo |
+| 愛沙尼亞文 | et |
+| 芬蘭文 | fi |
+| 法文 | fr |
+| 加利西亞文 | gl |
+| 德文 | de |
+| 希臘文 | el |
+| 希伯來文 | he |
+| 印地文 | hi |
+| 匈牙利文 | hu |
+| 印尼文 | id |
+| 愛爾蘭文 | ga |
+| 義大利文 | it |
+| 日文 | ja |
+| 韓文 | ko |
+| 吉爾吉斯文 | ky |
+| 拉脫維亞文 | lv |
+| 立陶宛文 | lt |
+| 馬來文 | ms |
+| 書面挪威文 | nb |
+| 波斯文 | fa |
+| 波蘭文 | pl |
+| 葡萄牙文 | pt |
+| 葡萄牙語（巴西） | pb |
+| 羅馬尼亞文 | ro |
+| 俄文 | ru |
+| 斯洛伐克文 | sk |
+| 斯洛維尼亞文 | sl |
+| 西班牙文 | es |
+| 瑞典文 | sv |
+| 他加祿語 | tl |
+| 泰文 | th |
+| 土耳其文 | tr |
+| 烏克蘭文 | uk |
+| 烏都文 | ur |
+| 越南文 | vi |
+
+實際可用的語言及翻譯組合取決於所連接的 LibreTranslate 執行個體安裝的模型。官方清單中的語言不保證可在此機器人中使用。可透過該執行個體的[語言 API](https://docs.libretranslate.com/api/operations/languages/)查詢。LibreTranslate 使用 `zt` 表示繁體中文，使用 `pb` 表示巴西葡萄牙語。
+
+## Google 翻譯 / DeepL（付費方案，推出時間未定）
+
 | 支援的語言 | API | ISO-639 代碼 |
 |----------|-----|----------------|
 | 南非語 | Google 翻譯 | af |

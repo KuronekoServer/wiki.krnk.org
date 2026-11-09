@@ -6,7 +6,67 @@ lastUpdated: 2025-07-18T06:55:21.954Z
 
 # Supported Languages List
 
-This table lists languages supported by the Twitch translation bot and the API/source used.
+The free plan uses LibreTranslate. The paid plan is intended to use Google Translate or DeepL, but **it is not yet available and its launch date has not been decided**.
+
+## LibreTranslate (free plan)
+
+The [official LibreTranslate model list](https://docs.libretranslate.com/guides/supported_languages/) includes these language codes:
+
+| Language | Language code |
+|---|---|
+| Albanian | sq |
+| Arabic | ar |
+| Azerbaijani | az |
+| Basque | eu |
+| Bangla | bn |
+| Bulgarian | bg |
+| Catalan | ca |
+| Chinese | zh |
+| Chinese (Traditional) | zt |
+| Czech | cs |
+| Danish | da |
+| Dutch | nl |
+| English | en |
+| Esperanto | eo |
+| Estonian | et |
+| Finnish | fi |
+| French | fr |
+| Galician | gl |
+| German | de |
+| Greek | el |
+| Hebrew | he |
+| Hindi | hi |
+| Hungarian | hu |
+| Indonesian | id |
+| Irish | ga |
+| Italian | it |
+| Japanese | ja |
+| Korean | ko |
+| Kyrgyz | ky |
+| Latvian | lv |
+| Lithuanian | lt |
+| Malay | ms |
+| Norwegian Bokmål | nb |
+| Persian | fa |
+| Polish | pl |
+| Portuguese | pt |
+| Portuguese (Brazil) | pb |
+| Romanian | ro |
+| Russian | ru |
+| Slovak | sk |
+| Slovenian | sl |
+| Spanish | es |
+| Swedish | sv |
+| Tagalog | tl |
+| Thai | th |
+| Turkish | tr |
+| Ukrainian | uk |
+| Urdu | ur |
+| Vietnamese | vi |
+
+Available languages and translation pairs depend on the models installed on the connected LibreTranslate instance. Inclusion in the official list does not guarantee availability in this bot. The instance's [languages API](https://docs.libretranslate.com/api/operations/languages/) provides its available languages and targets. LibreTranslate uses `zt` for Traditional Chinese and `pb` for Brazilian Portuguese.
+
+## Google Translate / DeepL (paid plan; launch date undecided)
 
 | Language | API | ISO-639 Code |
 |---|---|---|

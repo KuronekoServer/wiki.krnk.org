@@ -26,6 +26,18 @@ sidebar:
 
 VRChat での登録は視聴 URL のホスト名を使用します。カスタムノードでは表示された URL を確認してください。
 
+## サーバー設置リージョンマップ
+
+サーバーの設置リージョンを確認できます。
+
+### Nyan Streaming
+
+![Nyan Streaming サーバー設置リージョンマップ](https://api.nyst.live/api/v1/servers/map.svg)
+
+### Nyan Streaming Japan
+
+![Nyan Streaming Japan サーバー設置リージョンマップ](https://api.jp.nyst.live/api/v1/servers/map.svg)
+
 - [Nyan Streaming](https://nyst.live/)
 - [Nyan Streaming Japan](https://jp.nyst.live/)
 - [VRChat](../vrchat-world-domains/)

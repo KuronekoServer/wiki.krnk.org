@@ -26,6 +26,18 @@ sidebar:
 
 VRChat 中应登记观看 URL 的主机名。定制节点请以显示的 URL 为准。
 
+## 服务器部署区域地图
+
+可查看各服务的服务器部署区域。
+
+### Nyan Streaming
+
+![Nyan Streaming 服务器部署区域地图](https://api.nyst.live/api/v1/servers/map.svg)
+
+### Nyan Streaming Japan
+
+![Nyan Streaming Japan 服务器部署区域地图](https://api.jp.nyst.live/api/v1/servers/map.svg)
+
 - [Nyan Streaming](https://nyst.live/)
 - [Nyan Streaming Japan](https://jp.nyst.live/)
 - [VRChat](../vrchat-world-domains/)

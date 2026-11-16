@@ -26,6 +26,18 @@ Recording, stream duration, and available regions depend on the service, plan, a
 
 For VRChat, register the hostname from the playback URL. Check the displayed URL for custom nodes.
 
+## Server region maps
+
+View the server regions for each service.
+
+### Nyan Streaming
+
+![Nyan Streaming server region map](https://api.nyst.live/api/v1/servers/map.svg)
+
+### Nyan Streaming Japan
+
+![Nyan Streaming Japan server region map](https://api.jp.nyst.live/api/v1/servers/map.svg)
+
 - [Nyan Streaming](https://nyst.live/)
 - [Nyan Streaming Japan](https://jp.nyst.live/)
 - [VRChat](../vrchat-world-domains/)

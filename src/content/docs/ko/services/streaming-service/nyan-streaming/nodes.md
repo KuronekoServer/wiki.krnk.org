@@ -26,6 +26,18 @@ sidebar:
 
 VRChat에는 시청 URL의 호스트 이름을 등록합니다. 맞춤 노드는 표시된 URL을 확인하세요.
 
+## 서버 설치 리전 지도
+
+각 서비스의 서버 설치 리전을 확인할 수 있습니다.
+
+### Nyan Streaming
+
+![Nyan Streaming 서버 설치 리전 지도](https://api.nyst.live/api/v1/servers/map.svg)
+
+### Nyan Streaming Japan
+
+![Nyan Streaming Japan 서버 설치 리전 지도](https://api.jp.nyst.live/api/v1/servers/map.svg)
+
 - [Nyan Streaming](https://nyst.live/)
 - [Nyan Streaming Japan](https://jp.nyst.live/)
 - [VRChat](../vrchat-world-domains/)
